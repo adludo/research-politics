@@ -32,6 +32,7 @@ These instructions apply to all wiki prose, article metadata, infographic labels
 - Use efficient algorithms and keep client-side state and dependencies minimal. Avoid redundant calculations and renders; add memoisation or other optimisations when measurement or clear computational cost justifies them.
 - Preserve keyboard access, accessible labels, responsive layouts and reduced-motion preferences when creating or reusing interactive components.
 - Verify calculation correctness and meaningful interaction behaviour with appropriate tests, including relevant edge cases. Run the build and type check for code changes.
+- Do not keep newly written tests in the repository unless the user explicitly asks; use temporary tests for verification and remove them before committing. Preserve pre-existing tests unless their removal is requested.
 
 ## Before completing an editorial change
 
