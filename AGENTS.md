@@ -1,0 +1,30 @@
+# Wiki editorial instructions
+
+These instructions apply to all wiki prose, article metadata, infographic labels, captions and explanatory text in this repository.
+
+## Write succinctly and impartially
+
+- Use plain language, short paragraphs and only the detail needed to explain the subject accurately. Preserve context that changes a claim's meaning.
+- Describe parties, politicians and policies without advocacy, loaded language, speculation about motives or unsupported judgments. Apply the same evidence standards to every party.
+- Distinguish established facts, attributed statements, allegations, interpretations and illustrative models. Attribute opinions to their authors. Neutrality does not require equal weight for claims with unequal evidence.
+- Include the country or jurisdiction and relevant dates. Distinguish a party's stated position from enacted policy, voting records and actions by individual members.
+
+## Verify important claims about parties
+
+- Before publishing or updating any important claim about a political party, always double-check it against the actual underlying source. This includes policies, promises, ideology, leadership, election results, votes, funding, historical conduct, controversies and allegations. Never rely on memory, search snippets, AI output or an existing wiki entry as verification.
+- Open and read the source. Confirm that it directly supports the exact wording, party, jurisdiction and time period. Check its author or issuing institution, publication date, authenticity, methodology where relevant, and any corrections or newer evidence.
+- Prefer authoritative primary records: electoral commissions for results, parliamentary records for votes, legislation for legal changes, official registers or audited disclosures for funding, and dated party manifestos for stated policies. A party's own material supports what it says, not independent proof that its claims are true or its policies succeeded.
+- Cross-check consequential, disputed or potentially reputational claims with a second independent, credible source where available. Two reports repeating the same original allegation are not independent confirmation. Identify allegations as allegations, include the relevant response or outcome when verified, and avoid implying guilt from an accusation.
+- When sources conflict, explain the disagreement and assess the evidence rather than silently choosing a preferred account. If verification or necessary corroboration is unavailable, omit or clearly qualify the claim and report the verification gap. Never invent a citation or describe an unread source as verified.
+
+## Make evidence traceable
+
+- Attach a citation directly to each important party claim, including claims inside infographics. Link to the specific document, page, section, table or record rather than a general homepage.
+- Give enough citation detail to retrace the check: publisher or author, document title, publication or update date when available, URL, and access date. Include page numbers or section identifiers for long documents; use a stable archive when needed and identify it as archived.
+- Date time-sensitive statements explicitly (for example, "As of 18 November 2026"). Preserve historical context and recheck sources whenever such claims are edited.
+- Label simulated figures and assumptions clearly. Cite real data, explain units and denominators, and do not present illustrative outputs as observed political facts.
+
+## Before completing an editorial change
+
+- Review every important party claim for a supporting citation, accurate attribution, current context and impartial wording. Follow the citations again to confirm they support the final wording.
+- Summarize what was verified and disclose unresolved evidence gaps. Run the repository checks appropriate to any accompanying code changes; prose-only edits do not require an application build.
