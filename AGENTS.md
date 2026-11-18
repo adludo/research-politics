@@ -1,6 +1,6 @@
 # Wiki editorial instructions
 
-These instructions apply to all wiki prose, article metadata, infographic labels, captions and explanatory text in this repository.
+These instructions apply to all wiki prose, article metadata, infographic labels, captions, explanatory text, and code for infographics and interactive features in this repository.
 
 ## Write succinctly and impartially
 
@@ -23,6 +23,15 @@ These instructions apply to all wiki prose, article metadata, infographic labels
 - Give enough citation detail to retrace the check: publisher or author, document title, publication or update date when available, URL, and access date. Include page numbers or section identifiers for long documents; use a stable archive when needed and identify it as archived.
 - Date time-sensitive statements explicitly (for example, "As of 18 November 2026"). Preserve historical context and recheck sources whenever such claims are edited.
 - Label simulated figures and assumptions clearly. Cite real data, explain units and denominators, and do not present illustrative outputs as observed political facts.
+
+## Build clean, efficient and reusable interactive features
+
+- Keep infographic and interactive code clean, readable and modular. Use descriptive names, focused components and explicit TypeScript interfaces for inputs and outputs.
+- Separate source data, calculation logic, presentation and interaction state. Extract shared components, pure functions and hooks where they enable reuse; avoid duplicated logic and unnecessary abstractions.
+- Make visualisations configurable through typed props and data rather than hard-coded topic-specific values. Keep units, assumptions and source metadata alongside the data they describe.
+- Use efficient algorithms and keep client-side state and dependencies minimal. Avoid redundant calculations and renders; add memoisation or other optimisations when measurement or clear computational cost justifies them.
+- Preserve keyboard access, accessible labels, responsive layouts and reduced-motion preferences when creating or reusing interactive components.
+- Verify calculation correctness and meaningful interaction behaviour with appropriate tests, including relevant edge cases. Run the build and type check for code changes.
 
 ## Before completing an editorial change
 
