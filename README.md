@@ -36,3 +36,9 @@ This repository is deployment-ready; Vercel account linking and production deplo
 Start with `app/page.tsx` for the homepage and `app/globals.css` for styling. Add article routes and reusable infographic components as material is developed. Follow `AGENTS.md` for editorial verification, code quality and commit conventions.
 
 The former sample articles and voting model have been removed, including their topic URLs. The project uses system fonts and has no external font requests, analytics or tracking scripts.
+
+## Victorian election comparison draft
+
+`/elections/victoria-2026/` organises the contributor's 18 November 2026 summary into nine policy areas. `data/victoria-2026.json` stores the claims, supplied citations and verification metadata separately from presentation. The draft is marked `noindex` and prominently labelled as unverified; citations and current-election relevance could not be checked because all 34 source requests returned proxy 403 errors. Source labels derived from URLs are not authenticated document titles. Null publication and verification dates are intentional.
+
+Before marking claims verified, read the exact source, record authentic document metadata and a successful access date, confirm eligibility, amounts, timelines and election relevance, distinguish new commitments from existing programs, and corroborate consequential or disputed claims. Do not treat a successful URL request alone as factual verification. See `AGENTS.md` for the full editorial rules.
