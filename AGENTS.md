@@ -37,3 +37,21 @@ These instructions apply to all wiki prose, article metadata, infographic labels
 
 - Review every important party claim for a supporting citation, accurate attribution, current context and impartial wording. Follow the citations again to confirm they support the final wording.
 - Summarize what was verified and disclose unresolved evidence gaps. Run the repository checks appropriate to any accompanying code changes; prose-only edits do not require an application build.
+
+
+## Branch and commit conventions
+
+For branches and commits created by ChatGPT, Codex, or other coding agents:
+
+- Use descriptive lowercase branch names with hyphens, such as `chore/agent-commit-format`.
+- Follow the existing repository history: use `<TYPE>: <short lowercase description>` for commit subjects.
+- Use `FEAT` for new functionality, `FIX` for bug fixes, and `CHORE` for documentation, configuration, maintenance, and agent instructions.
+- Keep the type uppercase, followed by a colon and one space. Describe the concrete change without a trailing period.
+- Examples: `FEAT: insects spawn every 3 seconds on frog game`, `FIX: insects do not stack up while frog game not in focus`, `CHORE: updated agent branch and commit conventions`.
+- Use these conventions for new work; do not rewrite existing commits unless explicitly requested.
+
+When tasked with a feature or bug fix, adhere to this exact 3-step process:
+
+1. **Context & Impact Analysis:** Briefly state what files will be affected and identify any potential breaking changes or edge cases before writing code.
+2. **Implementation:** Provide clean, well-formatted code blocks with explicit filenames. 
+3. **Verification Checklist:** Supply a 2-3 bullet point checklist detailing exactly how to manually test or verify the changes.
