@@ -17,6 +17,16 @@ These instructions apply to all wiki prose, article metadata, infographic labels
 - Cross-check consequential, disputed or potentially reputational claims with a second independent, credible source where available. Two reports repeating the same original allegation are not independent confirmation. Identify allegations as allegations, include the relevant response or outcome when verified, and avoid implying guilt from an accusation.
 - When sources conflict, explain the disagreement and assess the evidence rather than silently choosing a preferred account. If verification or necessary corroboration is unavailable, omit or clearly qualify the claim and report the verification gap. Never invent a citation or describe an unread source as verified.
 
+## Retrieve sources through the web tool
+
+- Retrieve policy URLs using an available web search/browsing tool. Do not rely solely on curl, requests or urllib.
+- First search for each exact URL or use a site-restricted search. Then open the matching result through the web tool and follow relevant policy links using the references returned by that tool.
+- Reuse `scripts/web-research.mjs` and follow `docs/web-research.md` rather than regenerating request helpers each time. Discover the actual tool and inspect its schema before binding it; the tool name may differ between sessions.
+- Use only page references, numbered link IDs and line numbers from actual preceding tool output. Inspect each result before the next dependent request; never invent missing references or page content.
+- If direct HTTP access returns 403 but the search tool supplies extracted content, distinguish those results clearly. Report whether the evidence is a search snippet or a fuller extracted page, and any publication or crawl date shown. Record retrieval dates separately and identify dates that are not shown.
+- Do not claim live website access or HTTP 200 unless verified. Do not assume indexed text is current. Read enough context to verify exact wording, election relevance and qualifications; a search snippet alone is insufficient for important party claims.
+- This requires a Codex session with a web search tool. Shell access and the saved helper alone do not reproduce the earlier retrieval. If the tool is unavailable, report that limitation and leave verification pending rather than treating a shell 403 as proof that web-tool retrieval also failed.
+
 ## Make evidence traceable
 
 - Attach a citation directly to each important party claim, including claims inside infographics. Link to the specific document, page, section, table or record rather than a general homepage.

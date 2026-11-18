@@ -36,3 +36,7 @@ This repository is deployment-ready; Vercel account linking and production deplo
 Start with `app/page.tsx` for the homepage and `app/globals.css` for styling. Add article routes and reusable infographic components as material is developed. Follow `AGENTS.md` for editorial verification, code quality and commit conventions.
 
 The former sample articles and voting model have been removed, including their topic URLs. The project uses system fonts and has no external font requests, analytics or tracking scripts.
+
+## Web research workflow
+
+See [docs/web-research.md](docs/web-research.md) for the reusable search/open/follow/read helper in `scripts/web-research.mjs` and the distinction between web-tool extracted content and direct HTTP results. A host-provided web search tool is required; the helper does not enable one by itself.
