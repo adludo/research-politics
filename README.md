@@ -18,7 +18,6 @@ Open port 3000 to view the empty wiki homepage.
 ```sh
 npm run build
 npm run typecheck
-npm test
 ```
 
 `next build` generates the static site in `out/`, including the homepage and a 404 page. Preview that output with `python3 -m http.server 3000 --directory out`. This project uses static export; `next start` is not used.
