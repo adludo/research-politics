@@ -1,0 +1,892 @@
+{
+  "researchDate": "2026-11-18",
+  "electionDateSupplied": "2026-11-28",
+  "provenance": "User-supplied summary; claims, dates, rankings and election relevance not independently verified.",
+  "sources": {
+    "abc": {
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-11-04/victoria-2026-election-policy-promise-tracker/107247200",
+      "title": "Victoria 2026 election policy promise tracker (supplied title)",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "poll": {
+      "publisher": "DemosAU",
+      "url": "https://demosau.com/wp-content/uploads/DemosAU/vic-poll-nov-2026.html",
+      "title": "vic poll nov 2026.html",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "guardian": {
+      "publisher": "The Guardian",
+      "url": "https://www.theguardian.com/australia-news/2026/nov/16/victoria-election-2026-who-to-vote-for-policies-promises-labor-coalition-greens-one-nation-ntwnfb",
+      "title": "victoria election 2026 who to vote for policies promises labor coalition greens one nation ntwnfb",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "srl": {
+      "publisher": "Premier of Victoria",
+      "url": "https://www.premier.vic.gov.au/labor-will-build-suburban-rail-loop-and-save-money",
+      "title": "labor will build suburban rail loop and save money",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-land": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/our-priorities/cutting-land-tax-to-save-families-money",
+      "title": "cutting land tax to save families money",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-fares": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/our-priorities/capping-fares",
+      "title": "capping fares",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-tolls": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/our-priorities/capping-tolls",
+      "title": "capping tolls",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-dental": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/our-priorities/free-dental-for-all-victorians",
+      "title": "free dental for all victorians",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-health": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/our-priorities/investing-in-health-and-protecting-our-hospitals",
+      "title": "investing in health and protecting our hospitals",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-homes": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/our-priorities/building-homes-for-first-home-buyers",
+      "title": "building homes for first home buyers",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-roads": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/our-priorities/fixing-potholes-and-improving-local-roads",
+      "title": "fixing potholes and improving local roads",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-schools": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/news/labor-will-upgrade-hundreds-of-local-schools",
+      "title": "labor will upgrade hundreds of local schools",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-regions": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/news/labor-will-guarantee-royalties-for-the-regions",
+      "title": "labor will guarantee royalties for the regions",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "labor-plan": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/our-plan",
+      "title": "our plan",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "coalition-economy": {
+      "publisher": "Liberal–National Coalition campaign",
+      "url": "https://ourplan.au/economic-plan/",
+      "title": "economic plan",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "coalition-costs": {
+      "publisher": "Liberal–National Coalition campaign",
+      "url": "https://ourplan.au/lower-costs/",
+      "title": "lower costs",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "coalition-government": {
+      "publisher": "Liberal–National Coalition campaign",
+      "url": "https://ourplan.au/government-that-works/",
+      "title": "government that works",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "coalition-plan": {
+      "publisher": "Liberal–National Coalition campaign",
+      "url": "https://ourplan.au/",
+      "title": "ourplan.au",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "greens-tax": {
+      "publisher": "Victorian Greens",
+      "url": "https://greens.org.au/vic/platform/how-we-pay-for-it",
+      "title": "how we pay for it",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "greens-plan": {
+      "publisher": "Victorian Greens",
+      "url": "https://greens.org.au/vic/platform",
+      "title": "platform",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "greens-housing": {
+      "publisher": "Victorian Greens",
+      "url": "https://greens.org.au/vic/platform/housing",
+      "title": "housing",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "greens-transport": {
+      "publisher": "Victorian Greens",
+      "url": "https://greens.org.au/vic/platform/transport",
+      "title": "transport",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "greens-climate": {
+      "publisher": "Victorian Greens",
+      "url": "https://greens.org.au/vic/platform/climate",
+      "title": "climate",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "greens-education": {
+      "publisher": "Victorian Greens",
+      "url": "https://greens.org.au/vic/platform/education",
+      "title": "education",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "greens-safety": {
+      "publisher": "Victorian Greens",
+      "url": "https://greens.org.au/vic/platform/safety",
+      "title": "safety",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "greens-justice": {
+      "publisher": "Victorian Greens",
+      "url": "https://greens.org.au/vic/platform/first-nations-justice",
+      "title": "first nations justice",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "one-fiscal": {
+      "publisher": "One Nation Victoria",
+      "url": "https://vic.onenation.org.au/policies/fiscal-management",
+      "title": "fiscal management",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "one-costs": {
+      "publisher": "One Nation Victoria",
+      "url": "https://vic.onenation.org.au/policies/cost-of-living",
+      "title": "cost of living",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "one-health": {
+      "publisher": "One Nation Victoria",
+      "url": "https://vic.onenation.org.au/policies/health-and-emergency-services",
+      "title": "health and emergency services",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "one-energy": {
+      "publisher": "One Nation Victoria",
+      "url": "https://vic.onenation.org.au/policies/energy",
+      "title": "energy",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "one-education": {
+      "publisher": "One Nation Victoria",
+      "url": "https://vic.onenation.org.au/policies/education",
+      "title": "education",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "one-plan": {
+      "publisher": "One Nation Victoria",
+      "url": "https://vic.onenation.org.au/policies",
+      "title": "policies",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "one-crime": {
+      "publisher": "One Nation Victoria",
+      "url": "https://vic.onenation.org.au/policies/crime",
+      "title": "crime",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "one-integrity": {
+      "publisher": "One Nation Victoria",
+      "url": "https://vic.onenation.org.au/policies/democracy-and-accountability",
+      "title": "democracy and accountability",
+      "publicationDate": null,
+      "lastVerified": null,
+      "verification": "pending",
+      "lastAccessAttempt": "2026-11-18",
+      "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    }
+  },
+  "sections": [
+    {
+      "id": "budget",
+      "title": "Budget, taxation and business",
+      "note": "The Coalition’s cash-surplus target and Labor’s project savings target measure different things; they are not directly comparable budget totals.",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Seek $2 billion in Suburban Rail Loop savings: approximately $1 billion through scope reductions and another $1 billion targeted through an independent review.",
+              "source": "srl",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Progressively restore the land-tax threshold to $300,000, starting with increases in 2027–28.",
+              "source": "labor-land",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Introduce a $350 million manufacturing package, targeting 5,000 jobs through grants and public–private investment.",
+              "source": "abc",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Target a cash surplus by 2032; freeze recruitment to back-office positions, claiming $22 billion in savings; use windfall revenue to reduce debt.",
+              "source": "coalition-economy",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Promise no new or increased taxes.",
+              "source": "coalition-plan",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Restore the $300,000 land-tax threshold over five years; provide business payroll-tax relief and remove payroll taxes applying to schools and GP services.",
+              "source": "coalition-costs",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Introduce a quarterly 0.1% levy on Victoria’s share of the five major banks’ liabilities; increase online gambling tax to 25%, pokies taxes to 75%, and double casino table-game taxes; double coal and gas royalties; increase land tax on residential investment portfolios above $5 million. Use these taxes to fund expanded public services and household relief.",
+              "source": "greens-tax",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Cancel the Suburban Rail Loop and redirect its funding; reduce senior bureaucracy; introduce sunset reviews requiring government entities to justify their continuation.",
+              "source": "one-fiscal",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Wind back land-tax increases and lift the payroll-tax threshold. The supplied summary does not specify the new payroll threshold.",
+              "source": "one-costs",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cost-of-living",
+      "title": "Cost of living and household assistance",
+      "note": "",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Introduce a $30 weekly public-transport cap, or $15 for concession holders, for two years from 1 January 2027.",
+              "source": "labor-fares",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Introduce a $30 weekly toll cap during 2027 through rebates capped at $350 a week and $5,000 per vehicle annually. Eligible small businesses could claim for up to five vehicles.",
+              "source": "labor-tolls",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Introduce a $50 weekly toll cap for two years from 1 July 2027, covering cars, light commercial vehicles and small-business fleets of up to five vehicles. Scrap the Emergency Services Tax.",
+              "source": "coalition-costs",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Make public transport permanently free; trial 10 publicly owned supermarkets selling a basket of essential groceries at prices intended to be 30% cheaper; introduce $3,000 energy-upgrade vouchers for renters and homeowners.",
+              "source": "greens-plan",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Abolish stamp duty on home, contents and car insurance; provide $300 per school-age child annually for sport, split between summer and winter seasons, without means testing.",
+              "source": "one-costs",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Healthcare, dental and mental health",
+      "note": "",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Open 20 free public dental clinics, including six in regional Victoria. Make free annual check-ups available to Victorian residents, with treatment prioritised by urgency.",
+              "source": "labor-dental",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Expand 12 hospital emergency departments, adding 250 beds and 750 nurses.",
+              "source": "labor-health",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Deliver 25,000 additional elective operations annually through private-hospital partnerships at no additional patient cost; upgrade regional hospitals including West Gippsland, Wonthaggi and Mildura; establish a $50 million mental-health workforce fund; provide $5 million for a Parkville youth mental-health facility masterplan.",
+              "source": "coalition-government",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Invest $3 billion in public dentistry, including clinics, prevention and workforce expansion, to make dental care free.",
+              "source": "greens-plan",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Allocate at least 5% of the health budget to prevention and health promotion, and 3% to community health; expand abortion access, pill testing and supervised injecting services.",
+              "source": "abc",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Create a real-time statewide surgical and specialist waiting-list system; improve electronic-record interoperability; expand hospital-at-home and nurse-led discharge; redirect administrative savings into clinical care.",
+              "source": "one-health",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Guarantee minimum regional services, including 24/7 emergency departments.",
+              "source": "abc",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Cover remaining public maternity out-of-pocket expenses and contribute $2,000 towards private maternity care.",
+              "source": "one-costs",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "housing",
+      "title": "Housing, renting and planning",
+      "note": "",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Partner with the Commonwealth to deliver 25,600 homes, giving first-home buyers an initial exclusive purchasing opportunity. Sell at market prices, with the first homes expected in 2027. Contribute $499 million in state funding, including supporting infrastructure.",
+              "source": "labor-homes",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Exempt first-home buyers from stamp duty on homes up to $1 million; scrap Labor’s suburban high-rise activity-centre plans and restore local planning control; expand the Capital City Zone into selected inner-city areas; accelerate growth-area land release.",
+              "source": "coalition-costs",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Abolish stamp duty for owner-occupied homes below $1.1 million, with discounts up to $1.6 million; target 88,000 additional public homes, starting with $4 billion towards construction, maintenance and upgrades; oppose public-housing tower demolition.",
+              "source": "greens-housing",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Introduce a two-year rent freeze, followed by limits linked to wages or inflation.",
+              "source": "abc",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Release underused government land; impose statutory planning and building-approval deadlines; ease granny-flat and spare-room rental restrictions; increase foreign-purchaser duty; require community consultation before high-rise development.",
+              "source": "one-costs",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transport",
+      "title": "Transport, roads and infrastructure",
+      "note": "",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Continue the Suburban Rail Loop with scope reductions and a savings review.",
+              "source": "srl",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Repair 500,000 potholes in 2026, upgrade 50 local roads and strengthen government responsibility for road maintenance. The supplied summary describes the pothole program as already underway, rather than entirely a future-term promise.",
+              "source": "labor-roads",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Pause and review the Suburban Rail Loop.",
+              "source": "abc",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Spend $5 billion on road repairs and resurfacing; target one million potholes; provide 25 hybrid electric trains for the Melton and Wyndham Vale lines.",
+              "source": "coalition-costs",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Guarantee regional Victoria at least 25% of infrastructure spending.",
+              "source": "coalition-government",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Run trams and most trains at least every 10 minutes between 7am and 10pm, where infrastructure permits; spend $270 million on bus reform and $245 million on more frequent regional trains and coaches; allocate $80 million annually to safe cycling routes.",
+              "source": "greens-transport",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Cancel the Suburban Rail Loop, publish the costs of continuing versus stopping it, and redirect funding to other infrastructure.",
+              "source": "one-fiscal",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "title": "Energy, climate and environment",
+      "note": "",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Pause and review the Western Renewables Link transmission project.",
+              "source": "guardian",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Introduce a 2km buffer between new waste-to-energy facilities and existing homes.",
+              "source": "abc",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Reverse restrictions on new gas connections and gas appliances; encourage gas exploration; establish commercial-rooftop Urban Solar Parks.",
+              "source": "coalition-economy",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Cancel VNI West; require fundamental changes and a rigorous review before Western Renewables Link proceeds; restore a 2km wind-turbine buffer around homes.",
+              "source": "coalition-government",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Ban offshore oil and gas drilling and stop Viva’s gas import terminal; invest in renewables to enable earlier closure of Loy Yang A generating units.",
+              "source": "greens-climate",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Establish a public energy retailer and expand publicly owned renewables; impose a moratorium on new AI data centres pending protective laws; strengthen native-forest protection.",
+              "source": "greens-plan",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Scrap net-zero targets and subsidies; cancel VNI West and Western Renewables Link; support coal infrastructure upgrades and offshore gas exploration; reverse the new-home gas ban; repeal Victoria’s nuclear prohibition.",
+              "source": "one-energy",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education and skills",
+      "note": "",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Commit more than $1.17 billion to upgrades at 228 public schools, with planning for another 16. Provide $500 million for non-government school upgrades: $350 million for Catholic schools and $150 million for other low-fee independent schools. The supplied summary dates this announcement to 14 November 2026.",
+              "source": "labor-schools",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Establish 10 technical secondary colleges and subsidise half of eligible apprentices’ off-the-job training costs.",
+              "source": "coalition-costs",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Build three selective-entry high schools; introduce a literacy and numeracy guarantee with a long-term 90% NAPLAN proficiency goal.",
+              "source": "coalition-government",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Bring forward Victoria’s full 75% state share of the Schooling Resource Standard to 2028; replace schools’ reliance on voluntary parent contributions with adequate funding; establish an independent authority to allocate school upgrades according to need.",
+              "source": "greens-education",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Replace the Victorian Curriculum with a sequenced syllabus prioritising literacy, numeracy, science, history and civics; expand explicit instruction and phonics; expand dedicated trade schools and specialist behavioural-support settings.",
+              "source": "one-education",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "safety",
+      "title": "Crime, policing and community safety",
+      "note": "",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Recruit 1,500 additional police, alongside 200 Protective Services Officers and 400 reservists, to increase frontline policing capacity.",
+              "source": "labor-plan",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Increase police numbers by 3,000, comprising existing vacancies plus 1,500 additional funded positions; reopen more than 40 police stations; introduce “Break Bail, Face Jail” rules; expand adult sentencing for serious offences committed by young people.",
+              "source": "coalition-plan",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Invest $1 billion in community safety, including prevention, mental-health outreach and crisis response.",
+              "source": "greens-safety",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Raise the criminal-responsibility age to 14; repeal the 2025 bail changes and end life sentences for children.",
+              "source": "greens-justice",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Establish a 24/7 Bail Court; target resolution of violent charges within 90 days; apply adult sentencing to serious child offenders.",
+              "source": "one-plan",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Reduce police administrative work and prioritise retention of experienced officers.",
+              "source": "one-crime",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Treaty, regional investment and integrity",
+      "note": "",
+      "parties": [
+        {
+          "name": "Labor",
+          "claims": [
+            {
+              "text": "Maintain Treaty.",
+              "source": "abc",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Establish Royalties for the Regions, directing all mineral-resource royalties into regional investment, with more than $500 million forecast over four years.",
+              "source": "labor-regions",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Continue the construction-sector Royal Commission, supported by a special prosecutor and stronger IBAC financial-investigation powers.",
+              "source": "labor-plan",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Liberal–National Coalition",
+          "claims": [
+            {
+              "text": "Repeal Treaty within its first 100 days.",
+              "source": "abc",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Introduce a Charter of Budget Honesty and public spending tracker; establish an enhanced Royal Commission into construction-sector misconduct.",
+              "source": "coalition-government",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "Greens",
+          "claims": [
+            {
+              "text": "Defend Treaty and support further local treaties; implement Yoorrook Justice Commission recommendations, with an initial $50 million investment; support Traditional Owner management of national and state parks.",
+              "source": "greens-justice",
+              "status": "verification-pending"
+            },
+            {
+              "text": "Ban major corporate political donations and strengthen anti-corruption oversight.",
+              "source": "greens-plan",
+              "status": "verification-pending"
+            }
+          ]
+        },
+        {
+          "name": "One Nation",
+          "claims": [
+            {
+              "text": "Repeal the Statewide Treaty and abolish Gellung Warl, ending its legislated funding; establish Royal Commissions into the Big Build and Victoria’s COVID response.",
+              "source": "one-integrity",
+              "status": "verification-pending"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

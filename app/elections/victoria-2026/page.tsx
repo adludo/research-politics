@@ -1,0 +1,111 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import comparison from '../../../data/victoria-2026.json';
+
+export const metadata: Metadata = {
+  title: '2026 Victorian election policy comparison — draft',
+  description: 'User-supplied policy comparison organised by topic. Independent source verification is pending.',
+  robots: { index: false, follow: false },
+};
+
+type SourceId = keyof typeof comparison.sources;
+
+function Reference({ sourceId }: { sourceId: SourceId }) {
+  const source = comparison.sources[sourceId];
+  return (
+    <small className="policy-reference">
+      Supplied reference: <a href={source.url}>{source.publisher} — {source.title}</a>
+      {' · Verification pending'}
+    </small>
+  );
+}
+
+export default function VictorianElection() {
+  return (
+    <main id="main">
+      <Link href="/">Back to the wiki</Link>
+      <h1>2026 Victorian state election: policy comparison</h1>
+      <aside className="research-notice" aria-labelledby="verification-heading">
+        <h2 id="verification-heading">Draft — independent verification pending</h2>
+        <p>
+          This page organises a user-supplied summary dated 18 November 2026.
+          It has not been independently verified. All 34 supplied references were
+          blocked by the research environment’s proxy (403) on that date.
+          Links are supplied citations, not confirmation of their contents or validity.
+        </p>
+        <p>
+          Policy wording, eligibility, costs, dates and relevance to this election
+          require checking against the underlying documents. Do not rely on this
+          draft as a verified voting guide. Announced expenditure, savings and
+          outcomes are not independently validated costings or forecasts.
+        </p>
+      </aside>
+      <section aria-labelledby="scope-heading">
+        <h2 id="scope-heading">Scope and context</h2>
+        <p>
+          The supplied summary gives an election date of 28 November 2026 and covers
+          Labor, the Liberal–National Coalition, the Greens and One Nation. It groups
+          the Liberals and Nationals as a joint campaign platform. This selection
+          and grouping are supplied by the contributor; neither a ranking of the
+          leading groups nor current participation has been independently confirmed.
+        </p>
+        <p>
+          The summary describes these as 2026 commitments, including existing
+          policies being defended or continued. These classifications still need
+          source review. All monetary amounts are Australian dollars.
+        </p>
+        <p><Reference sourceId="poll" /></p>
+        <p><Reference sourceId="abc" /></p>
+      </section>
+      <nav className="policy-contents" aria-label="Policy areas">
+        <h2>Policy areas</h2>
+        <ol>{comparison.sections.map(section => (
+          <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>
+        ))}</ol>
+      </nav>
+      {comparison.sections.map(section => (
+        <section key={section.id} id={section.id} aria-labelledby={`${section.id}-heading`}>
+          <h2 id={`${section.id}-heading`}>{section.title}</h2>
+          <p className="verification-label">Attributed to the supplied summary; verification pending.</p>
+          {section.note && <p className="comparison-note">{section.note}</p>}
+          <div className="policy-parties">
+            {section.parties.map(party => (
+              <article className="policy-party" key={party.name}>
+                <h3>{party.name}</h3>
+                <ul>{party.claims.map((claim, index) => (
+                  <li key={`${claim.source}-${index}`}>
+                    <p>{claim.text}</p>
+                    <Reference sourceId={claim.source as SourceId} />
+                  </li>
+                ))}</ul>
+              </article>
+            ))}
+          </div>
+          <a href="#main">Back to top</a>
+        </section>
+      ))}
+      <section aria-labelledby="campaigns-heading">
+        <h2 id="campaigns-heading">Supplied campaign pages</h2>
+        <ul>{(['labor-plan', 'coalition-plan', 'greens-plan', 'one-plan'] as const).map(id => (
+          <li key={id}><Reference sourceId={id} /></li>
+        ))}</ul>
+      </section>
+      <section aria-labelledby="review-heading">
+        <h2 id="review-heading">Reference review requirements</h2>
+        <p>
+          Before treating this as verified material, open each reference, record its
+          actual title, publication or update date, access date and relevant section,
+          and check every claim against the final wording. Confirm election relevance
+          and distinguish new promises, standing platforms and existing programs.
+          Seek independent corroboration for consequential or disputed claims.
+        </p>
+        <p>
+          Reference labels were derived from the supplied URLs; document titles and
+          publication dates have not been authenticated. No successful source access
+          or verification date has been recorded. The underlying data retains the
+          failed access attempts separately from verification status.
+        </p>
+      </section>
+    </main>
+  );
+}
