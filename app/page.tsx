@@ -1,3 +1,12 @@
-import Explorer from '../components/Explorer';
-import VoteLab from '../components/VoteLab';
-export default function Home(){return <main id="main"><section className="hero"><div className="hero-copy"><div className="eyebrow"><span className="tiny-cross">✳</span> LESS NOISE. MORE UNDERSTANDING.</div><h1>Politics, <em>made</em><br/><em>visible.</em></h1><p>A living field guide to power, people and the ideas in between. Explore the connections. Question the systems. See the bigger picture.</p><a className="primary" href="#library">Explore the field guide <span>↗</span></a><div className="hero-foot"><span>INDEPENDENT IN SPIRIT</span><span>CURIOUS BY DESIGN</span></div></div><div className="hero-graphic" role="img" aria-label="Interconnected circles representing people, power and policy"><div className="graphic-top"><span>THE WORLD IS CONNECTED.</span><span>FIG. 001</span></div><div className="orbit orbit-one"><span>PEOPLE</span></div><div className="orbit orbit-two"><span>POWER</span></div><div className="orbit orbit-three"><span>POLICY</span></div><div className="orbit-center">↗</div><div className="graphic-bottom"><span>EVERYTHING INFLUENCES EVERYTHING.</span><span>+ EXPLORE</span></div></div></section><div className="strip"><span>A starting point, not the final word.</span><p>Ideas explained simply. Sources kept close. Room to think for yourself.</p><span>↓</span></div><Explorer/><VoteLab/><section className="about"><span className="eyebrow">A NOTE ON THIS FIELD GUIDE</span><h2>Understanding starts<br/>with better questions.</h2><p>This is an evolving notebook, not an encyclopedia of certainties. Each guide offers an introduction and a path to further reading. The interactive models are deliberately simplified tools for exploration.</p><a href="https://github.com/adludo/research-politics" target="_blank" rel="noreferrer" className="text-link">Help grow the notebook ↗</a></section></main>}
+export default function Home() {
+  return (
+    <main id="main">
+      <h1>Research Politics</h1>
+      <p>A wiki for political research and interactive infographics.</p>
+      <section aria-labelledby="articles-heading">
+        <h2 id="articles-heading">Articles</h2>
+        <p>No articles yet.</p>
+      </section>
+    </main>
+  );
+}
