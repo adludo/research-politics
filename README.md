@@ -40,3 +40,5 @@ The former sample articles and voting model have been removed, including their t
 ## Web research workflow
 
 See [docs/web-research.md](docs/web-research.md) for the reusable search/open/follow/read helper in `scripts/web-research.mjs` and the distinction between web-tool extracted content and direct HTTP results. A host-provided web search tool is required; the helper does not enable one by itself.
+
+For a standalone, dependency-free CLI, run `python3 scripts/web-tool.py --help`. It provides direct-HTTP page extraction, numbered links, saved references and Bing RSS snippet search. Unlike the hosted helper, it needs no injected ChatGPT tool, but public endpoints must be allowed by the environment's network policy. Usage and limitations are documented in the same guide.

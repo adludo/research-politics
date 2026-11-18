@@ -27,6 +27,8 @@ These instructions apply to all wiki prose, article metadata, infographic labels
 - Do not claim live website access or HTTP 200 unless verified. Do not assume indexed text is current. Read enough context to verify exact wording, election relevance and qualifications; a search snippet alone is insufficient for important party claims.
 - This requires a Codex session with a web search tool. Shell access and the saved helper alone do not reproduce the earlier retrieval. If the tool is unavailable, report that limitation and leave verification pending rather than treating a shell 403 as proof that web-tool retrieval also failed.
 
+- When a hosted web tool is unavailable, `scripts/web-tool.py` is an optional standalone search/open/click/read CLI. Its HTML extraction uses direct HTTP and its Bing RSS results are search snippets; it does not reproduce ChatGPT’s hosted retrieval or bypass proxy restrictions. Preserve these distinctions and follow `docs/web-research.md`.
+
 ## Make evidence traceable
 
 - Attach a citation directly to each important party claim, including claims inside infographics. Link to the specific document, page, section, table or record rather than a general homepage.
