@@ -50,3 +50,14 @@
 .compact > .summary .description { font-size: .78rem; }
 .compact > .summary .indicator { flex-basis: 1.5rem; height: 1.5rem; }
 .compact > .content { padding: 0 1.1rem 1.1rem; }
+
+/* Secondary article context should not compete with the policy panels. */
+.subtle { border-color: #e4e7eb; border-radius: .5rem; box-shadow: none; }
+.subtle + .subtle { margin-top: .5rem; }
+.subtle[open] { border-color: #ccd4dc; box-shadow: none; }
+.subtle > .summary { padding: .8rem 1rem; gap: .75rem; }
+.subtle > .summary:hover { background: #fafbfc; }
+.subtle > .summary .title { font-size: .9rem; font-weight: 500; color: #4a5968; }
+.subtle > .summary .indicator { flex-basis: 1.25rem; height: 1.25rem; background: #f1f3f5; }
+.subtle > .summary .indicator::before, .subtle > .summary .indicator::after { left: .35rem; right: .35rem; }
+.subtle > .content { padding: 0 1rem .75rem; font-size: .9rem; color: #4a5968; }

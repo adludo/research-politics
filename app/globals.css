@@ -20,8 +20,7 @@ a:focus-visible { outline: 3px solid #245b91; outline-offset: 4px; }
 .skip { position: absolute; top: -5rem; left: 1rem; padding: .5rem; background: #fff; }
 .skip:focus { top: 1rem; }
 
-.research-notice { border: 1px solid #b48a36; background: #fff8e8; padding: 1.25rem; margin-top: 2rem; }
-.research-notice h2 { margin-top: 0; }
+.research-context { margin-top: 1.5rem; }
 .policy-contents { border-block: 1px solid #ddd; margin-top: 2rem; }
 .policy-reference { display: block; overflow-wrap: anywhere; }
 
