@@ -1,0 +1,16 @@
+.comparison { margin-top: 2rem; }
+.hint { font-size: .9rem; color: #536577; margin-bottom: 1rem; }
+.notice { font-size: .82rem; color: #6a4b12; padding: .7rem 0; }
+.note { background: #f0f5fa; color: #314b65; padding: 1rem; border-radius: .65rem; font-size: .9rem; }
+.parties { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.party { min-width: 0; padding: 1.25rem; border: 1px solid #e2e8ef; border-radius: .75rem; background: #fafbfd; }
+.partyName { margin: 0 0 1rem; font-size: 1rem; line-height: 1.5; color: #1f3449; }
+.claims { margin: 0; padding-left: 1.1rem; font-size: .94rem; }
+.claims li { padding-left: .15rem; margin-bottom: 1.25rem; }
+.claims li:last-child { margin-bottom: 0; }
+.claims li::marker { color: #8095aa; }
+.claims p { margin: 0 0 .65rem; }
+.claims small { font-size: .76rem; color: #5c6b7b; line-height: 1.65; }
+.empty { color: #5c6b7b; font-size: .9rem; }
+@media (max-width: 700px) { .parties { grid-template-columns: 1fr; } }
+@media print { .parties { display: block; } .party { break-inside: avoid; margin-bottom: 1rem; } }
