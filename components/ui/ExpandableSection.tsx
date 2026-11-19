@@ -9,7 +9,7 @@ export interface ExpandableSectionProps {
   description?: string;
   index?: number;
   headingLevel?: 2 | 3 | 4;
-  variant?: 'default' | 'compact';
+  variant?: 'default' | 'compact' | 'subtle';
   children: ReactNode;
 }
 
@@ -37,7 +37,7 @@ export default function ExpandableSection({
   }, [id]);
 
   return (
-    <details ref={panel} id={id} className={`${styles.panel} ${variant === 'compact' ? styles.compact : ''}`}>
+    <details ref={panel} id={id} className={`${styles.panel} ${variant === 'default' ? '' : styles[variant]}`}>
       <summary className={styles.summary}>
         {index !== undefined && <span className={styles.index} aria-hidden="true">{String(index).padStart(2, '0')}</span>}
         <span className={styles.label}>

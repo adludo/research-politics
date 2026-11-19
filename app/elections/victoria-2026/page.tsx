@@ -3,6 +3,7 @@ import Link from 'next/link';
 import comparison from '../../../data/victoria-2026.json';
 import PolicyComparison from '../../../components/policies/PolicyComparison';
 import SourceReference from '../../../components/policies/SourceReference';
+import ExpandableSection from '../../../components/ui/ExpandableSection';
 
 export const metadata: Metadata = {
   title: '2026 Victorian election policy comparison — draft',
@@ -21,38 +22,42 @@ export default function VictorianElection() {
     <main id="main">
       <Link href="/">Back to the wiki</Link>
       <h1>2026 Victorian state election: policy comparison</h1>
-      <aside className="research-notice" aria-labelledby="verification-heading">
-        <h2 id="verification-heading">Draft — independent verification pending</h2>
-        <p>
-          This page organises a user-supplied summary dated 18 November 2026.
-          It has not been independently verified. All 34 supplied references were
-          blocked by the research environment’s proxy (403) on that date.
-          Links are supplied citations, not confirmation of their contents or validity.
-        </p>
-        <p>
-          Policy wording, eligibility, costs, dates and relevance to this election
-          require checking against the underlying documents. Do not rely on this
-          draft as a verified voting guide. Announced expenditure, savings and
-          outcomes are not independently validated costings or forecasts.
-        </p>
-      </aside>
-      <section aria-labelledby="scope-heading">
-        <h2 id="scope-heading">Scope and context</h2>
-        <p>
-          The supplied summary gives an election date of 28 November 2026 and covers
-          Labor, the Liberal–National Coalition, the Greens and One Nation. It groups
-          the Liberals and Nationals as a joint campaign platform. This selection
-          and grouping are supplied by the contributor; neither a ranking of the
-          leading groups nor current participation has been independently confirmed.
-        </p>
-        <p>
-          The summary describes these as 2026 commitments, including existing
-          policies being defended or continued. These classifications still need
-          source review. All monetary amounts are Australian dollars.
-        </p>
-        <p><Reference sourceId="poll" /></p>
-        <p><Reference sourceId="abc" /></p>
-      </section>
+      <div className="research-context">
+        <ExpandableSection
+          id="verification-heading"
+          title="Draft — independent verification pending"
+          variant="subtle"
+        >
+          <p>
+            This page organises a user-supplied summary dated 18 November 2026.
+            It has not been independently verified. All 34 supplied references were
+            blocked by the research environment’s proxy (403) on that date.
+            Links are supplied citations, not confirmation of their contents or validity.
+          </p>
+          <p>
+            Policy wording, eligibility, costs, dates and relevance to this election
+            require checking against the underlying documents. Do not rely on this
+            draft as a verified voting guide. Announced expenditure, savings and
+            outcomes are not independently validated costings or forecasts.
+          </p>
+        </ExpandableSection>
+        <ExpandableSection id="scope-heading" title="Scope and context" variant="subtle">
+          <p>
+            The supplied summary gives an election date of 28 November 2026 and covers
+            Labor, the Liberal–National Coalition, the Greens and One Nation. It groups
+            the Liberals and Nationals as a joint campaign platform. This selection
+            and grouping are supplied by the contributor; neither a ranking of the
+            leading groups nor current participation has been independently confirmed.
+          </p>
+          <p>
+            The summary describes these as 2026 commitments, including existing
+            policies being defended or continued. These classifications still need
+            source review. All monetary amounts are Australian dollars.
+          </p>
+          <p><Reference sourceId="poll" /></p>
+          <p><Reference sourceId="abc" /></p>
+        </ExpandableSection>
+      </div>
       <nav className="policy-contents" aria-label="Policy areas">
         <h2>Policy areas</h2>
         <ol>{comparison.sections.map(section => (
