@@ -23,10 +23,10 @@ a:focus-visible { outline: 3px solid #245b91; outline-offset: 4px; }
 .research-notice { border: 1px solid #b48a36; background: #fff8e8; padding: 1.25rem; margin-top: 2rem; }
 .research-notice h2 { margin-top: 0; }
 .policy-contents { border-block: 1px solid #ddd; margin-top: 2rem; }
-.policy-party { border-top: 1px solid #ddd; padding-block: .5rem 1rem; }
-.policy-party h3 { margin-bottom: .5rem; }
-.policy-party li { margin-bottom: 1.25rem; }
-.policy-party li p { margin-bottom: .35rem; }
 .policy-reference { display: block; overflow-wrap: anywhere; }
-.verification-label { color: #644711; font-size: .9rem; }
-.comparison-note { border-left: 3px solid #888; padding-left: 1rem; }
+
+.policy-contents { padding: 1.25rem 1.5rem; border: 1px solid #dce3ea; border-radius: 1rem; background: #f7f9fc; }
+.policy-contents h2 { margin-top: 0; font-size: 1.15rem; }
+.policy-contents ol { columns: 2; column-gap: 2.5rem; padding-left: 1.25rem; margin-bottom: 0; }
+.policy-contents li { break-inside: avoid; margin-bottom: .6rem; font-size: .9rem; }
+@media (max-width: 600px) { .policy-contents ol { columns: 1; } }
