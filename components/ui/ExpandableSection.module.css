@@ -43,3 +43,10 @@
   .panel > .content { display: block; }
   .indicator { display: none; }
 }
+
+.compact { background: #fafbfd; box-shadow: none; border-radius: .75rem; }
+.compact > .summary { padding: 1.1rem; gap: .75rem; }
+.compact > .summary .title { font-size: 1rem; }
+.compact > .summary .description { font-size: .78rem; }
+.compact > .summary .indicator { flex-basis: 1.5rem; height: 1.5rem; }
+.compact > .content { padding: 0 1.1rem 1.1rem; }

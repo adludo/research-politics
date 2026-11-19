@@ -15,7 +15,7 @@ export default function PolicyComparison({
 }: PolicyComparisonProps) {
   return (
     <div className={styles.comparison}>
-      <p className={styles.hint}>Open a policy area to compare the parties. You can keep multiple areas open.</p>
+      <p className={styles.hint}>Open a policy area, then a party to read its policies. You can keep multiple areas and parties open.</p>
       {sections.map((section, index) => (
         <ExpandableSection
           key={section.id}
@@ -27,8 +27,8 @@ export default function PolicyComparison({
           <p className={styles.notice}>{verificationNotice}</p>
           {section.note && <p className={styles.note}>{section.note}</p>}
           <div className={styles.parties}>
-            {section.parties.map(party => (
-              <PartyPolicyCard key={party.name} party={party} sources={sources} referenceStatus={referenceStatus} />
+            {section.parties.map((party, partyIndex) => (
+              <PartyPolicyCard key={party.name} id={`${section.id}-party-${partyIndex + 1}`} party={party} sources={sources} referenceStatus={referenceStatus} />
             ))}
           </div>
         </ExpandableSection>
