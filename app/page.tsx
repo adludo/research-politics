@@ -14,6 +14,7 @@ export default function Home() {
           </li>
         </ul>
       </section>
+      <p><Link href="/verification/">Verification history and conflicts</Link></p>
     </main>
   );
 }

@@ -54,3 +54,7 @@ The Victoria comparison uses these components with its existing data and verific
 Party cards are also independently expandable. `PartyPolicyCard` takes a unique `id`, and the comparison supplies IDs such as `budget-party-1`. Linking to a party ID opens both that party and its enclosing policy area. The generic `ExpandableSection` supports `variant="compact"` and `headingLevel={3}` for nested disclosures; its defaults remain suitable for top-level policy areas. Party panels start closed, retain native keyboard controls, and keep their state when the enclosing area is closed and reopened.
 
 For secondary article context, use `ExpandableSection` with `variant="subtle"`. The Victoria article uses it for the disclaimer and scope: both start collapsed, while the draft-status title remains visible. Their original text, citations and hash targets are retained.
+
+## Verify a page on request
+
+See [docs/wiki-verification.md](docs/wiki-verification.md) for the Cursor subagent and Codex `$verify-wiki-page` skill. They audit only an explicitly requested target, append dated evidence/conflicts to `data/verification-runs.json`, and leave the article unchanged. The wiki displays the history at `/verification/`. No automatic verification runs are configured.

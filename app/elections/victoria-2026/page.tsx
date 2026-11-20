@@ -22,6 +22,7 @@ export default function VictorianElection() {
     <main id="main">
       <Link href="/">Back to the wiki</Link>
       <h1>2026 Victorian state election: policy comparison</h1>
+      <p><Link href="/verification/">Verification history and conflicts</Link></p>
       <div className="research-context">
         <ExpandableSection
           id="verification-heading"

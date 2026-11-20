@@ -1,0 +1,12 @@
+.empty { border: 1px solid #dce3ea; border-radius: .75rem; padding: 1.25rem; background: #f7f9fc; }
+.empty h2 { margin-top: 0; }
+.run { margin-top: 1.25rem; }
+.metadata { display: grid; grid-template-columns: auto 1fr; gap: .5rem 1rem; font-size: .9rem; }
+.metadata dt { font-weight: 600; }
+.metadata dd { margin: 0; min-width: 0; }
+.finding { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #dce3ea; }
+.finding h3 { text-transform: capitalize; }
+.evidence { border-left: 3px solid #c8d5e3; padding-left: 1rem; font-size: .9rem; }
+.run code, .finding a { overflow-wrap: anywhere; }
+.evidence blockquote { margin-inline: 0; }
+@media (max-width: 600px) { .metadata { grid-template-columns: 1fr; } }
