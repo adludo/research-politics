@@ -1,0 +1,5 @@
+interface:
+  display_name: "Verify a wiki page"
+  short_description: "On-demand source audit of one target wiki page"
+policy:
+  allow_implicit_invocation: false

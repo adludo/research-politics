@@ -34,6 +34,10 @@ These instructions apply to all wiki prose, article metadata, infographic labels
 - Verify calculation correctness and meaningful interaction behaviour with appropriate tests, including relevant edge cases. Run the build and type check for code changes.
 - Do not keep newly written tests in the repository unless the user explicitly asks; use temporary tests for verification and remove them before committing. Preserve pre-existing tests unless their removal is requested.
 
+## On-demand verification subagent
+
+See [.agents/skills/verify-wiki-page/SKILL.md](.agents/skills/verify-wiki-page/SKILL.md) for the explicit-only verifier, Cursor/Codex invocation and dated conflict-log contract. This is the single source for the verifier workflow; normal editorial checks above remain the author's responsibility.
+
 ## Before completing an editorial change
 
 - Review every important party claim for a supporting citation, accurate attribution, current context and impartial wording. Follow the citations again to confirm they support the final wording.
