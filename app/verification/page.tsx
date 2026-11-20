@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import log from '../../data/verification-runs.json';
-import type { VerificationRun, FindingStatus } from '../../data/verification-types';
+import type { VerificationLog, FindingStatus } from '../../data/verification-types';
 import ExpandableSection from '../../components/ui/ExpandableSection';
 import styles from './verification.module.css';
 
@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const runs = log.runs as VerificationRun[];
+const registry = log as VerificationLog;
+const runs = registry.runs;
 const conflicts: FindingStatus[] = ['contradicted', 'partial', 'outdated'];
 
 function timestamp(value: string) {
@@ -60,17 +61,24 @@ export default function VerificationLog() {
                   <p><strong>Location:</strong> <code>{finding.location}</code></p>
                   <p>{finding.explanation}</p>
                   {finding.suggestedCorrection && <p><strong>Suggested correction:</strong> {finding.suggestedCorrection}</p>}
-                  <ul>{finding.sourceUrls.map(url => <li key={url}><a href={url}>{url}</a></li>)}</ul>
-                  {finding.evidence.map((evidence, index) => (
-                    <div key={index} className={styles.evidence}>
-                      <p><a href={evidence.url}>{evidence.title ?? evidence.url}</a> — {evidence.publisher ?? 'Publisher not established'}</p>
-                      <p>Retrieved: <time dateTime={evidence.retrievedAt}>{evidence.retrievedAt}</time> · Method: {evidence.method}</p>
-                      <p>Published: {evidence.publicationDate ?? 'Not shown'} · Updated: {evidence.updateDate ?? 'Not shown'} · Crawl date: {evidence.crawlDate ?? 'Not shown'}</p>
-                      {evidence.quote && <blockquote>{evidence.quote}</blockquote>}
-                      {evidence.locator && <p>Source location: {evidence.locator}</p>}
-                      <p>{evidence.accessNote}</p>
-                    </div>
-                  ))}
+                  <ul>{finding.sourceIds.map(id => {
+                    const source = registry.sources[id];
+                    return <li key={id}><a href={source.url}>{source.url}</a></li>;
+                  })}</ul>
+                  {finding.evidenceIds.map(id => {
+                    const evidence = registry.evidence[id];
+                    const source = registry.sources[evidence.sourceId];
+                    return (
+                      <div key={id} className={styles.evidence}>
+                        <p><a href={source.url}>{source.title ?? source.url}</a> — {source.publisher ?? 'Publisher not established'}</p>
+                        <p>Retrieved: <time dateTime={evidence.retrievedAt}>{evidence.retrievedAt}</time> · Method: {evidence.method}</p>
+                        <p>Published: {source.publicationDate ?? 'Not shown'} · Updated: {source.updateDate ?? 'Not shown'} · Crawl date: {source.crawlDate ?? 'Not shown'}</p>
+                        {evidence.quote && <blockquote>{evidence.quote}</blockquote>}
+                        {evidence.locator && <p>Source location: {evidence.locator}</p>}
+                        <p>{evidence.accessNote}</p>
+                      </div>
+                    );
+                  })}
                 </article>
               ))}
             </ExpandableSection>
