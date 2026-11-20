@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
+import SiteNavigation from '../components/layout/SiteNavigation';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -15,8 +15,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body>
         <a className="skip" href="#main">Skip to content</a>
-        <header><Link href="/">Research Politics</Link></header>
+        <SiteNavigation />
         {children}
+        <footer className="site-footer">
+          <span>Research Politics</span>
+          <a href="https://github.com/adludo/research-politics">View the source</a>
+        </footer>
       </body>
     </html>
   );
