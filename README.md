@@ -54,3 +54,7 @@ The Victoria comparison uses these components with its existing data and verific
 Party cards are also independently expandable. `PartyPolicyCard` takes a unique `id`, and the comparison supplies IDs such as `budget-party-1`. Linking to a party ID opens both that party and its enclosing policy area. The generic `ExpandableSection` supports `variant="compact"` and `headingLevel={3}` for nested disclosures; its defaults remain suitable for top-level policy areas. Party panels start closed, retain native keyboard controls, and keep their state when the enclosing area is closed and reopened.
 
 For secondary article context, use `ExpandableSection` with `variant="subtle"`. The Victoria article uses it for the disclaimer and scope: both start collapsed, while the draft-status title remains visible. Their original text, citations and hash targets are retained.
+
+## Victorian budget source data
+
+[Official Victorian budget and historical financial datasets](data/victorian-budget/README.md) are stored in `data/victorian-budget/`: 15 original workbooks and the November 2026 Pre-Election Budget Update PDF, with source URLs, retrieval dates, checksums and coverage notes. Original budget-paper PDFs hosted on S3 are listed separately as not downloaded.
