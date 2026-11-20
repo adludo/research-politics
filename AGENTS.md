@@ -36,9 +36,7 @@ These instructions apply to all wiki prose, article metadata, infographic labels
 
 ## On-demand verification subagent
 
-- The dedicated `wiki-verifier` subagent runs only when explicitly requested for one target page. Adding or editing data does not invoke it. Normal editorial checks above remain the author's responsibility.
-- Use `docs/agents/wiki-verifier.md` as its shared instructions. Cursor uses `.cursor/agents/wiki-verifier.md`; Codex uses the explicit-only `$verify-wiki-page` skill. See `docs/wiki-verification.md` for invocation and capability requirements.
-- The verifier may only append dated run records to `data/verification-runs.json`, rendered at `/verification/`. Preserve earlier runs, distinguish conflicts from source-access gaps, and do not auto-correct articles or commit/push its findings without a separate request.
+See [.agents/skills/verify-wiki-page/SKILL.md](.agents/skills/verify-wiki-page/SKILL.md) for the explicit-only verifier, Cursor/Codex invocation and dated conflict-log contract. This is the single source for the verifier workflow; normal editorial checks above remain the author's responsibility.
 
 ## Before completing an editorial change
 

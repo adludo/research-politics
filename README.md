@@ -57,4 +57,4 @@ For secondary article context, use `ExpandableSection` with `variant="subtle"`. 
 
 ## Verify a page on request
 
-See [docs/wiki-verification.md](docs/wiki-verification.md) for the Cursor subagent and Codex `$verify-wiki-page` skill. They audit only an explicitly requested target, append dated evidence/conflicts to `data/verification-runs.json`, and leave the article unchanged. The wiki displays the history at `/verification/`. No automatic verification runs are configured.
+See the [wiki verifier instructions](.agents/skills/verify-wiki-page/SKILL.md) for Cursor/Codex invocation and the dated conflict log at `/verification/`. The verifier runs only when explicitly requested for a target page.
