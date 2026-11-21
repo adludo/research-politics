@@ -6,6 +6,7 @@ from pathlib import Path
 import re
 import sys
 from urllib.parse import urlsplit
+from verification_log import expand, SOURCE_FIELDS, EVIDENCE_FIELDS
 
 STATUSES = {'supported', 'contradicted', 'partial', 'outdated', 'missing-reference', 'inaccessible', 'unverifiable'}
 METHODS = {'direct-http', 'extracted-page', 'search-snippet', 'supplied-document'}
@@ -32,7 +33,7 @@ def url(value):
             'Evidence needs public HTTP(S) URLs without embedded credentials.')
 
 
-def validate(log):
+def validate_runs(log):
     require(isinstance(log, dict) and isinstance(log.get('runs'), list), 'Expected a runs array.')
     seen = {}
     for run in log['runs']:
@@ -73,6 +74,48 @@ def validate(log):
                 require(run['status'] == 'incomplete', 'Unresolved evidence gaps require an incomplete run.')
         seen[run['id']] = run['target']
     return len(seen)
+
+
+def validate(log):
+    require(isinstance(log, dict) and log.get('schemaVersion') == 2, 'Expected schemaVersion 2; normalize legacy logs first.')
+    require(set(log) == {'schemaVersion', 'sources', 'evidence', 'runs'}, 'Unexpected log fields.')
+    require(isinstance(log['sources'], dict) and isinstance(log['evidence'], dict), 'Expected shared record maps.')
+    source_records, evidence_records = set(), set()
+    for key, source in log['sources'].items():
+        require(re.fullmatch(r'source-[a-z0-9-]+', key), 'Invalid source ID.')
+        require(isinstance(source, dict) and set(source) == set(SOURCE_FIELDS), 'Unexpected source fields.')
+        url(source['url'])
+        for field in SOURCE_FIELDS[1:]:
+            require(source[field] is None or text(source[field]), f'Invalid source field: {field}')
+        canonical = json.dumps(source, sort_keys=True)
+        require(canonical not in source_records, 'Duplicate source record; reuse its ID.')
+        source_records.add(canonical)
+    for key, evidence in log['evidence'].items():
+        require(re.fullmatch(r'evidence-[a-z0-9-]+', key), 'Invalid evidence ID.')
+        require(isinstance(evidence, dict) and set(evidence) == {'sourceId', *EVIDENCE_FIELDS}, 'Unexpected evidence fields.')
+        require(evidence['sourceId'] in log['sources'], 'Dangling evidence sourceId.')
+        canonical = json.dumps(evidence, sort_keys=True)
+        require(canonical not in evidence_records, 'Duplicate evidence record; reuse its ID.')
+        evidence_records.add(canonical)
+        stamp(evidence['retrievedAt'])
+        require(evidence['method'] in METHODS and text(evidence['accessNote']), 'Invalid evidence metadata.')
+        for field in ['quote', 'locator']:
+            require(evidence[field] is None or text(evidence[field]), f'Invalid evidence field: {field}')
+    require(isinstance(log['runs'], list), 'Expected runs array.')
+    used_sources, used_evidence = set(), set()
+    for run in log['runs']:
+        for finding in run['findings']:
+            require('sourceUrls' not in finding and 'evidence' not in finding, 'Findings must use IDs, not inline records.')
+            require(isinstance(finding['sourceIds'], list) and isinstance(finding['evidenceIds'], list), 'Expected reference ID arrays.')
+            for key in finding['sourceIds']:
+                require(isinstance(key, str) and key in log['sources'], 'Dangling finding source ID.')
+                used_sources.add(key)
+            for key in finding['evidenceIds']:
+                require(isinstance(key, str) and key in log['evidence'], 'Dangling finding evidence ID.')
+                used_evidence.add(key)
+                used_sources.add(log['evidence'][key]['sourceId'])
+    require(used_sources == set(log['sources']) and used_evidence == set(log['evidence']), 'Unused shared records; keep the log lean.')
+    return validate_runs(expand(log))
 
 
 if __name__ == '__main__':
