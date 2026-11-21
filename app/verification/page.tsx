@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import log from '../../data/verification-runs.json';
-import type { VerificationLog, FindingStatus } from '../../data/verification-types';
+import comparison from '../../data/victoria-2026.json';
+import type { VerificationLog, VerificationRun, VerificationFinding, FindingStatus } from '../../data/verification-types';
 import ExpandableSection from '../../components/ui/ExpandableSection';
 import styles from './verification.module.css';
 
@@ -21,6 +22,59 @@ function timestamp(value: string) {
   }).format(new Date(value));
 }
 
+const policyAreas = new Map(comparison.sections.map(({ id, title }) => [id, title]));
+
+interface FindingEntry {
+  finding: VerificationFinding;
+  party?: string;
+  id: string;
+}
+
+function groupFindings(run: VerificationRun) {
+  const areas = new Map<string, { id: string; title: string; entries: FindingEntry[] }>();
+  for (const finding of run.findings) {
+    const location = /^data\/victoria-2026\.json#\/sections\/\d+\/parties\/\d+\/claims\/\d+ \(assertion \d+; (.+)\)$/.exec(finding.location);
+    const policyId = location && /^(.+)-\d+-\d+-\d+$/.exec(finding.claimId)?.[1];
+    const areaId = policyId || (finding.claimId.startsWith('page-') ? 'page-context' : 'other');
+    const title = policyAreas.get(areaId) ?? (policyId || (areaId === 'page-context' ? 'Page context' : 'Other statements'));
+    const area = areas.get(areaId) ?? { id: areaId, title, entries: [] };
+    area.entries.push({ finding, party: location?.[1], id: `statement-${run.id}:${finding.claimId}` });
+    areas.set(areaId, area);
+  }
+  return [...areas.values()];
+}
+
+function Finding({ finding, party, id }: FindingEntry) {
+  return (
+    <article id={id} className={styles.finding} tabIndex={-1}>
+      <h4><code>{finding.claimId}</code>{party && ` · ${party}`}</h4>
+      <p><strong>Status:</strong> {finding.status.replaceAll('-', ' ')}</p>
+      <p><strong>Statement:</strong> {finding.statement}</p>
+      <p><strong>Location:</strong> <code>{finding.location}</code></p>
+      <p>{finding.explanation}</p>
+      {finding.suggestedCorrection && <p><strong>Suggested correction:</strong> {finding.suggestedCorrection}</p>}
+      <ul>{finding.sourceIds.map(id => {
+        const source = registry.sources[id];
+        return <li key={id}><a href={source.url}>{source.url}</a></li>;
+      })}</ul>
+      {finding.evidenceIds.map(id => {
+        const evidence = registry.evidence[id];
+        const source = registry.sources[evidence.sourceId];
+        return (
+          <div key={id} className={styles.evidence}>
+            <p><a href={source.url}>{source.title ?? source.url}</a> — {source.publisher ?? 'Publisher not established'}</p>
+            <p>Retrieved: <time dateTime={evidence.retrievedAt}>{evidence.retrievedAt}</time> · Method: {evidence.method}</p>
+            <p>Published: {source.publicationDate ?? 'Not shown'} · Updated: {source.updateDate ?? 'Not shown'} · Crawl date: {source.crawlDate ?? 'Not shown'}</p>
+            {evidence.quote && <blockquote>{evidence.quote}</blockquote>}
+            {evidence.locator && <p>Source location: {evidence.locator}</p>}
+            <p>{evidence.accessNote}</p>
+          </div>
+        );
+      })}
+    </article>
+  );
+}
+
 export default function VerificationLog() {
   return (
     <main id="main" className="content-page">
@@ -37,11 +91,33 @@ export default function VerificationLog() {
         const conflictCount = run.findings.filter(f => conflicts.includes(f.status)).length;
         const supported = run.findings.filter(f => f.status === 'supported').length;
         const gaps = run.findings.length - supported - conflictCount;
+        const areas = groupFindings(run);
         return (
           <section key={run.id} className={styles.run}>
             <ExpandableSection id={run.id} title={run.target}
               description={`${timestamp(run.completedAt)} Melbourne · ${run.status} · ${conflictCount} conflicts · ${gaps} gaps`}>
               <p>{run.summary}</p>
+              {areas.length > 0 && (
+                <nav id={`${run.id}-contents`} className={`surface-card ${styles.contents}`} aria-label="Statement contents">
+                  <h3>Statement contents</h3>
+                  <p>Open a policy area to jump to a statement. For policy IDs, the three numbers identify the party, policy group and statement in that order.</p>
+                  {areas.map(area => (
+                    <details key={area.id}>
+                      <summary>{area.title} ({area.entries.length})</summary>
+                      <ul>
+                        {area.entries.map(({ finding, party, id }) => (
+                          <li key={id}>
+                            <a href={`#${encodeURIComponent(id)}`}>
+                              <code>{finding.claimId}</code>{party && ` · ${party}`}
+                              <span className={styles.statement}>{finding.statement}</span>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </details>
+                  ))}
+                </nav>
+              )}
               <dl className={styles.metadata}>
                 <dt>Run</dt><dd>{run.id}</dd>
                 <dt>Started</dt><dd><time dateTime={run.startedAt}>{run.startedAt}</time></dd>
@@ -54,32 +130,14 @@ export default function VerificationLog() {
               <details><summary>Reviewed files and SHA-256 hashes</summary><ul>{run.reviewedFiles.map(file => (
                 <li key={file.path}><code>{file.path}: {file.sha256}</code></li>
               ))}</ul></details>
-              {run.findings.map(finding => (
-                <article key={finding.claimId} className={styles.finding}>
-                  <h3>{finding.status.replaceAll('-', ' ')}: {finding.claimId}</h3>
-                  <p><strong>Statement:</strong> {finding.statement}</p>
-                  <p><strong>Location:</strong> <code>{finding.location}</code></p>
-                  <p>{finding.explanation}</p>
-                  {finding.suggestedCorrection && <p><strong>Suggested correction:</strong> {finding.suggestedCorrection}</p>}
-                  <ul>{finding.sourceIds.map(id => {
-                    const source = registry.sources[id];
-                    return <li key={id}><a href={source.url}>{source.url}</a></li>;
-                  })}</ul>
-                  {finding.evidenceIds.map(id => {
-                    const evidence = registry.evidence[id];
-                    const source = registry.sources[evidence.sourceId];
-                    return (
-                      <div key={id} className={styles.evidence}>
-                        <p><a href={source.url}>{source.title ?? source.url}</a> — {source.publisher ?? 'Publisher not established'}</p>
-                        <p>Retrieved: <time dateTime={evidence.retrievedAt}>{evidence.retrievedAt}</time> · Method: {evidence.method}</p>
-                        <p>Published: {source.publicationDate ?? 'Not shown'} · Updated: {source.updateDate ?? 'Not shown'} · Crawl date: {source.crawlDate ?? 'Not shown'}</p>
-                        {evidence.quote && <blockquote>{evidence.quote}</blockquote>}
-                        {evidence.locator && <p>Source location: {evidence.locator}</p>}
-                        <p>{evidence.accessNote}</p>
-                      </div>
-                    );
-                  })}
-                </article>
+              {areas.map(area => (
+                <ExpandableSection key={area.id} id={`${run.id}-area-${area.id}`} title={area.title}
+                  headingLevel={3} description={`${area.entries.length} statements`}>
+                  {area.entries.map(({ finding, party, id }) => (
+                    <Finding key={id} finding={finding} party={party} id={id} />
+                  ))}
+                  <p><a href={`#${run.id}-contents`}>Back to statement contents</a></p>
+                </ExpandableSection>
               ))}
             </ExpandableSection>
           </section>
