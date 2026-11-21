@@ -1,15 +1,19 @@
 export type FindingStatus = 'supported' | 'contradicted' | 'partial' | 'outdated' |
   'missing-reference' | 'inaccessible' | 'unverifiable';
 
-export interface VerificationEvidence {
+export interface VerificationSource {
   url: string;
   publisher: string | null;
   title: string | null;
-  retrievedAt: string;
-  method: 'direct-http' | 'extracted-page' | 'search-snippet' | 'supplied-document';
   publicationDate: string | null;
   updateDate: string | null;
   crawlDate: string | null;
+}
+
+export interface VerificationEvidence {
+  sourceId: string;
+  retrievedAt: string;
+  method: 'direct-http' | 'extracted-page' | 'search-snippet' | 'supplied-document';
   quote: string | null;
   locator: string | null;
   accessNote: string;
@@ -19,11 +23,11 @@ export interface VerificationFinding {
   claimId: string;
   location: string;
   statement: string;
-  sourceUrls: string[];
+  sourceIds: string[];
   status: FindingStatus;
   explanation: string;
   suggestedCorrection: string | null;
-  evidence: VerificationEvidence[];
+  evidenceIds: string[];
 }
 
 export interface VerificationRun {
@@ -39,4 +43,11 @@ export interface VerificationRun {
   supersedesRunId: string | null;
   summary: string;
   findings: VerificationFinding[];
+}
+
+export interface VerificationLog {
+  schemaVersion: 2;
+  sources: Record<string, VerificationSource>;
+  evidence: Record<string, VerificationEvidence>;
+  runs: VerificationRun[];
 }

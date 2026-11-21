@@ -49,15 +49,23 @@ The wiki page `/verification/` renders `data/verification-runs.json`. The homepa
 
 ## Run record contract
 
-See the complete interfaces in `data/verification-types.ts`. Append to the `runs` array in chronological append order:
+See the complete interfaces in `data/verification-types.ts`. The log uses **schemaVersion 2** with shared top-level `sources` and `evidence` ID maps plus the chronological `runs` array. Never embed source metadata or evidence objects in findings. Append a run and only the new shared records it needs; reuse existing identical records across findings and runs.
+
+- `sources[sourceId]`: `url`, actual `publisher` and `title` (or null), `publicationDate`, `updateDate` and `crawlDate` (or null).
+- `evidence[evidenceId]`: `sourceId`, `retrievedAt`, `method` (`direct-http`, `extracted-page`, `search-snippet` or `supplied-document`), short exact `quote`, `locator` and `accessNote`.
+- Generate stable IDs with `intern(table, 'source-', record)` or `intern(table, 'evidence-', record)` from `scripts/verification_log.py`. It hashes the complete record, reuses exact matches and detects ID collisions. Do not reuse an old evidence ID for a new retrieval time, changed source metadata or changed quotation. A new version gets a new record; preserve records referenced by earlier runs.
+- If a source URL has no observed metadata, store null metadata rather than inventing it. Findings may cite a source without evidence (for example, a missing reference), but must not invent retrievals.
+
+Each run retains:
 
 - `id`: unique URL-safe `run-*` ID, incorporating a timestamp and unique suffix.
 - `target`: the exact requested local page route or source path.
 - `startedAt`, `completedAt`: ISO 8601 timestamps with explicit offsets. `researchAsOf`: `YYYY-MM-DD` in Australia/Melbourne.
 - `revision`: full Git commit; `dirty`: whether uncommitted changes were included; `reviewedFiles`: repository paths and SHA-256 hashes for the page and contributing content/data.
 - `status`: `complete` or `incomplete`; `supersedesRunId`: earlier same-page run ID or null; `summary`: concise coverage/limitations.
-- `findings`: one record per atomic statement, including supported statements. Each has `claimId`, `location`, exact `statement`, supplied `sourceUrls`, `status`, `explanation`, `suggestedCorrection` (or null) and an `evidence` array.
-- Each evidence item has `url`, actual `publisher` and `title` (or null), `retrievedAt`, `method` (`direct-http`, `extracted-page`, `search-snippet` or `supplied-document`), `publicationDate`, `updateDate`, `crawlDate`, short exact `quote`, `locator` and `accessNote`. Unknown metadata uses null; failed access uses no invented quote. Record actual errors in `accessNote`.
+- `findings`: one record per atomic statement, including supported statements. Each has `claimId`, `location`, exact `statement`, `sourceIds`, `status`, `explanation`, `suggestedCorrection` (or null) and `evidenceIds`. These ID arrays must resolve to the shared maps; keep citation and evidence ordering.
+
+Unknown metadata uses null; failed access uses no invented quote. Record actual errors in the shared evidence record's `accessNote`. Do not duplicate identical records under different IDs or leave unused records in the log.
 
 Use `supported`, `contradicted`, `partial`, `outdated`, `missing-reference`, `inaccessible` or `unverifiable` for finding status. Claims without readable/full enough evidence must not be marked supported. Compound statements must be split, and every factual statement—including page dates and scope/ranking claims—must be accounted for. If access prevents completion, record what was attempted and what remains unchecked, with `status: incomplete`.
 
@@ -69,7 +77,7 @@ npm run build
 npm run typecheck
 ```
 
-The validator checks structure, required provenance, unique IDs, timestamps and minimum evidence requirements. It cannot establish that quotes are authentic, claims are exhaustive or conclusions correct; the parent must inspect the actual evidence and review the diff. Re-read the latest log before appending and serialise concurrent writes. Commit/push only when requested separately.
+The validator checks structure, required provenance, unique IDs, timestamps, reference integrity, duplicate/unused shared records and minimum evidence requirements. It cannot establish that quotes are authentic, claims are exhaustive or conclusions correct; the parent must inspect the actual evidence and review the diff. Re-read the latest log before appending and serialise concurrent writes. Commit/push only when requested separately.
 
 ## Verifier task
 
@@ -104,6 +112,6 @@ For each atomic claim use one status:
 
 Append one run, including successful/no-conflict runs, to `data/verification-runs.json` using the Run record contract section in this file. Never fabricate an audit to populate the log. If access fails, still record the actual attempted checks and gaps; mark untouched claims `unverifiable` with a reason and do not imply a complete successful audit. Set run status to `incomplete` when claims remain inaccessible or unverifiable. Record conflicts in the findings with evidence and a suggested correction, but do not apply it.
 
-Preserve all earlier runs unchanged, including earlier conflicts. A later run may use `supersedesRunId` to identify a prior run of the same page; it must verify the page anew and explicitly account for earlier findings. Do not equate an absent finding with a resolved conflict. Re-read the log immediately before writing, merge your new uniquely identified run into its latest contents, and have the parent serialise concurrent appends to avoid lost updates. If the file cannot be written, return the complete proposed run and report that persistence failed.
+Preserve all earlier runs and their referenced shared records unchanged, including earlier conflicts. A later run may use `supersedesRunId` to identify a prior run of the same page; it must verify the page anew and explicitly account for earlier findings. Do not equate an absent finding with a resolved conflict. Re-read the log immediately before writing, merge your new uniquely identified run and any new shared records into its latest contents, and have the parent serialise concurrent appends to avoid lost updates. If the file cannot be written, return the complete proposed run and report that persistence failed.
 
 Return a concise summary with target, run ID, time, counts by outcome, conflicts, gaps and the `/verification/` URL. State whether the audit completed; distinguish source support from independent truth and describe access limitations.
