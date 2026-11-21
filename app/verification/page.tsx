@@ -22,13 +22,13 @@ function timestamp(value: string) {
 
 export default function VerificationLog() {
   return (
-    <main id="main">
-      <Link href="/">Back to the wiki</Link>
+    <main id="main" className="content-page">
+      <Link href="/" className="back-link">Back to the wiki</Link>
       <h1>Verification log</h1>
       <p>Source checks run only when requested for a specific page. This log preserves dated findings; it does not automatically correct or approve an article.</p>
       <p>Contradicted, partial and outdated claims are recorded as conflicts. Inaccessible sources, missing references and insufficient evidence are verification gaps. Historical findings remain visible after later runs.</p>
       {!runs.length ? (
-        <section className={styles.empty}>
+        <section className="surface-card">
           <h2>No verification runs recorded</h2>
           <p>No page has been audited by this agent yet. An empty log does not mean the wiki has no conflicts or that its claims are verified.</p>
         </section>

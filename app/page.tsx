@@ -24,7 +24,7 @@ export default function Home() {
         <p className={styles.intro}>Explore policy commitments, compare the details and follow the evidence behind each claim.</p>
       </section>
 
-      <section className={styles.library} aria-labelledby="articles-heading">
+      <section aria-labelledby="articles-heading">
         <div className={styles.sectionHeading}>
           <h2 id="articles-heading">Explore the wiki</h2>
           <span>Election research</span>

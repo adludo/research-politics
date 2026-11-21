@@ -5,6 +5,8 @@ import PolicyComparison from '../../../components/policies/PolicyComparison';
 import SourceReference from '../../../components/policies/SourceReference';
 import ExpandableSection from '../../../components/ui/ExpandableSection';
 
+import styles from './election.module.css';
+
 export const metadata: Metadata = {
   title: '2026 Victorian election policy comparison — draft',
   description: 'User-supplied policy comparison organised by topic. Independent source verification is pending.',
@@ -19,11 +21,11 @@ function Reference({ sourceId }: { sourceId: SourceId }) {
 
 export default function VictorianElection() {
   return (
-    <main id="main">
-      <Link href="/">Back to the wiki</Link>
+    <main id="main" className="content-page">
+      <Link href="/" className="back-link">Back to the wiki</Link>
       <h1>2026 Victorian state election: policy comparison</h1>
       <p><Link href="/verification/">Verification history and conflicts</Link></p>
-      <div className="research-context">
+      <div className={styles.context}>
         <ExpandableSection
           id="verification-heading"
           title="Draft — independent verification pending"
@@ -59,7 +61,7 @@ export default function VictorianElection() {
           <p><Reference sourceId="abc" /></p>
         </ExpandableSection>
       </div>
-      <nav className="policy-contents" aria-label="Policy areas">
+      <nav className={`surface-card ${styles.contents}`} aria-label="Policy areas">
         <h2>Policy areas</h2>
         <ol>{comparison.sections.map(section => (
           <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>
