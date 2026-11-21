@@ -12,7 +12,7 @@ export interface PartyPolicyCardProps {
 
 export default function PartyPolicyCard({ id, party, sources, referenceStatus }: PartyPolicyCardProps) {
   return (
-    <article className={styles.party}>
+    <article>
       <ExpandableSection
         id={id}
         title={party.name}
