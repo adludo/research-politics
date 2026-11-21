@@ -21,20 +21,29 @@ export default function ExpandableSection({
 
   useEffect(() => {
     const revealLinkedSection = () => {
-      if (window.location.hash !== `#${id}` || !panel.current) return;
-      panel.current.open = true;
-      // A nested party permalink must also reveal its enclosing policy area.
-      let ancestor = panel.current.parentElement?.closest('details');
+      const details = panel.current;
+      if (!details || !window.location.hash) return;
+
+      let target: HTMLElement | null;
+      try {
+        target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+      } catch {
+        return;
+      }
+      if (!target || target.closest('details') !== details) return;
+
+      details.open = true;
+      let ancestor = details.parentElement?.closest('details');
       while (ancestor) {
         ancestor.open = true;
         ancestor = ancestor.parentElement?.closest('details');
       }
-      panel.current.scrollIntoView({ block: 'start' });
+      target.scrollIntoView({ block: 'start' });
     };
     revealLinkedSection();
     window.addEventListener('hashchange', revealLinkedSection);
     return () => window.removeEventListener('hashchange', revealLinkedSection);
-  }, [id]);
+  }, []);
 
   return (
     <details ref={panel} id={id} className={`${styles.panel} ${variant === 'default' ? '' : styles[variant]}`}>
