@@ -2,11 +2,13 @@
 """Return visible text from public One Nation pages for wiki verification.
 
 Plain HTTP clients receive a Cloudflare interstitial ("Just a moment...", or an
-interactive check) instead of the policy page. This script opens each URL in
-the installed Google Chrome, waits until that check clears, and prints the
-visible page text as JSON. A person completes any captcha in the Chrome window.
-The script does not solve checks, change browser fingerprints, or call a
-captcha service.
+interactive check) instead of the policy page. This script opens each URL in a
+browser, waits until that check clears, and prints the visible page text as JSON.
+On a Mac it uses the installed Google Chrome and leaves the window visible so a
+person can complete a check. In Codex cloud, and on any Linux machine without a
+display, it uses headless Playwright Chromium, follows HTTP(S)_PROXY, and
+installs Chromium when the browser is missing. It does not solve checks, change
+browser fingerprints, or call a captcha service.
 
 A successful extract is page text only. It does not mark a wiki claim verified.
 
@@ -16,7 +18,6 @@ Examples:
   python3 scripts/fetch_onenation_page.py --from-data --output /tmp/onenation-pages.json
 
 Requires: pip install playwright
-Uses the Google Chrome already installed on the machine.
 """
 
 from __future__ import annotations
@@ -24,17 +25,19 @@ from __future__ import annotations
 import argparse
 from datetime import datetime
 import json
+import os
 from pathlib import Path
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import time
-from urllib.parse import urlsplit
+from urllib.parse import unquote, urlsplit
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA = ROOT / "data" / "victoria-2026.json"
-DEFAULT_PROFILE = Path.home() / ".cache" / "research-politics" / "onenation-chrome"
-MELBOURNE = ZoneInfo("Australia/Melbourne")
 ALLOWED_HOST = "onenation.org.au"
 NAVIGATION_TIMEOUT_MS = 45000
 POLL_SECONDS = 1.0
@@ -95,8 +98,89 @@ READ_PAGE = """
 """
 
 
+class BrowserMissing(RuntimeError):
+    """Playwright has no Chromium binary for this environment yet."""
+
+
 def now_stamp():
-    return datetime.now(MELBOURNE).isoformat(timespec="seconds")
+    try:
+        zone = ZoneInfo("Australia/Melbourne")
+    except Exception:
+        return datetime.now().astimezone().isoformat(timespec="seconds")
+    return datetime.now(zone).isoformat(timespec="seconds")
+
+
+def default_headless(platform=None, environ=None):
+    """Headless when there is no display. A Mac session stays visible."""
+    platform = sys.platform if platform is None else platform
+    environ = os.environ if environ is None else environ
+    if environ.get("DISPLAY") or environ.get("WAYLAND_DISPLAY"):
+        return False
+    if platform == "darwin":
+        return False
+    return True
+
+
+def container_runtime(platform=None, environ=None):
+    """True for root, Docker, or a Linux session without a display."""
+    platform = sys.platform if platform is None else platform
+    environ = os.environ if environ is None else environ
+    if hasattr(os, "geteuid") and os.geteuid() == 0:
+        return True
+    if Path("/.dockerenv").exists():
+        return True
+    return platform.startswith("linux") and default_headless(platform, environ)
+
+
+def proxy_from_environ(environ=None):
+    """Playwright proxy settings from the environment, without embedding secrets in the server URL."""
+    environ = os.environ if environ is None else environ
+    raw = (
+        environ.get("HTTPS_PROXY")
+        or environ.get("https_proxy")
+        or environ.get("HTTP_PROXY")
+        or environ.get("http_proxy")
+        or environ.get("ALL_PROXY")
+        or environ.get("all_proxy")
+        or ""
+    ).strip()
+    if not raw:
+        return None
+    parts = urlsplit(raw if "://" in raw else "http://" + raw)
+    if not parts.hostname:
+        return None
+    server = f"{parts.scheme}://{parts.hostname}"
+    if parts.port:
+        server += f":{parts.port}"
+    settings = {"server": server}
+    if parts.username:
+        settings["username"] = unquote(parts.username)
+    if parts.password:
+        settings["password"] = unquote(parts.password)
+    return settings
+
+
+def default_profile():
+    candidate = Path.home() / ".cache" / "research-politics" / "onenation-chrome"
+    try:
+        candidate.mkdir(parents=True, exist_ok=True)
+        probe = candidate / ".write-probe"
+        probe.write_text("ok", encoding="utf-8")
+        probe.unlink()
+        return candidate
+    except OSError:
+        fallback = Path(tempfile.gettempdir()) / "research-politics-onenation-chrome"
+        fallback.mkdir(parents=True, exist_ok=True)
+        return fallback
+
+
+def chrome_available():
+    if sys.platform == "darwin":
+        return Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome").is_file()
+    return bool(
+        shutil.which("google-chrome")
+        or shutil.which("google-chrome-stable")
+    )
 
 
 def is_allowed_url(url):
@@ -140,6 +224,17 @@ def is_edge_error(text, http_status):
     return flattened.startswith("error code:") and len(flattened) < 40
 
 
+def is_proxy_denial(text, http_status):
+    """True for a short proxy rejection, which is separate from a Cloudflare check."""
+    if http_status not in {401, 403, 407}:
+        return False
+    flattened = " ".join((text or "").split()).lower()
+    if len(flattened) > 500 or is_challenge_page("", flattened):
+        return False
+    markers = ("tunnel connection failed", "proxy error", "proxy authentication", "access via proxy")
+    return any(marker in flattened for marker in markers)
+
+
 def onenation_sources(path):
     """Return (source id, url) pairs from a wiki data file, in file order."""
     data = json.loads(Path(path).read_text(encoding="utf-8"))
@@ -177,22 +272,67 @@ def collect_targets(urls, data_path):
     return [(url, seen[url]) for url in ordered]
 
 
-def launch_chrome(playwright, profile, headless):
+def missing_browser(error):
+    message = str(error).lower()
+    return "executable doesn't exist" in message or "please run the following command" in message or "browser is not installed" in message
+
+
+def missing_display(error):
+    message = str(error).lower()
+    return any(part in message for part in ("missing x server", "no display", "xopendisplay", "failed to connect to the bus"))
+
+
+def launch_browser(playwright, profile, headless):
+    """Open Chrome when a visible desktop browser is available, otherwise Playwright Chromium."""
     profile.mkdir(parents=True, exist_ok=True)
+    use_chrome = (not headless) and chrome_available()
+    args = ["--no-first-run", "--no-default-browser-check"]
     options = {
         "user_data_dir": str(profile),
         "headless": headless,
         "locale": "en-AU",
         "viewport": {"width": 1280, "height": 900},
-        "args": ["--no-first-run", "--no-default-browser-check"],
+        "args": args,
     }
+    proxy = proxy_from_environ()
+    if proxy:
+        options["proxy"] = proxy
+    if container_runtime():
+        args.extend(["--disable-dev-shm-usage", "--no-sandbox"])
+        options["chromium_sandbox"] = False
+    browser_name = "chrome" if use_chrome else "chromium"
     try:
-        return playwright.chromium.launch_persistent_context(channel="chrome", **options)
-    except Exception as chrome_error:
-        message = str(chrome_error).lower()
-        if "channel" not in message and "not found" not in message:
-            raise
-        return playwright.chromium.launch_persistent_context(**options)
+        if use_chrome:
+            context = playwright.chromium.launch_persistent_context(channel="chrome", **options)
+        else:
+            context = playwright.chromium.launch_persistent_context(**options)
+    except Exception as error:
+        if missing_browser(error):
+            raise BrowserMissing(str(error)) from error
+        raise
+    return context, browser_name
+
+
+def install_chromium():
+    print("Installing Playwright Chromium for this environment.", file=sys.stderr)
+    completed = subprocess.run(
+        [sys.executable, "-m", "playwright", "install", "chromium"],
+        stdin=subprocess.DEVNULL,
+        check=False,
+    )
+    return completed.returncode == 0
+
+
+def install_chromium_dependencies():
+    if not hasattr(os, "geteuid") or os.geteuid() != 0:
+        return False
+    print("Installing Chromium system libraries.", file=sys.stderr)
+    completed = subprocess.run(
+        [sys.executable, "-m", "playwright", "install-deps", "chromium"],
+        stdin=subprocess.DEVNULL,
+        check=False,
+    )
+    return completed.returncode == 0
 
 
 def read_page(page):
@@ -215,7 +355,7 @@ def page_is_ready(snapshot, http_status):
     return len(snapshot["text"]) >= MIN_PAGE_CHARS and bool(snapshot["title"])
 
 
-def fetch_page(page, url, source_ids, wait_seconds, headless, document_status):
+def fetch_page(page, url, source_ids, wait_seconds, headless, browser_name, document_status):
     started = time.monotonic()
     document_status["value"] = None
     challenge_seen = False
@@ -253,7 +393,7 @@ def fetch_page(page, url, source_ids, wait_seconds, headless, document_status):
             previous = None
             if not headless and not prompted:
                 print(
-                    f"Browser check is showing for {url}. Complete it in the Chrome window.",
+                    f"Browser check is showing for {url}. Complete it in the browser window.",
                     file=sys.stderr,
                 )
                 prompted = True
@@ -264,7 +404,13 @@ def fetch_page(page, url, source_ids, wait_seconds, headless, document_status):
                 stable = 1
                 previous = last["text"]
             if stable >= STABLE_READS:
-                return success_record(url, source_ids, last, http_status, challenge_seen)
+                return success_record(url, source_ids, last, http_status, challenge_seen, browser_name, headless)
+        elif is_proxy_denial(last["text"], http_status):
+            return result_record(
+                url, source_ids, status="error", challenge_seen=challenge_seen,
+                final_url=last["finalUrl"], http_status=http_status, title=last["title"] or None,
+                access_note=f"The environment proxy refused the connection ({http_status}). Page text was not returned.",
+            )
         elif is_edge_error(last["text"], http_status):
             note = f"Cloudflare returned {http_status or 'an origin error'} and no policy text."
             return result_record(
@@ -276,16 +422,23 @@ def fetch_page(page, url, source_ids, wait_seconds, headless, document_status):
 
     http_status = document_status["value"]
     if last and page_is_ready(last, http_status):
-        return success_record(url, source_ids, last, http_status, challenge_seen)
+        return success_record(url, source_ids, last, http_status, challenge_seen, browser_name, headless)
     if last and is_challenge_page(last["title"], last["text"]):
         waited = int(time.monotonic() - started)
+        if headless:
+            note = (
+                f"Cloudflare check was still showing after {waited}s in headless {browser_name}. "
+                "Page text was not returned."
+            )
+        else:
+            note = (
+                f"Cloudflare check was still showing after {waited}s. "
+                "Page text was not returned. Complete the check in the browser window and run again."
+            )
         return result_record(
             url, source_ids, status="challenge", challenge_seen=True,
             final_url=last["finalUrl"], http_status=http_status, title=last["title"] or None,
-            access_note=(
-                f"Cloudflare check was still showing after {waited}s. "
-                "Page text was not returned. Complete the check in a visible Chrome window and run again."
-            ),
+            access_note=note,
         )
     return result_record(
         url, source_ids, status="error", challenge_seen=challenge_seen,
@@ -296,11 +449,12 @@ def fetch_page(page, url, source_ids, wait_seconds, headless, document_status):
     )
 
 
-def success_record(url, source_ids, snapshot, http_status, challenge_seen):
+def success_record(url, source_ids, snapshot, http_status, challenge_seen, browser_name, headless):
+    mode = "headless" if headless else "visible"
     if challenge_seen:
-        note = "Opened in Chrome. The Cloudflare check cleared before extraction. Visible main text extracted."
+        note = f"Opened in {mode} {browser_name}. The Cloudflare check cleared before extraction. Visible main text extracted."
     else:
-        note = "Opened in Chrome. No Cloudflare interstitial was showing. Visible main text extracted."
+        note = f"Opened in {mode} {browser_name}. No Cloudflare interstitial was showing. Visible main text extracted."
     return result_record(
         url, source_ids, status="ok", challenge_seen=challenge_seen,
         final_url=snapshot["finalUrl"], http_status=http_status,
@@ -332,12 +486,21 @@ def result_record(
     }
 
 
-def fetch_all(targets, profile, headless, wait_seconds):
+def run_fetch(targets, profile, headless, wait_seconds):
     from playwright.sync_api import sync_playwright
 
     results = []
     with sync_playwright() as playwright:
-        context = launch_chrome(playwright, profile, headless)
+        try:
+            context, browser_name = launch_browser(playwright, profile, headless)
+        except Exception as error:
+            if headless or not missing_display(error):
+                raise
+            print("No display is available. Retrying headless.", file=sys.stderr)
+            headless = True
+            context, browser_name = launch_browser(playwright, profile, True)
+        mode = "headless" if headless else "visible"
+        print(f"Using {mode} {browser_name}.", file=sys.stderr)
         document_status = {"value": None}
 
         def on_response(response):
@@ -356,11 +519,29 @@ def fetch_all(targets, profile, headless, wait_seconds):
             page.on("response", on_response)
             for url, source_ids in targets:
                 results.append(fetch_page(
-                    page, url, source_ids, wait_seconds, headless, document_status,
+                    page, url, source_ids, wait_seconds, headless, browser_name, document_status,
                 ))
         finally:
             context.close()
-    return results
+    return results, browser_name, headless
+
+
+def fetch_all(targets, profile, headless, wait_seconds):
+    installed_browser = False
+    installed_dependencies = False
+    while True:
+        try:
+            return run_fetch(targets, profile, headless, wait_seconds)
+        except BrowserMissing:
+            if installed_browser or not install_chromium():
+                raise
+            installed_browser = True
+        except Exception as error:
+            library_missing = "shared librar" in str(error).lower()
+            if library_missing and not installed_dependencies and install_chromium_dependencies():
+                installed_dependencies = True
+                continue
+            raise
 
 
 def parse_args(argv):
@@ -371,17 +552,25 @@ def parse_args(argv):
         help=f"Also fetch One Nation URLs from a wiki data file (default: {DEFAULT_DATA}).",
     )
     parser.add_argument("--output", type=Path, help="Write JSON to this file as well as stdout.")
-    parser.add_argument("--headless", action="store_true", help="Hide Chrome. An interactive captcha cannot be completed.")
+    display = parser.add_mutually_exclusive_group()
+    display.add_argument("--headless", action="store_true", help="Hide the browser. This is the default in Codex cloud.")
+    display.add_argument("--headed", action="store_true", help="Show the browser so a person can complete a check.")
     parser.add_argument(
         "--wait", type=float, default=None,
-        help="Seconds to wait for the check to clear and the page text to settle (default: 120, or 25 with --headless).",
+        help="Seconds to wait for the check to clear and the page text to settle (default: 120 visible, 25 headless).",
     )
-    parser.add_argument("--profile", type=Path, default=DEFAULT_PROFILE, help="Chrome profile directory used to keep a cleared check.")
+    parser.add_argument("--profile", type=Path, default=None, help="Browser profile directory used to keep a cleared check.")
     args = parser.parse_args(argv)
+    if args.headed:
+        args.headless = False
+    elif not args.headless:
+        args.headless = default_headless()
     if args.wait is None:
         args.wait = 25 if args.headless else 120
     if args.wait <= 0:
         parser.error("--wait must be greater than 0.")
+    if args.profile is None:
+        args.profile = default_profile()
     if not args.urls and args.from_data is None:
         parser.error("Pass a One Nation URL or --from-data.")
     return args
@@ -395,17 +584,24 @@ def main(argv=None):
         print(str(error), file=sys.stderr)
         return 2
     try:
-        pages = fetch_all(targets, args.profile, args.headless, args.wait)
+        pages, browser_name, headless = fetch_all(targets, args.profile, args.headless, args.wait)
     except ModuleNotFoundError:
         print("Playwright is not installed. Run: pip install playwright", file=sys.stderr)
         return 2
     except Exception as error:
         message = str(error).splitlines()[0]
-        print(f"Could not open Chrome: {message}", file=sys.stderr)
-        print("Install Google Chrome, or run: pip install playwright && playwright install chromium", file=sys.stderr)
+        print(f"Could not open a browser: {message}", file=sys.stderr)
+        print("Run: pip install playwright && python3 -m playwright install chromium", file=sys.stderr)
         return 2
 
-    payload = {"retrievedAt": now_stamp(), "pages": pages}
+    proxy = proxy_from_environ()
+    payload = {
+        "retrievedAt": now_stamp(),
+        "browser": browser_name,
+        "headless": headless,
+        "proxy": proxy["server"] if proxy else None,
+        "pages": pages,
+    }
     encoded = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
