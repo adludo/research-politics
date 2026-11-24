@@ -281,10 +281,210 @@
       "updateDate": null,
       "crawlDate": null
     },
+    "source-b0e1eb3f9be5b8bb": {
+      "url": "https://www.abc.net.au/news/2026-11-04/victoria-2026-election-policy-promise-tracker/107247200",
+      "publisher": "ABC News",
+      "title": "The key policies on offer from parties in the 2026 Victorian state election",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-f9e44ca46bbc4b16": {
+      "url": "https://demosau.com/wp-content/uploads/DemosAU/vic-poll-nov-2026.html",
+      "publisher": "DemosAU",
+      "title": "Victorian State Poll November 2026",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-d7752513310a31d0": {
+      "url": "https://www.theguardian.com/australia-news/2026/nov/16/victoria-election-2026-who-to-vote-for-policies-promises-labor-coalition-greens-one-nation-ntwnfb",
+      "publisher": "The Guardian",
+      "title": "Confused about who to vote for in the Victoria election? A guide to key promises made by Labor, the Coalition, Greens and One Nation",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-c221289c665239cd": {
+      "url": "https://www.premier.vic.gov.au/labor-will-build-suburban-rail-loop-and-save-money",
+      "publisher": "Premier of Victoria",
+      "title": "Labor Will Build The Suburban Rail Loop - And Save Money",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
     "source-3c45f48d1e1e8afc": {
       "url": "https://www.viclabor.org.au/our-priorities/cutting-land-tax-to-save-families-money",
       "publisher": "Victorian Labor",
       "title": "Cutting land tax to save families money",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-756e0989aacd22aa": {
+      "url": "https://www.viclabor.org.au/our-priorities/capping-fares",
+      "publisher": "Victorian Labor",
+      "title": "Capping public transport at $30 a week",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-27157efb8a482b7b": {
+      "url": "https://www.viclabor.org.au/our-priorities/capping-tolls",
+      "publisher": "Victorian Labor",
+      "title": "Capping tolls at $30 a week",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-c40d22b5ff09eb41": {
+      "url": "https://www.viclabor.org.au/our-priorities/free-dental-for-all-victorians",
+      "publisher": "Victorian Labor",
+      "title": "Free dental for all Victorians",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-8f32c06dd100660e": {
+      "url": "https://www.viclabor.org.au/our-priorities/investing-in-health-and-protecting-our-hospitals",
+      "publisher": "Victorian Labor",
+      "title": "Investing in health and protecting our hospitals",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-48deb3232d2e6db4": {
+      "url": "https://www.viclabor.org.au/our-priorities/building-homes-for-first-home-buyers",
+      "publisher": "Victorian Labor",
+      "title": "Building 25,000 homes for first home buyers",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-5bec9881a0631539": {
+      "url": "https://www.viclabor.org.au/our-priorities/fixing-potholes-and-improving-local-roads",
+      "publisher": "Victorian Labor",
+      "title": "Fixing potholes and improving local roads",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-cd7a9ec90de72475": {
+      "url": "https://www.viclabor.org.au/news/labor-will-upgrade-hundreds-of-local-schools",
+      "publisher": "Victorian Labor",
+      "title": "Labor Will Upgrade Hundreds of Local Schools",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-d9a57ce2a492ca02": {
+      "url": "https://www.viclabor.org.au/news/labor-will-guarantee-royalties-for-the-regions",
+      "publisher": "Victorian Labor",
+      "title": "Labor Will Guarantee Royalties for the Regions",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-c963b6eea5986f95": {
+      "url": "https://www.viclabor.org.au/our-plan",
+      "publisher": "Victorian Labor",
+      "title": "Labor is fighting for working people.",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-fb2ffe114542cc33": {
+      "url": "https://ourplan.au/economic-plan/",
+      "publisher": "Liberal–National Coalition campaign",
+      "title": "Our ten year economic plan.",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-e7bf8dfcd729b6e7": {
+      "url": "https://ourplan.au/lower-costs/",
+      "publisher": "Liberal–National Coalition campaign",
+      "title": "Lower costs.",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-670663077ac12ad8": {
+      "url": "https://ourplan.au/government-that-works/",
+      "publisher": "Liberal–National Coalition campaign",
+      "title": "Government that works.",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-981c0b3261eb9d4f": {
+      "url": "https://ourplan.au/",
+      "publisher": "Liberal–National Coalition campaign",
+      "title": "Our Plan to deliver for Victorians.",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-3a63972b026c74c8": {
+      "url": "https://greens.org.au/vic/platform/how-we-pay-for-it",
+      "publisher": "Victorian Greens",
+      "title": "How we will pay for our plans",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-b416b64ac37d1b1b": {
+      "url": "https://greens.org.au/vic/platform",
+      "publisher": "Victorian Greens",
+      "title": "Demand better",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-2a34fedf6a955035": {
+      "url": "https://greens.org.au/vic/platform/housing",
+      "publisher": "Victorian Greens",
+      "title": "Make Housing Affordable",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-923024562153cda1": {
+      "url": "https://greens.org.au/vic/platform/transport",
+      "publisher": "Victorian Greens",
+      "title": "Transport",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-21ed5699917774bd": {
+      "url": "https://greens.org.au/vic/platform/climate",
+      "publisher": "Victorian Greens",
+      "title": "End Coal and Gas",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-2d62ba47bb9ecb46": {
+      "url": "https://greens.org.au/vic/platform/education",
+      "publisher": "Victorian Greens",
+      "title": "Education",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-7e31baa916abb90b": {
+      "url": "https://greens.org.au/vic/platform/safety",
+      "publisher": "Victorian Greens",
+      "title": "Community Safety",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
+    },
+    "source-609230d8c0e64d02": {
+      "url": "https://greens.org.au/vic/platform/first-nations-justice",
+      "publisher": "Victorian Greens",
+      "title": "First Nations & Treaty",
       "publicationDate": null,
       "updateDate": null,
       "crawlDate": null
@@ -345,38 +545,6 @@
       "updateDate": null,
       "crawlDate": null
     },
-    "source-756e0989aacd22aa": {
-      "url": "https://www.viclabor.org.au/our-priorities/capping-fares",
-      "publisher": "Victorian Labor",
-      "title": "Capping public transport at $30 a week",
-      "publicationDate": null,
-      "updateDate": null,
-      "crawlDate": null
-    },
-    "source-27157efb8a482b7b": {
-      "url": "https://www.viclabor.org.au/our-priorities/capping-tolls",
-      "publisher": "Victorian Labor",
-      "title": "Capping tolls at $30 a week",
-      "publicationDate": null,
-      "updateDate": null,
-      "crawlDate": null
-    },
-    "source-c40d22b5ff09eb41": {
-      "url": "https://www.viclabor.org.au/our-priorities/free-dental-for-all-victorians",
-      "publisher": "Victorian Labor",
-      "title": "Free dental for all Victorians",
-      "publicationDate": null,
-      "updateDate": null,
-      "crawlDate": null
-    },
-    "source-8f32c06dd100660e": {
-      "url": "https://www.viclabor.org.au/our-priorities/investing-in-health-and-protecting-our-hospitals",
-      "publisher": "Victorian Labor",
-      "title": "Investing in health and protecting our hospitals",
-      "publicationDate": null,
-      "updateDate": null,
-      "crawlDate": null
-    },
     "source-5b99036c0c80f184": {
       "url": "https://ourplan.au/government-that-works/",
       "publisher": "Liberal–National Coalition campaign",
@@ -393,28 +561,12 @@
       "updateDate": "2026-11-02T22:11:11+00:00",
       "crawlDate": null
     },
-    "source-48deb3232d2e6db4": {
-      "url": "https://www.viclabor.org.au/our-priorities/building-homes-for-first-home-buyers",
-      "publisher": "Victorian Labor",
-      "title": "Building 25,000 homes for first home buyers",
-      "publicationDate": null,
-      "updateDate": null,
-      "crawlDate": null
-    },
     "source-f76782644e631312": {
       "url": "https://greens.org.au/vic/platform/housing",
       "publisher": "Victorian Greens",
       "title": "Make Housing Affordable | Australian Greens Victoria",
       "publicationDate": null,
       "updateDate": "2026-11-23T17:04:28+1100",
-      "crawlDate": null
-    },
-    "source-5bec9881a0631539": {
-      "url": "https://www.viclabor.org.au/our-priorities/fixing-potholes-and-improving-local-roads",
-      "publisher": "Victorian Labor",
-      "title": "Fixing potholes and improving local roads",
-      "publicationDate": null,
-      "updateDate": null,
       "crawlDate": null
     },
     "source-a420cdfb0745d7c1": {
@@ -479,14 +631,6 @@
       "title": "Policies | One Nation Victoria",
       "publicationDate": null,
       "updateDate": "2026-11-02T23:14:07+00:00",
-      "crawlDate": null
-    },
-    "source-d9a57ce2a492ca02": {
-      "url": "https://www.viclabor.org.au/news/labor-will-guarantee-royalties-for-the-regions",
-      "publisher": "Victorian Labor",
-      "title": "Labor Will Guarantee Royalties for the Regions",
-      "publicationDate": null,
-      "updateDate": null,
       "crawlDate": null
     },
     "source-5b71e4aa7c470575": {
@@ -1554,6 +1698,278 @@
       "quote": "\"verification\": \"pending\"",
       "locator": "sources/*/verification; sources/*/accessResult",
       "accessNote": "Read the checked-out file at the recorded Git revision; URL identifies that version. No HTTP request to this GitHub URL was made. This corroborates recorded provenance, not original research truth."
+    },
+    "evidence-98d65db87a233b5c": {
+      "sourceId": "source-b0e1eb3f9be5b8bb",
+      "retrievedAt": "2026-11-22T11:14:44+11:00",
+      "method": "direct-http",
+      "quote": "The key policies on offer from parties in the 2026 Victorian state election",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-43e7708fd90f3c82": {
+      "sourceId": "source-f9e44ca46bbc4b16",
+      "retrievedAt": "2026-11-22T11:14:44+11:00",
+      "method": "direct-http",
+      "quote": "Victorian State Poll November 2026",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-8fe6078601c41cd2": {
+      "sourceId": "source-d7752513310a31d0",
+      "retrievedAt": "2026-11-22T11:14:43+11:00",
+      "method": "direct-http",
+      "quote": "Confused about who to vote for in the Victoria election? A guide to key promises made by Labor, the Coalition, Greens and One Nation",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-d0a9428adb6dc4d2": {
+      "sourceId": "source-c221289c665239cd",
+      "retrievedAt": "2026-11-22T11:14:44+11:00",
+      "method": "direct-http",
+      "quote": "Labor Will Build The Suburban Rail Loop - And Save Money",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-31a21bf32f71a123": {
+      "sourceId": "source-3c45f48d1e1e8afc",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Cutting land tax to save families money",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-a3d1c13276de586f": {
+      "sourceId": "source-756e0989aacd22aa",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Capping public transport at $30 a week",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-cdd7249cf3a653e5": {
+      "sourceId": "source-27157efb8a482b7b",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Capping tolls at $30 a week",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-80027f3d8fa43726": {
+      "sourceId": "source-c40d22b5ff09eb41",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Free dental for all Victorians",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-ad9759589ae5143d": {
+      "sourceId": "source-8f32c06dd100660e",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Investing in health and protecting our hospitals",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-e0bfc93d2bb131a0": {
+      "sourceId": "source-48deb3232d2e6db4",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Building 25,000 homes for first home buyers",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-76387f36ad370f42": {
+      "sourceId": "source-5bec9881a0631539",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Fixing potholes and improving local roads",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-09f7bf1e7588244d": {
+      "sourceId": "source-cd7a9ec90de72475",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Labor Will Upgrade Hundreds of Local Schools",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-a6497114a4c1bc08": {
+      "sourceId": "source-d9a57ce2a492ca02",
+      "retrievedAt": "2026-11-22T11:14:43+11:00",
+      "method": "direct-http",
+      "quote": "Labor Will Guarantee Royalties for the Regions",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-0fcacf839ea30a29": {
+      "sourceId": "source-c963b6eea5986f95",
+      "retrievedAt": "2026-11-22T11:14:42+11:00",
+      "method": "direct-http",
+      "quote": "Labor is fighting for working people.",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-3b94f77104dae718": {
+      "sourceId": "source-fb2ffe114542cc33",
+      "retrievedAt": "2026-11-22T11:14:44+11:00",
+      "method": "direct-http",
+      "quote": "Our ten year economic plan.",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-0bd1c1e9c73b21aa": {
+      "sourceId": "source-e7bf8dfcd729b6e7",
+      "retrievedAt": "2026-11-22T11:14:43+11:00",
+      "method": "direct-http",
+      "quote": "Lower costs.",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-ded92ec78cf493ea": {
+      "sourceId": "source-670663077ac12ad8",
+      "retrievedAt": "2026-11-22T11:14:43+11:00",
+      "method": "direct-http",
+      "quote": "Government that works.",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-605aa046aca39796": {
+      "sourceId": "source-981c0b3261eb9d4f",
+      "retrievedAt": "2026-11-22T11:14:43+11:00",
+      "method": "direct-http",
+      "quote": "Our Plan to deliver for Victorians.",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-50ea03cbe7ecb5d1": {
+      "sourceId": "source-3a63972b026c74c8",
+      "retrievedAt": "2026-11-22T11:14:45+11:00",
+      "method": "direct-http",
+      "quote": "How we will pay for our plans",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-04a47ea34a6bf711": {
+      "sourceId": "source-b416b64ac37d1b1b",
+      "retrievedAt": "2026-11-22T11:14:45+11:00",
+      "method": "direct-http",
+      "quote": "Demand better",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-55774db30d4f0fca": {
+      "sourceId": "source-2a34fedf6a955035",
+      "retrievedAt": "2026-11-22T11:14:45+11:00",
+      "method": "direct-http",
+      "quote": "Make Housing Affordable",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-c4d89f5894be918a": {
+      "sourceId": "source-923024562153cda1",
+      "retrievedAt": "2026-11-22T11:14:45+11:00",
+      "method": "direct-http",
+      "quote": "Transport",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-89f3fb1d613d9b1c": {
+      "sourceId": "source-21ed5699917774bd",
+      "retrievedAt": "2026-11-22T11:14:45+11:00",
+      "method": "direct-http",
+      "quote": "End Coal and Gas",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-421ac39acf92ec2a": {
+      "sourceId": "source-2d62ba47bb9ecb46",
+      "retrievedAt": "2026-11-22T11:14:46+11:00",
+      "method": "direct-http",
+      "quote": "Education",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-542c479894f5abac": {
+      "sourceId": "source-7e31baa916abb90b",
+      "retrievedAt": "2026-11-22T11:14:45+11:00",
+      "method": "direct-http",
+      "quote": "Community Safety",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-21292ba45e5a2241": {
+      "sourceId": "source-609230d8c0e64d02",
+      "retrievedAt": "2026-11-22T11:14:46+11:00",
+      "method": "direct-http",
+      "quote": "First Nations & Treaty",
+      "locator": "Main page heading (H1)",
+      "accessNote": "HTTP 200. Retrieved the cited page and read its main heading. Access check only."
+    },
+    "evidence-eb8c7f9e2920049d": {
+      "sourceId": "source-9232e20089dedd7b",
+      "retrievedAt": "2026-11-22T11:14:46+11:00",
+      "method": "direct-http",
+      "quote": null,
+      "locator": null,
+      "accessNote": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page."
+    },
+    "evidence-cb57a29f73d60216": {
+      "sourceId": "source-f66baaa19a4407df",
+      "retrievedAt": "2026-11-22T11:14:46+11:00",
+      "method": "direct-http",
+      "quote": null,
+      "locator": null,
+      "accessNote": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page."
+    },
+    "evidence-8b48cbf01126af88": {
+      "sourceId": "source-e93751b95cd254be",
+      "retrievedAt": "2026-11-22T11:14:46+11:00",
+      "method": "direct-http",
+      "quote": null,
+      "locator": null,
+      "accessNote": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page."
+    },
+    "evidence-ef572f5aef8f30c1": {
+      "sourceId": "source-1a5f78aa5b1d67c5",
+      "retrievedAt": "2026-11-22T11:14:47+11:00",
+      "method": "direct-http",
+      "quote": null,
+      "locator": null,
+      "accessNote": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page."
+    },
+    "evidence-069c764754fe754a": {
+      "sourceId": "source-ab6636b30c825b40",
+      "retrievedAt": "2026-11-22T11:14:47+11:00",
+      "method": "direct-http",
+      "quote": null,
+      "locator": null,
+      "accessNote": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page."
+    },
+    "evidence-44f5405daa363f8b": {
+      "sourceId": "source-ee49cc26d3c5b773",
+      "retrievedAt": "2026-11-22T11:14:47+11:00",
+      "method": "direct-http",
+      "quote": null,
+      "locator": null,
+      "accessNote": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page."
+    },
+    "evidence-f61f94eacf853f3d": {
+      "sourceId": "source-ba119776c03cbc2b",
+      "retrievedAt": "2026-11-22T11:14:47+11:00",
+      "method": "direct-http",
+      "quote": null,
+      "locator": null,
+      "accessNote": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page."
+    },
+    "evidence-737f966f0015c8cf": {
+      "sourceId": "source-2ec803bf35fc2862",
+      "retrievedAt": "2026-11-22T11:14:47+11:00",
+      "method": "direct-http",
+      "quote": null,
+      "locator": null,
+      "accessNote": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page."
     },
     "evidence-9dc4c6debc8ac93a": {
       "sourceId": "source-1d51b9801043d208",
@@ -6533,6 +6949,506 @@
           "evidenceIds": [
             "evidence-7f8ef2fbf0c8d873",
             "evidence-f652e10a724923e2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "run-20261122-111517-vic-reference-access",
+      "target": "/elections/victoria-2026/",
+      "startedAt": "2026-11-22T11:14:41+11:00",
+      "completedAt": "2026-11-22T11:15:17+11:00",
+      "researchAsOf": "2026-11-22",
+      "revision": "d1b990782649e9b6652774cb206c830c9664edca",
+      "dirty": true,
+      "reviewedFiles": [
+        {
+          "path": "app/elections/victoria-2026/page.tsx",
+          "sha256": "1d0f865cdfe42c44ab58a805fbc15cf6c2d202dd00570936e1ff4c1d6dec3807"
+        },
+        {
+          "path": "data/victoria-2026.json",
+          "sha256": "0a071dd83d6067f564264b584fd5db7e511fcfbf670b9664bc9023d09abd17a6"
+        }
+      ],
+      "status": "incomplete",
+      "supersedesRunId": null,
+      "summary": "Reference access recheck only. All 34 cited URLs connected through the proxy. Twenty-six returned readable pages, including 12 previously blocked references. All eight One Nation URLs returned HTTP 202 with a CAPTCHA and remain unreadable. Supported findings in this run refer to link access. The earlier policy-claim audit remains applicable to its dated snapshot.",
+      "findings": [
+        {
+          "claimId": "reference-abc",
+          "location": "data/victoria-2026.json#/sources/abc",
+          "statement": "The supplied reference from ABC News (Victoria 2026 election policy promise tracker (supplied title)) is accessible.",
+          "sourceIds": [
+            "source-b0e1eb3f9be5b8bb"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-98d65db87a233b5c"
+          ]
+        },
+        {
+          "claimId": "reference-poll",
+          "location": "data/victoria-2026.json#/sources/poll",
+          "statement": "The supplied reference from DemosAU (vic poll nov 2026.html) is accessible.",
+          "sourceIds": [
+            "source-f9e44ca46bbc4b16"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-43e7708fd90f3c82"
+          ]
+        },
+        {
+          "claimId": "reference-guardian",
+          "location": "data/victoria-2026.json#/sources/guardian",
+          "statement": "The supplied reference from The Guardian (victoria election 2026 who to vote for policies promises labor coalition greens one nation ntwnfb) is accessible.",
+          "sourceIds": [
+            "source-d7752513310a31d0"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-8fe6078601c41cd2"
+          ]
+        },
+        {
+          "claimId": "reference-srl",
+          "location": "data/victoria-2026.json#/sources/srl",
+          "statement": "The supplied reference from Premier of Victoria (labor will build suburban rail loop and save money) is accessible.",
+          "sourceIds": [
+            "source-c221289c665239cd"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-d0a9428adb6dc4d2"
+          ]
+        },
+        {
+          "claimId": "reference-labor-land",
+          "location": "data/victoria-2026.json#/sources/labor-land",
+          "statement": "The supplied reference from Victorian Labor (cutting land tax to save families money) is accessible.",
+          "sourceIds": [
+            "source-3c45f48d1e1e8afc"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-31a21bf32f71a123"
+          ]
+        },
+        {
+          "claimId": "reference-labor-fares",
+          "location": "data/victoria-2026.json#/sources/labor-fares",
+          "statement": "The supplied reference from Victorian Labor (capping fares) is accessible.",
+          "sourceIds": [
+            "source-756e0989aacd22aa"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-a3d1c13276de586f"
+          ]
+        },
+        {
+          "claimId": "reference-labor-tolls",
+          "location": "data/victoria-2026.json#/sources/labor-tolls",
+          "statement": "The supplied reference from Victorian Labor (capping tolls) is accessible.",
+          "sourceIds": [
+            "source-27157efb8a482b7b"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-cdd7249cf3a653e5"
+          ]
+        },
+        {
+          "claimId": "reference-labor-dental",
+          "location": "data/victoria-2026.json#/sources/labor-dental",
+          "statement": "The supplied reference from Victorian Labor (free dental for all victorians) is accessible.",
+          "sourceIds": [
+            "source-c40d22b5ff09eb41"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-80027f3d8fa43726"
+          ]
+        },
+        {
+          "claimId": "reference-labor-health",
+          "location": "data/victoria-2026.json#/sources/labor-health",
+          "statement": "The supplied reference from Victorian Labor (investing in health and protecting our hospitals) is accessible.",
+          "sourceIds": [
+            "source-8f32c06dd100660e"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-ad9759589ae5143d"
+          ]
+        },
+        {
+          "claimId": "reference-labor-homes",
+          "location": "data/victoria-2026.json#/sources/labor-homes",
+          "statement": "The supplied reference from Victorian Labor (building homes for first home buyers) is accessible.",
+          "sourceIds": [
+            "source-48deb3232d2e6db4"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-e0bfc93d2bb131a0"
+          ]
+        },
+        {
+          "claimId": "reference-labor-roads",
+          "location": "data/victoria-2026.json#/sources/labor-roads",
+          "statement": "The supplied reference from Victorian Labor (fixing potholes and improving local roads) is accessible.",
+          "sourceIds": [
+            "source-5bec9881a0631539"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-76387f36ad370f42"
+          ]
+        },
+        {
+          "claimId": "reference-labor-schools",
+          "location": "data/victoria-2026.json#/sources/labor-schools",
+          "statement": "The supplied reference from Victorian Labor (labor will upgrade hundreds of local schools) is accessible.",
+          "sourceIds": [
+            "source-cd7a9ec90de72475"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-09f7bf1e7588244d"
+          ]
+        },
+        {
+          "claimId": "reference-labor-regions",
+          "location": "data/victoria-2026.json#/sources/labor-regions",
+          "statement": "The supplied reference from Victorian Labor (labor will guarantee royalties for the regions) is accessible.",
+          "sourceIds": [
+            "source-d9a57ce2a492ca02"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-a6497114a4c1bc08"
+          ]
+        },
+        {
+          "claimId": "reference-labor-plan",
+          "location": "data/victoria-2026.json#/sources/labor-plan",
+          "statement": "The supplied reference from Victorian Labor (our plan) is accessible.",
+          "sourceIds": [
+            "source-c963b6eea5986f95"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-0fcacf839ea30a29"
+          ]
+        },
+        {
+          "claimId": "reference-coalition-economy",
+          "location": "data/victoria-2026.json#/sources/coalition-economy",
+          "statement": "The supplied reference from Liberal–National Coalition campaign (economic plan) is accessible.",
+          "sourceIds": [
+            "source-fb2ffe114542cc33"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-3b94f77104dae718"
+          ]
+        },
+        {
+          "claimId": "reference-coalition-costs",
+          "location": "data/victoria-2026.json#/sources/coalition-costs",
+          "statement": "The supplied reference from Liberal–National Coalition campaign (lower costs) is accessible.",
+          "sourceIds": [
+            "source-e7bf8dfcd729b6e7"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-0bd1c1e9c73b21aa"
+          ]
+        },
+        {
+          "claimId": "reference-coalition-government",
+          "location": "data/victoria-2026.json#/sources/coalition-government",
+          "statement": "The supplied reference from Liberal–National Coalition campaign (government that works) is accessible.",
+          "sourceIds": [
+            "source-670663077ac12ad8"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-ded92ec78cf493ea"
+          ]
+        },
+        {
+          "claimId": "reference-coalition-plan",
+          "location": "data/victoria-2026.json#/sources/coalition-plan",
+          "statement": "The supplied reference from Liberal–National Coalition campaign (ourplan.au) is accessible.",
+          "sourceIds": [
+            "source-981c0b3261eb9d4f"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-605aa046aca39796"
+          ]
+        },
+        {
+          "claimId": "reference-greens-tax",
+          "location": "data/victoria-2026.json#/sources/greens-tax",
+          "statement": "The supplied reference from Victorian Greens (how we pay for it) is accessible.",
+          "sourceIds": [
+            "source-3a63972b026c74c8"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-50ea03cbe7ecb5d1"
+          ]
+        },
+        {
+          "claimId": "reference-greens-plan",
+          "location": "data/victoria-2026.json#/sources/greens-plan",
+          "statement": "The supplied reference from Victorian Greens (platform) is accessible.",
+          "sourceIds": [
+            "source-b416b64ac37d1b1b"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-04a47ea34a6bf711"
+          ]
+        },
+        {
+          "claimId": "reference-greens-housing",
+          "location": "data/victoria-2026.json#/sources/greens-housing",
+          "statement": "The supplied reference from Victorian Greens (housing) is accessible.",
+          "sourceIds": [
+            "source-2a34fedf6a955035"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-55774db30d4f0fca"
+          ]
+        },
+        {
+          "claimId": "reference-greens-transport",
+          "location": "data/victoria-2026.json#/sources/greens-transport",
+          "statement": "The supplied reference from Victorian Greens (transport) is accessible.",
+          "sourceIds": [
+            "source-923024562153cda1"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-c4d89f5894be918a"
+          ]
+        },
+        {
+          "claimId": "reference-greens-climate",
+          "location": "data/victoria-2026.json#/sources/greens-climate",
+          "statement": "The supplied reference from Victorian Greens (climate) is accessible.",
+          "sourceIds": [
+            "source-21ed5699917774bd"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-89f3fb1d613d9b1c"
+          ]
+        },
+        {
+          "claimId": "reference-greens-education",
+          "location": "data/victoria-2026.json#/sources/greens-education",
+          "statement": "The supplied reference from Victorian Greens (education) is accessible.",
+          "sourceIds": [
+            "source-2d62ba47bb9ecb46"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-421ac39acf92ec2a"
+          ]
+        },
+        {
+          "claimId": "reference-greens-safety",
+          "location": "data/victoria-2026.json#/sources/greens-safety",
+          "statement": "The supplied reference from Victorian Greens (safety) is accessible.",
+          "sourceIds": [
+            "source-7e31baa916abb90b"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-542c479894f5abac"
+          ]
+        },
+        {
+          "claimId": "reference-greens-justice",
+          "location": "data/victoria-2026.json#/sources/greens-justice",
+          "statement": "The supplied reference from Victorian Greens (first nations justice) is accessible.",
+          "sourceIds": [
+            "source-609230d8c0e64d02"
+          ],
+          "status": "supported",
+          "explanation": "HTTP 200. Retrieved the cited page and read its main heading. Access check only.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-21292ba45e5a2241"
+          ]
+        },
+        {
+          "claimId": "reference-one-fiscal",
+          "location": "data/victoria-2026.json#/sources/one-fiscal",
+          "statement": "The supplied reference from One Nation Victoria (fiscal management) is accessible.",
+          "sourceIds": [
+            "source-9232e20089dedd7b"
+          ],
+          "status": "inaccessible",
+          "explanation": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-eb8c7f9e2920049d"
+          ]
+        },
+        {
+          "claimId": "reference-one-costs",
+          "location": "data/victoria-2026.json#/sources/one-costs",
+          "statement": "The supplied reference from One Nation Victoria (cost of living) is accessible.",
+          "sourceIds": [
+            "source-f66baaa19a4407df"
+          ],
+          "status": "inaccessible",
+          "explanation": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-cb57a29f73d60216"
+          ]
+        },
+        {
+          "claimId": "reference-one-health",
+          "location": "data/victoria-2026.json#/sources/one-health",
+          "statement": "The supplied reference from One Nation Victoria (health and emergency services) is accessible.",
+          "sourceIds": [
+            "source-e93751b95cd254be"
+          ],
+          "status": "inaccessible",
+          "explanation": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-8b48cbf01126af88"
+          ]
+        },
+        {
+          "claimId": "reference-one-energy",
+          "location": "data/victoria-2026.json#/sources/one-energy",
+          "statement": "The supplied reference from One Nation Victoria (energy) is accessible.",
+          "sourceIds": [
+            "source-1a5f78aa5b1d67c5"
+          ],
+          "status": "inaccessible",
+          "explanation": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-ef572f5aef8f30c1"
+          ]
+        },
+        {
+          "claimId": "reference-one-education",
+          "location": "data/victoria-2026.json#/sources/one-education",
+          "statement": "The supplied reference from One Nation Victoria (education) is accessible.",
+          "sourceIds": [
+            "source-ab6636b30c825b40"
+          ],
+          "status": "inaccessible",
+          "explanation": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-069c764754fe754a"
+          ]
+        },
+        {
+          "claimId": "reference-one-plan",
+          "location": "data/victoria-2026.json#/sources/one-plan",
+          "statement": "The supplied reference from One Nation Victoria (policies) is accessible.",
+          "sourceIds": [
+            "source-ee49cc26d3c5b773"
+          ],
+          "status": "inaccessible",
+          "explanation": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-44f5405daa363f8b"
+          ]
+        },
+        {
+          "claimId": "reference-one-crime",
+          "location": "data/victoria-2026.json#/sources/one-crime",
+          "statement": "The supplied reference from One Nation Victoria (crime) is accessible.",
+          "sourceIds": [
+            "source-ba119776c03cbc2b"
+          ],
+          "status": "inaccessible",
+          "explanation": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-f61f94eacf853f3d"
+          ]
+        },
+        {
+          "claimId": "reference-one-integrity",
+          "location": "data/victoria-2026.json#/sources/one-integrity",
+          "statement": "The supplied reference from One Nation Victoria (democracy and accountability) is accessible.",
+          "sourceIds": [
+            "source-2ec803bf35fc2862"
+          ],
+          "status": "inaccessible",
+          "explanation": "Proxy CONNECT succeeded. The site returned HTTP 202 with a CAPTCHA redirect instead of the policy page.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-737f966f0015c8cf"
           ]
         }
       ]
