@@ -5,6 +5,8 @@ import PolicyComparison from '../../../components/policies/PolicyComparison';
 import SourceReference from '../../../components/policies/SourceReference';
 import ExpandableSection from '../../../components/ui/ExpandableSection';
 
+import styles from './election.module.css';
+
 export const metadata: Metadata = {
   title: '2026 Victorian election policy comparison — draft',
   description: 'User-supplied policy comparison organised by topic. Independent source verification is pending.',
@@ -19,28 +21,11 @@ function Reference({ sourceId }: { sourceId: SourceId }) {
 
 export default function VictorianElection() {
   return (
-    <main id="main">
-      <Link href="/">Back to the wiki</Link>
+    <main id="main" className="content-page">
+      <Link href="/" className="back-link">Back to the wiki</Link>
       <h1>2026 Victorian state election: policy comparison</h1>
-      <div className="research-context">
-        <ExpandableSection
-          id="verification-heading"
-          title="Draft — independent verification pending"
-          variant="subtle"
-        >
-          <p>
-            This page organises a user-supplied summary dated 18 November 2026.
-            It has not been independently verified. All 34 supplied references were
-            blocked by the research environment’s proxy (403) on that date.
-            Links are supplied citations, not confirmation of their contents or validity.
-          </p>
-          <p>
-            Policy wording, eligibility, costs, dates and relevance to this election
-            require checking against the underlying documents. Do not rely on this
-            draft as a verified voting guide. Announced expenditure, savings and
-            outcomes are not independently validated costings or forecasts.
-          </p>
-        </ExpandableSection>
+      <p><Link href="/verification/">Verification history and conflicts</Link></p>
+      <div className={styles.context}>
         <ExpandableSection id="scope-heading" title="Scope and context" variant="subtle">
           <p>
             The supplied summary gives an election date of 28 November 2026 and covers
@@ -58,7 +43,7 @@ export default function VictorianElection() {
           <p><Reference sourceId="abc" /></p>
         </ExpandableSection>
       </div>
-      <nav className="policy-contents" aria-label="Policy areas">
+      <nav className={`surface-card ${styles.contents}`} aria-label="Policy areas">
         <h2>Policy areas</h2>
         <ol>{comparison.sections.map(section => (
           <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>
@@ -76,20 +61,20 @@ export default function VictorianElection() {
           <li key={id}><Reference sourceId={id} /></li>
         ))}</ul>
       </section>
-      <section aria-labelledby="review-heading">
-        <h2 id="review-heading">Reference review requirements</h2>
+      <section id="verification-heading" aria-labelledby="review-heading">
+        <h2 id="review-heading">Verification and source review</h2>
         <p>
-          Before treating this as verified material, open each reference, record its
-          actual title, publication or update date, access date and relevant section,
-          and check every claim against the final wording. Confirm election relevance
-          and distinguish new promises, standing platforms and existing programs.
-          Seek independent corroboration for consequential or disputed claims.
+          This comparison draws on a contributor’s 18 November 2026 summary.
+          The initial proxy check blocked all 34 supplied references. Citation labels
+          came from the supplied URLs. See the <Link href="/verification/">verification log</Link> for
+          later findings and remaining gaps.
         </p>
         <p>
-          Reference labels were derived from the supplied URLs; document titles and
-          publication dates have not been authenticated. No successful source access
-          or verification date has been recorded. The underlying data retains the
-          failed access attempts separately from verification status.
+          Before relying on this comparison as a voting guide, check policy wording,
+          eligibility, costs, dates and election relevance against the original sources.
+          Record each source’s title, publication or update date, access date and relevant section.
+          Distinguish new promises from standing platforms and existing programs,
+          and independently check announced spending, savings, forecasts and disputed claims.
         </p>
       </section>
     </main>

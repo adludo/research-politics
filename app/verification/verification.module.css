@@ -1,0 +1,21 @@
+.run { margin-top: 1.25rem; }
+.metadata { display: grid; grid-template-columns: auto 1fr; gap: .5rem 1rem; font-size: .9rem; }
+.metadata dt { font-weight: 600; }
+.metadata dd { margin: 0; min-width: 0; }
+.contents { margin-block: 1.25rem; }
+.run summary { cursor: pointer; }
+.contents details + details { margin-top: .35rem; }
+.contents ul { margin-block: .5rem 1rem; padding-left: 1.5rem; }
+.contents li + li { margin-top: .65rem; }
+.statement { display: block; font-size: .9rem; color: var(--muted); }
+.contents, .finding { scroll-margin-top: 1.5rem; }
+.finding { margin-top: 1.25rem; }
+.finding + .finding { padding-top: 1.25rem; border-top: 1px solid var(--border); }
+.finding h4 { margin: 0; font-size: 1rem; }
+.finding h4 code { color: var(--accent); }
+.finding:target { border-inline-start: 3px solid var(--accent); padding-inline-start: .75rem; }
+.metadata + details { margin-bottom: 1.25rem; }
+.evidence { border-left: 3px solid var(--border-strong); padding-left: 1rem; font-size: .9rem; }
+.run code, .finding a { overflow-wrap: anywhere; }
+.evidence blockquote { margin-inline: 0; }
+@media (max-width: 600px) { .metadata { grid-template-columns: 1fr; } }

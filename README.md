@@ -58,3 +58,11 @@ For secondary article context, use `ExpandableSection` with `variant="subtle"`. 
 ## Victorian budget source data
 
 [Official Victorian budget and historical financial datasets](data/victorian-budget/README.md) are stored in `data/victorian-budget/`: 15 original workbooks and the November 2026 Pre-Election Budget Update PDF, with source URLs, retrieval dates, checksums and coverage notes. Original budget-paper PDFs hosted on S3 are listed separately as not downloaded.
+
+## Verify a page on request
+
+See the [wiki verifier instructions](.agents/skills/verify-wiki-page/SKILL.md) for Cursor/Codex invocation and the dated conflict log at `/verification/`. The verifier runs only when explicitly requested for a target page.
+
+### Shared verification records
+
+The verification log uses schema version 2: top-level `sources` and `evidence` maps hold reusable records; findings contain `sourceIds` and `evidenceIds`. The verifier's single instruction file documents how to append records. `python3 scripts/verification_log.py --write` losslessly migrates a legacy inline log (or leaves a version-2 log unchanged), and `python3 scripts/validate-verification-log.py` checks all references. The existing audit retains all 209 findings, dates, quotations and provenance; this format change is not a new verification run.

@@ -1,0 +1,4 @@
+.context { margin-top: 1.5rem; }
+.contents ol { columns: 2; column-gap: 2rem; padding-left: 1.25rem; font-size: .9rem; }
+.contents li { break-inside: avoid; margin-bottom: .5rem; }
+@media (max-width: 600px) { .contents ol { columns: 1; } }
