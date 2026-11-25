@@ -69,8 +69,7 @@ function Finding({ finding, party, id }: FindingEntry) {
         <VerificationBadge status={finding.status} />
       </p>
       <p><strong>Statement:</strong> {finding.statement}</p>
-      <p><strong>Location:</strong> <code>{finding.location}</code></p>
-      <p>{finding.explanation}</p>
+      <p>{finding.explanation.replace(/^HTTP 200[.;]\s*/i, '')}</p>
       {finding.suggestedCorrection && <p><strong>Suggested correction:</strong> {finding.suggestedCorrection}</p>}
       <ul>{finding.sourceIds.map(id => {
         const source = registry.sources[id];
@@ -79,14 +78,14 @@ function Finding({ finding, party, id }: FindingEntry) {
       {finding.evidenceIds.map(id => {
         const evidence = registry.evidence[id];
         const source = registry.sources[evidence.sourceId];
+        const httpStatus = /(?:\bHTTP(?: status)?\s+|Tunnel connection failed:\s*)([1-5]\d{2})\b/i.exec(evidence.accessNote)?.[1];
         return (
           <div key={id} className={styles.evidence}>
             <p><a href={source.url}>{source.title ?? source.url}</a> — {source.publisher ?? 'Publisher not established'}</p>
-            <p>Retrieved: <time dateTime={evidence.retrievedAt}>{evidence.retrievedAt}</time> · Method: {evidence.method}</p>
-            <p>Published: {source.publicationDate ?? 'Not shown'} · Updated: {source.updateDate ?? 'Not shown'} · Crawl date: {source.crawlDate ?? 'Not shown'}</p>
+            <p>Retrieved: <time dateTime={evidence.retrievedAt}>{evidence.retrievedAt}</time></p>
+            <p>Published: {source.publicationDate ?? 'Not shown'} · Updated: {source.updateDate ?? 'Not shown'}</p>
             {evidence.quote && <blockquote>{evidence.quote}</blockquote>}
-            {evidence.locator && <p>Source location: {evidence.locator}</p>}
-            <p>{evidence.accessNote}</p>
+            {httpStatus && httpStatus !== '200' && <p>{evidence.accessNote}</p>}
           </div>
         );
       })}
