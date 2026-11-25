@@ -7,19 +7,20 @@ import styles from './PolicyComparison.module.css';
 export interface PartyPolicyCardProps {
   id: string;
   party: PartyPolicies;
+  headingLevel?: 3 | 4;
   sources: PolicySources;
   referenceStatus?: string;
   verification?: readonly (PolicyVerification | undefined)[];
 }
 
-export default function PartyPolicyCard({ id, party, sources, referenceStatus, verification }: PartyPolicyCardProps) {
+export default function PartyPolicyCard({ id, party, sources, referenceStatus, verification, headingLevel = 3 }: PartyPolicyCardProps) {
   return (
     <article>
       <ExpandableSection
         id={id}
         title={party.name}
         description={`${party.claims.length} policy ${party.claims.length === 1 ? 'group' : 'groups'}`}
-        headingLevel={3}
+        headingLevel={headingLevel}
         variant="compact"
       >
         {party.claims.length ? (

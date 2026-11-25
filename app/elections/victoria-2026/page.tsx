@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import comparison from '../../../data/victoria-2026.json';
+import VictorianBudgetChart from '../../../components/budgets/VictorianBudgetChart';
 import PolicyComparison from '../../../components/policies/PolicyComparison';
 import SourceReference from '../../../components/policies/SourceReference';
 import BackToTop from '../../../components/ui/BackToTop';
@@ -10,8 +11,8 @@ import { getPolicyVerification } from './policy-verification';
 import styles from './election.module.css';
 
 export const metadata: Metadata = {
-  title: '2026 Victorian election policy comparison — draft',
-  description: 'User-supplied policy comparison organised by topic. Each policy links to its recorded verification finding where available.',
+  title: '2026 Victorian state election',
+  description: 'Party policies, verification findings and Victorian state budget figures for the 2026 state election.',
   robots: { index: false, follow: false },
 };
 
@@ -21,14 +22,18 @@ function Reference({ sourceId }: { sourceId: SourceId }) {
   return <SourceReference source={comparison.sources[sourceId]} statusLabel="Verification pending" />;
 }
 
-export default function VictorianElection() {
+function ElectionPolicies() {
   return (
-    <main id="main" className="content-page" tabIndex={-1}>
-      <Link href="/" className="back-link">Back to the wiki</Link>
-      <h1>2026 Victorian state election: policy comparison</h1>
+    <>
+      <nav className={`surface-card ${styles.contents}`} aria-labelledby="policy-areas-heading">
+        <h3 id="policy-areas-heading">Policy areas</h3>
+        <ol>{comparison.sections.map(section => (
+          <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>
+        ))}</ol>
+      </nav>
       <p><Link href="/verification/">Verification history and conflicts</Link></p>
       <div className={styles.context}>
-        <ExpandableSection id="scope-heading" title="Scope and context" variant="subtle">
+        <ExpandableSection id="scope-heading" title="Scope and context" headingLevel={3} variant="subtle">
           <p>
             The supplied summary gives an election date of 28 November 2026 and covers
             Labor, the Liberal–National Coalition, the Greens and One Nation. It groups
@@ -45,26 +50,21 @@ export default function VictorianElection() {
           <p><Reference sourceId="abc" /></p>
         </ExpandableSection>
       </div>
-      <nav className={`surface-card ${styles.contents}`} aria-label="Policy areas">
-        <h2>Policy areas</h2>
-        <ol>{comparison.sections.map(section => (
-          <li key={section.id}><a href={`#${section.id}`}>{section.title}</a></li>
-        ))}</ol>
-      </nav>
       <PolicyComparison
+        headingLevel={3}
         sections={comparison.sections}
         sources={comparison.sources}
         verificationNotice="Status badges link to the recorded findings for each policy."
         policyVerification={getPolicyVerification()}
       />
       <section aria-labelledby="campaigns-heading">
-        <h2 id="campaigns-heading">Supplied campaign pages</h2>
+        <h3 id="campaigns-heading">Supplied campaign pages</h3>
         <ul>{(['labor-plan', 'coalition-plan', 'greens-plan', 'one-plan'] as const).map(id => (
           <li key={id}><Reference sourceId={id} /></li>
         ))}</ul>
       </section>
       <section id="verification-heading" aria-labelledby="review-heading">
-        <h2 id="review-heading">Verification and source review</h2>
+        <h3 id="review-heading">Verification and source review</h3>
         <p>
           This comparison draws on a contributor’s 18 November 2026 summary.
           The initial proxy check blocked all 34 supplied references. Citation labels
@@ -79,6 +79,42 @@ export default function VictorianElection() {
           and independently check announced spending, savings, forecasts and disputed claims.
         </p>
       </section>
+    </>
+  );
+}
+
+function StateBudget() {
+  return (
+    <>
+      <p>Victorian general government revenue, expenses, operating results and net debt from 2016–17 to 2025–26.</p>
+      <p><Link href="/budgets/victoria/">View annual budget figures and sources</Link></p>
+      <VictorianBudgetChart />
+    </>
+  );
+}
+
+const sections = [
+  { id: 'policies', title: 'Policies', Content: ElectionPolicies },
+  { id: 'state-budget', title: 'State budget', Content: StateBudget },
+];
+
+export default function VictorianElection() {
+  return (
+    <main id="main" className="content-page" tabIndex={-1}>
+      <Link href="/" className="back-link">Back to the wiki</Link>
+      <h1>2026 Victorian state election</h1>
+      <nav className="surface-card" aria-labelledby="contents-heading">
+        <h2 id="contents-heading">Contents</h2>
+        <ul className={styles.sectionLinks}>
+          {sections.map(({ id, title }) => <li key={id}><a href={`#${id}`}>{title}</a></li>)}
+        </ul>
+      </nav>
+      {sections.map(({ id, title, Content }) => (
+        <section key={id} id={id} className={styles.detailSection} aria-labelledby={`${id}-heading`}>
+          <h2 id={`${id}-heading`}>{title}</h2>
+          <Content />
+        </section>
+      ))}
       <BackToTop />
     </main>
   );
