@@ -3,7 +3,7 @@ import styles from './PolicyComparison.module.css';
 
 export interface SourceReferenceProps {
   source: PolicySource;
-  statusLabel: string;
+  statusLabel?: string;
   prefix?: string;
 }
 

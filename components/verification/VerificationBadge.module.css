@@ -1,0 +1,13 @@
+.badge {
+  display: inline-block;
+  margin-inline-start: .4rem;
+  padding: .1rem .45rem;
+  border-radius: .35rem;
+  font-size: .75rem;
+  font-weight: 650;
+}
+a.badge { text-decoration: underline; text-underline-offset: .15em; }
+.conflict { color: #8b2525; background: #fbe8e7; }
+.gap { color: #65450c; background: #faedcb; }
+.supported { color: var(--accent); background: var(--surface-accent); }
+.pending { color: var(--muted); background: var(--surface-soft); }

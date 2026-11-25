@@ -1,3 +1,10 @@
+import type { FindingStatus } from '../../data/verification-types';
+
+export interface PolicyVerification {
+  status: FindingStatus;
+  href: string;
+}
+
 export interface PolicySource {
   publisher: string;
   title: string;

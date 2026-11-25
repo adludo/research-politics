@@ -6,11 +6,12 @@ import SourceReference from '../../../components/policies/SourceReference';
 import BackToTop from '../../../components/ui/BackToTop';
 import ExpandableSection from '../../../components/ui/ExpandableSection';
 
+import { getPolicyVerification } from './policy-verification';
 import styles from './election.module.css';
 
 export const metadata: Metadata = {
   title: '2026 Victorian election policy comparison — draft',
-  description: 'User-supplied policy comparison organised by topic. Independent source verification is pending.',
+  description: 'User-supplied policy comparison organised by topic. Each policy links to its recorded verification finding where available.',
   robots: { index: false, follow: false },
 };
 
@@ -53,8 +54,8 @@ export default function VictorianElection() {
       <PolicyComparison
         sections={comparison.sections}
         sources={comparison.sources}
-        verificationNotice="Attributed to the supplied summary; verification pending."
-        referenceStatus="Verification pending"
+        verificationNotice="Status badges link to the recorded findings for each policy."
+        policyVerification={getPolicyVerification()}
       />
       <section aria-labelledby="campaigns-heading">
         <h2 id="campaigns-heading">Supplied campaign pages</h2>
