@@ -656,6 +656,14 @@
       "publicationDate": null,
       "updateDate": null,
       "crawlDate": null
+    },
+    "source-250d54c6b9c96531": {
+      "url": "https://demosau.com/wp-content/uploads/DemosAU/vic-poll-nov-2026.html",
+      "publisher": "DemosAU",
+      "title": "Victorian State Poll November 2026 | DemosAU",
+      "publicationDate": null,
+      "updateDate": null,
+      "crawlDate": null
     }
   },
   "evidence": {
@@ -3658,6 +3666,14 @@
       "quote": "\"lastVerified\": null",
       "locator": "/sources/*/lastVerified",
       "accessNote": "Read the checked-out JSON directly; locator identifies the inspected field."
+    },
+    "evidence-0b37d8af3845e18a": {
+      "sourceId": "source-250d54c6b9c96531",
+      "retrievedAt": "2026-11-25T12:37:16+11:00",
+      "method": "extracted-page",
+      "quote": "Party figures are shares of decided voters. The 4% of respondents who don't know are excluded.",
+      "locator": "State voting intention (Legislative Assembly), Primary vote, All Respondents",
+      "accessNote": "HTTP 200. Opened in headless chromium. No CAPTCHA or browser check was showing. Visible page text extracted."
     }
   },
   "runs": [
@@ -10468,6 +10484,58 @@
           "evidenceIds": [
             "evidence-7a65e5ad02573be8",
             "evidence-9dc4c6debc8ac93a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "run-20261125t123745-captcha-gap-recheck",
+      "target": "/elections/victoria-2026/",
+      "startedAt": "2026-11-25T01:37:09+00:00",
+      "completedAt": "2026-11-25T12:37:45+11:00",
+      "researchAsOf": "2026-11-25",
+      "revision": "39832ddc08128da433466d90b4472be2b7d4a2c4",
+      "dirty": false,
+      "reviewedFiles": [
+        {
+          "path": "app/elections/victoria-2026/page.tsx",
+          "sha256": "1d0f865cdfe42c44ab58a805fbc15cf6c2d202dd00570936e1ff4c1d6dec3807"
+        },
+        {
+          "path": "data/victoria-2026.json",
+          "sha256": "0a071dd83d6067f564264b584fd5db7e511fcfbf670b9664bc9023d09abd17a6"
+        }
+      ],
+      "status": "incomplete",
+      "supersedesRunId": null,
+      "summary": "Targeted CAPTCHA follow-up to the 24 November audit. The updated browser retriever returned the cited DemosAU poll. The poll supports a dated comparison of voting intention, while current candidate participation and any broader ranking remain unverified. The eight historical One Nation CAPTCHA gaps were already resolved in the 24 November audit. Other findings from that audit were outside this recheck.",
+      "findings": [
+        {
+          "claimId": "reference-poll",
+          "location": "data/victoria-2026.json#/sources/poll",
+          "statement": "The cited November 2026 DemosAU Victorian state poll is accessible.",
+          "sourceIds": [
+            "source-250d54c6b9c96531"
+          ],
+          "status": "supported",
+          "explanation": "Retrieved the cited page in Chromium and read the Victorian Legislative Assembly voting-intention question and primary-vote table.",
+          "suggestedCorrection": null,
+          "evidenceIds": [
+            "evidence-0b37d8af3845e18a"
+          ]
+        },
+        {
+          "claimId": "page-ranking",
+          "location": "app/elections/victoria-2026/page.tsx",
+          "statement": "neither a ranking of the leading groups nor current participation has been independently confirmed.",
+          "status": "unverifiable",
+          "explanation": "DemosAU reports primary voting intention among decided respondents in its November poll, including Coalition 33%, One Nation 21%, Labor 18% and Greens 17%. This establishes their order in that poll only. It does not establish an election-wide ranking or confirm who is standing.",
+          "suggestedCorrection": "If citing the poll for an ordering, identify it as November DemosAU voting intention and use the electoral commission candidate list for participation.",
+          "sourceIds": [
+            "source-250d54c6b9c96531"
+          ],
+          "evidenceIds": [
+            "evidence-0b37d8af3845e18a"
           ]
         }
       ]
