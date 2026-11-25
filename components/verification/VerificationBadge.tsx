@@ -16,7 +16,7 @@ export default function VerificationBadge(props: BadgeProps) {
   const kind = status === 'pending' ? 'pending' : issueKinds[status] ?? 'supported';
   const label = kind === 'conflict' || kind === 'gap'
     ? `${kind === 'conflict' ? 'Conflict' : 'Gap'} · ${status.replaceAll('-', ' ')}`
-    : kind === 'pending' ? 'Verification pending' : 'Supported';
+    : kind === 'pending' ? 'Verification pending' : 'Verified';
   const className = `${styles.badge} ${styles[kind]}`;
 
   return href
