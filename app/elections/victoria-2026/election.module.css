@@ -1,7 +1,7 @@
 .context { margin-top: 1.5rem; }
-.contents ol { columns: 2; column-gap: 2rem; padding-left: 1.25rem; font-size: .9rem; }
-.contents li { break-inside: avoid; margin-bottom: .5rem; }
-@media (max-width: 600px) { .contents ol { columns: 1; } }
-.sectionLinks { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding: 0; list-style: none; }
+.sectionLinks { margin: 0; padding: 0; list-style: none; }
+.sectionLinks li + li { margin-top: .45rem; }
+.topics { margin: .4rem 0 0 1rem; font-size: .9rem; }
+.topics summary { cursor: pointer; color: var(--muted); }
+.topics ul { margin: .4rem 0 0; padding-inline-start: 1.25rem; }
 .detailSection { scroll-margin-top: 1.5rem; }
-.detailSection > section { margin-top: 2rem; }
