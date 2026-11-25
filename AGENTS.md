@@ -34,6 +34,12 @@ These instructions apply to all wiki prose, article metadata, infographic labels
 - Verify calculation correctness and meaningful interaction behaviour with appropriate tests, including relevant edge cases. Run the build and type check for code changes.
 - Do not keep newly written tests in the repository unless the user explicitly asks; use temporary tests for verification and remove them before committing. Preserve pre-existing tests unless their removal is requested.
 
+## Build budget charts from official sources
+
+- Link to the official publication page and the specific table or workbook. Retrieve only the material needed for the requested graph. Keep raw PDFs and workbooks in temporary storage and commit only the chart and the values it uses.
+- Record the release date, sheet and cell ranges, reporting sector, units and conversions. Keep actuals and forecasts distinguishable, match net debt to the financial year-end and disclose material restatements or accounting breaks.
+- Provide an accessible annual values table alongside each chart. Verify the plotted values against the official data and add detailed series as requested.
+
 ## On-demand verification subagent
 
 See [.agents/skills/verify-wiki-page/SKILL.md](.agents/skills/verify-wiki-page/SKILL.md) for the explicit-only verifier, Cursor/Codex invocation and dated conflict-log contract. This is the single source for the verifier workflow; normal editorial checks above remain the author's responsibility.
