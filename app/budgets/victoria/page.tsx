@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
+import VictorianBudgetChart from '../../../components/budgets/VictorianBudgetChart';
 import overview from '../../../data/victorian-budget/overview.json';
 import styles from './budget.module.css';
 
@@ -22,18 +22,7 @@ export default function VictorianBudget() {
       <p>General government actuals from 2016–17 to 2025–26, in nominal Australian dollars.</p>
       <p>Net debt rose from $15.8 billion to $160.7 billion. The operating result was a deficit for six consecutive years from 2019–20 before returning to a $2.4 billion surplus in 2025–26.</p>
 
-      <figure className={styles.figure}>
-        <div className={styles.scroll} tabIndex={0} role="region" aria-label="Budget chart">
-          <Image
-            src="/charts/victorian-budget-overview.svg"
-            width={576}
-            height={576}
-            alt="Three panels track revenue and expenses, the net operating result, and June-end net debt. Annual values are in the table below."
-            unoptimized
-          />
-        </div>
-        <figcaption className={styles.caption}>Source: Victorian Department of Treasury and Finance, November 2026 financial aggregates.</figcaption>
-      </figure>
+      <VictorianBudgetChart />
 
       <section aria-labelledby="values-heading">
         <h2 id="values-heading">Annual figures</h2>

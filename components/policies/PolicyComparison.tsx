@@ -5,6 +5,7 @@ import styles from './PolicyComparison.module.css';
 
 export interface PolicyComparisonProps {
   sections: readonly PolicyArea[];
+  headingLevel?: 2 | 3;
   sources: PolicySources;
   verificationNotice: string;
   referenceStatus?: string;
@@ -12,7 +13,7 @@ export interface PolicyComparisonProps {
 }
 
 export default function PolicyComparison({
-  sections, sources, verificationNotice, referenceStatus, policyVerification,
+  sections, sources, verificationNotice, referenceStatus, policyVerification, headingLevel = 2,
 }: PolicyComparisonProps) {
   return (
     <div className={styles.comparison}>
@@ -22,6 +23,7 @@ export default function PolicyComparison({
           key={section.id}
           id={section.id}
           title={section.title}
+          headingLevel={headingLevel}
           index={index + 1}
           description={`${section.parties.length} electoral groups · ${section.parties.reduce((total, party) => total + party.claims.length, 0)} policy groups`}
         >
@@ -30,6 +32,7 @@ export default function PolicyComparison({
           <div className={styles.parties}>
             {section.parties.map((party, partyIndex) => (
               <PartyPolicyCard key={party.name} id={`${section.id}-party-${partyIndex + 1}`} party={party} sources={sources} referenceStatus={referenceStatus}
+                headingLevel={headingLevel === 2 ? 3 : 4}
                 verification={policyVerification && party.claims.map((_, claimIndex) =>
                   policyVerification.get(`/sections/${index}/parties/${partyIndex}/claims/${claimIndex}`)
                 )} />
