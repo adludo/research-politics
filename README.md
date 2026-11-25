@@ -57,7 +57,7 @@ For secondary article context, use `ExpandableSection` with `variant="subtle"`. 
 
 ## Victorian budget source data
 
-[Official Victorian budget and historical financial datasets](data/victorian-budget/README.md) are stored in `data/victorian-budget/`: 15 original workbooks and the November 2026 Pre-Election Budget Update PDF, with source URLs, retrieval dates, checksums and coverage notes. Original budget-paper PDFs hosted on S3 are listed separately as not downloaded.
+The [Victorian budget overview](/budgets/victoria/) charts ten years of general government actuals. The [budget source index](data/victorian-budget/README.md) links to the official workbooks and budget papers.
 
 ## Verify a page on request
 
