@@ -6,7 +6,6 @@ import styles from './SiteNavigation.module.css';
 
 const links = [
   { href: '/', label: 'Overview' },
-  { href: '/elections/victoria-2026/', label: 'Policies' },
   { href: '/verification/', label: 'Verification' },
 ];
 
@@ -25,8 +24,10 @@ export default function SiteNavigation() {
         </Link>
         <nav className={styles.links} aria-label="Main navigation">
           {links.map(link => {
-            const active = link.href === '/' ? pathname === '/' : pathname?.replace(/\/$/, '') === link.href.replace(/\/$/, '');
-            return <Link key={link.href} href={link.href} aria-current={active ? 'page' : undefined}>{link.label}</Link>;
+            const isCurrentPage = pathname?.replace(/\/$/, '') === link.href.replace(/\/$/, '');
+            const isElectionOverview = link.href === '/' && pathname?.startsWith('/elections/');
+            const current = isCurrentPage ? 'page' : isElectionOverview ? 'true' : undefined;
+            return <Link key={link.href} href={link.href} aria-current={current}>{link.label}</Link>;
           })}
         </nav>
       </div>
