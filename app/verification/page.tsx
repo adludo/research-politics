@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import log from '../../data/verification-runs.json';
 import comparison from '../../data/victoria-2026.json';
-import type { VerificationLog, VerificationRun, VerificationFinding, FindingStatus } from '../../data/verification-types';
+import type { VerificationLog, VerificationRun, VerificationFinding } from '../../data/verification-types';
+import { findingAnchor, issueKinds } from '../../data/verification-status';
+import VerificationBadge from '../../components/verification/VerificationBadge';
 import ExpandableSection from '../../components/ui/ExpandableSection';
 import styles from './verification.module.css';
 
@@ -14,16 +16,6 @@ export const metadata: Metadata = {
 
 const registry = log as VerificationLog;
 const runs = registry.runs;
-const issueKinds = {
-  supported: null,
-  contradicted: 'conflict',
-  partial: 'conflict',
-  outdated: 'conflict',
-  'missing-reference': 'gap',
-  inaccessible: 'gap',
-  unverifiable: 'gap',
-} as const satisfies Record<FindingStatus, 'conflict' | 'gap' | null>;
-
 function countIssues(findings: VerificationFinding[]) {
   const counts = { conflict: 0, gap: 0 };
   for (const { status } of findings) {
@@ -31,16 +23,6 @@ function countIssues(findings: VerificationFinding[]) {
     if (kind) counts[kind]++;
   }
   return counts;
-}
-
-function IssueBadge({ status }: { status: FindingStatus }) {
-  const kind = issueKinds[status];
-  if (!kind) return null;
-  return (
-    <span className={`${styles.issueBadge} ${styles[kind]}`}>
-      {kind === 'conflict' ? 'Conflict' : 'Gap'} · {status.replaceAll('-', ' ')}
-    </span>
-  );
 }
 
 function timestamp(value: string) {
@@ -71,7 +53,7 @@ function groupFindings(run: VerificationRun) {
     const areaId = policyId || (finding.claimId.startsWith('page-') ? 'page-context' : 'other');
     const title = policyAreas.get(areaId) ?? (policyId || (areaId === 'page-context' ? 'Page context' : 'Other statements'));
     const area = areas.get(areaId) ?? { id: areaId, title, entries: [] };
-    area.entries.push({ finding, party: location?.[1], id: `statement-${run.id}:${finding.claimId}` });
+    area.entries.push({ finding, party: location?.[1], id: findingAnchor(run.id, finding.claimId) });
     areas.set(areaId, area);
   }
   return [...areas.values()];
@@ -83,7 +65,7 @@ function Finding({ finding, party, id }: FindingEntry) {
       <h4><code>{finding.claimId}</code>{party && ` · ${party}`}</h4>
       <p>
         <strong>Status:</strong>{' '}
-        {finding.status === 'supported' ? 'Supported' : <IssueBadge status={finding.status} />}
+        <VerificationBadge status={finding.status} />
       </p>
       <p><strong>Statement:</strong> {finding.statement}</p>
       <p><strong>Location:</strong> <code>{finding.location}</code></p>
@@ -145,7 +127,7 @@ function StatementContents({ runId, areas }: FindingAreaProps) {
                 <li key={id}>
                   <a href={`#${encodeURIComponent(id)}`}>
                     <code>{finding.claimId}</code>{party && ` · ${party}`}
-                    <IssueBadge status={finding.status} />
+                    {issueKinds[finding.status] && <VerificationBadge status={finding.status} />}
                     <span className={styles.statement}>{finding.statement}</span>
                   </a>
                 </li>

@@ -1,17 +1,18 @@
 import ExpandableSection from '../ui/ExpandableSection';
 import PartyPolicyCard from './PartyPolicyCard';
-import type { PolicyArea, PolicySources } from './types';
+import type { PolicyArea, PolicySources, PolicyVerification } from './types';
 import styles from './PolicyComparison.module.css';
 
 export interface PolicyComparisonProps {
   sections: readonly PolicyArea[];
   sources: PolicySources;
   verificationNotice: string;
-  referenceStatus: string;
+  referenceStatus?: string;
+  policyVerification?: ReadonlyMap<string, PolicyVerification>;
 }
 
 export default function PolicyComparison({
-  sections, sources, verificationNotice, referenceStatus,
+  sections, sources, verificationNotice, referenceStatus, policyVerification,
 }: PolicyComparisonProps) {
   return (
     <div className={styles.comparison}>
@@ -28,7 +29,10 @@ export default function PolicyComparison({
           {section.note && <p className={styles.note}>{section.note}</p>}
           <div className={styles.parties}>
             {section.parties.map((party, partyIndex) => (
-              <PartyPolicyCard key={party.name} id={`${section.id}-party-${partyIndex + 1}`} party={party} sources={sources} referenceStatus={referenceStatus} />
+              <PartyPolicyCard key={party.name} id={`${section.id}-party-${partyIndex + 1}`} party={party} sources={sources} referenceStatus={referenceStatus}
+                verification={policyVerification && party.claims.map((_, claimIndex) =>
+                  policyVerification.get(`/sections/${index}/parties/${partyIndex}/claims/${claimIndex}`)
+                )} />
             ))}
           </div>
         </ExpandableSection>

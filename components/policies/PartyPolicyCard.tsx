@@ -1,16 +1,18 @@
 import ExpandableSection from '../ui/ExpandableSection';
+import VerificationBadge from '../verification/VerificationBadge';
 import SourceReference from './SourceReference';
-import type { PartyPolicies, PolicySources } from './types';
+import type { PartyPolicies, PolicySources, PolicyVerification } from './types';
 import styles from './PolicyComparison.module.css';
 
 export interface PartyPolicyCardProps {
   id: string;
   party: PartyPolicies;
   sources: PolicySources;
-  referenceStatus: string;
+  referenceStatus?: string;
+  verification?: readonly (PolicyVerification | undefined)[];
 }
 
-export default function PartyPolicyCard({ id, party, sources, referenceStatus }: PartyPolicyCardProps) {
+export default function PartyPolicyCard({ id, party, sources, referenceStatus, verification }: PartyPolicyCardProps) {
   return (
     <article>
       <ExpandableSection
@@ -25,9 +27,13 @@ export default function PartyPolicyCard({ id, party, sources, referenceStatus }:
             {party.claims.map((claim, index) => {
               const source = sources[claim.source];
               if (!source) throw new Error(`Missing policy source: ${claim.source}`);
+              const finding = verification?.[index];
               return (
                 <li key={`${claim.source}-${index}`}>
-                  <p>{claim.text}</p>
+                  <p>
+                    {claim.text}
+                    {verification && <VerificationBadge status={finding?.status ?? 'pending'} href={finding?.href} />}
+                  </p>
                   <SourceReference source={source} statusLabel={referenceStatus} />
                 </li>
               );
