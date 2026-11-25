@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
-"""Return visible text from public One Nation pages for wiki verification.
+"""Return visible text from a cited public page for wiki verification.
 
-Plain HTTP clients receive a Cloudflare interstitial ("Just a moment...", or an
-interactive check) instead of the policy page. This script opens each URL in a
-browser, waits until that check clears, and prints the visible page text as JSON.
-On a Mac it uses the installed Google Chrome and leaves the window visible so a
-person can complete a check. In Codex cloud, and on any Linux machine without a
-display, it uses headless Playwright Chromium, follows HTTP(S)_PROXY, and
-installs Chromium when the browser is missing. It does not solve checks, change
-browser fingerprints, or call a captcha service.
+Plain HTTP clients often receive a CAPTCHA or browser-check interstitial instead
+of the page. This script opens each http(s) URL in a browser, waits until that
+check clears, and prints the visible page text as JSON. On a Mac it uses the
+installed Google Chrome and leaves the window visible so a person can complete
+a check. In Codex cloud, and on any Linux machine without a display, it uses
+headless Playwright Chromium, follows HTTP(S)_PROXY, and installs Chromium when
+the browser is missing. It does not solve checks, change browser fingerprints,
+or call a captcha service.
 
-A successful extract is page text only. It does not mark a wiki claim verified.
+A successful extract is page text only. It does not mark a wiki claim verified,
+and it does not turn a source into a ranking.
 
 Examples:
-  python3 scripts/fetch_onenation_page.py https://vic.onenation.org.au/policies/fiscal-management
-  python3 scripts/fetch_onenation_page.py --from-data
-  python3 scripts/fetch_onenation_page.py --from-data --output /tmp/onenation-pages.json
+  python3 scripts/fetch_onenation_page.py https://demosau.com/wp-content/uploads/DemosAU/vic-poll-nov-2026.html
+  python3 scripts/fetch_onenation_page.py --from-data --host demosau.com
+  python3 scripts/fetch_onenation_page.py --from-data --output /tmp/source-pages.json
 
 Requires: pip install playwright
 """
@@ -38,7 +39,6 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA = ROOT / "data" / "victoria-2026.json"
-ALLOWED_HOST = "onenation.org.au"
 NAVIGATION_TIMEOUT_MS = 45000
 POLL_SECONDS = 1.0
 STABLE_READS = 2
@@ -54,9 +54,22 @@ CHALLENGE_PHRASES = (
     "just a moment",
     "enable javascript and cookies",
     "verify you are human",
+    "verify you're a human",
+    "verify that you are human",
     "checking your browser",
     "needs to review the security of your connection",
     "performance & security by cloudflare",
+    "attention required",
+    "please complete the security check",
+    "complete the captcha",
+    "security check",
+    "i'm not a robot",
+    "i am human",
+    "hcaptcha",
+    "recaptcha",
+    "cf-turnstile",
+    "checking if the site connection is secure",
+    "pardon our interruption",
 )
 
 READ_PAGE = """
@@ -74,25 +87,30 @@ READ_PAGE = """
     published: null,
     modified: null,
   };
-  if (!document.body) return empty;
-  const root = document.querySelector("#main-content")
-    || document.querySelector(".et_pb_post_content")
-    || document.querySelector("main")
+  if (!document.body) return { ...empty, challengeFrame: false };
+  const root = document.querySelector("main")
     || document.querySelector("article")
+    || document.querySelector("[role='main']")
     || document.querySelector(".entry-content")
     || document.querySelector("#content")
+    || document.querySelector("#main-content")
+    || document.querySelector(".et_pb_post_content")
     || document.body;
   const copy = root.cloneNode(true);
   copy.querySelectorAll("script, style, noscript, nav, footer, #back-link").forEach((node) => {
     node.remove();
   });
   const heading = document.querySelector("h1");
+  const challengeFrame = Boolean(document.querySelector(
+    "iframe[src*='challenges.cloudflare.com'], iframe[src*='recaptcha'], iframe[src*='hcaptcha'], iframe[src*='turnstile'], .g-recaptcha, .h-captcha"
+  ));
   return {
     title: document.title || "",
     heading: heading ? heading.innerText : "",
     text: copy.innerText || "",
     published: meta("article:published_time"),
     modified: meta("article:modified_time"),
+    challengeFrame,
   };
 }
 """
@@ -161,7 +179,7 @@ def proxy_from_environ(environ=None):
 
 
 def default_profile():
-    candidate = Path.home() / ".cache" / "research-politics" / "onenation-chrome"
+    candidate = Path.home() / ".cache" / "research-politics" / "source-browser"
     try:
         candidate.mkdir(parents=True, exist_ok=True)
         probe = candidate / ".write-probe"
@@ -169,7 +187,7 @@ def default_profile():
         probe.unlink()
         return candidate
     except OSError:
-        fallback = Path(tempfile.gettempdir()) / "research-politics-onenation-chrome"
+        fallback = Path(tempfile.gettempdir()) / "research-politics-source-browser"
         fallback.mkdir(parents=True, exist_ok=True)
         return fallback
 
@@ -184,15 +202,30 @@ def chrome_available():
 
 
 def is_allowed_url(url):
-    """True for http(s) URLs on onenation.org.au and its subdomains."""
+    """True for any http(s) URL with a hostname."""
     try:
         parts = urlsplit(url)
     except ValueError:
         return False
     host = (parts.hostname or "").lower().rstrip(".")
-    if parts.scheme not in {"http", "https"} or not host:
-        return False
-    return host == ALLOWED_HOST or host.endswith("." + ALLOWED_HOST)
+    return parts.scheme in {"http", "https"} and bool(host)
+
+
+def comparable_host(value):
+    host = (value or "").strip().lower().rstrip(".")
+    if "://" in host:
+        host = (urlsplit(host).hostname or "").lower().rstrip(".")
+    if host.startswith("www."):
+        host = host[4:]
+    return host
+
+
+def host_matches(url, host_filter):
+    if not host_filter:
+        return True
+    needle = comparable_host(host_filter)
+    host = comparable_host(urlsplit(url).hostname or "")
+    return bool(needle) and (host == needle or host.endswith("." + needle))
 
 
 def clean_text(value):
@@ -205,13 +238,15 @@ def clean_text(value):
     return collapsed.strip()
 
 
-def is_challenge_page(title, text):
-    """True when the visible document is still a Cloudflare interstitial."""
+def is_challenge_page(title, text, challenge_frame=False):
+    """True when the visible document is still a CAPTCHA or browser check."""
     title_l = (title or "").strip().lower()
     text_l = (text or "").strip().lower()
-    if title_l.startswith("just a moment"):
+    if title_l.startswith("just a moment") or title_l.startswith("attention required"):
         return True
     short = len(text_l) < 1500
+    if short and challenge_frame:
+        return True
     if short and any(phrase in title_l or phrase in text_l for phrase in CHALLENGE_PHRASES):
         return True
     return False
@@ -235,7 +270,7 @@ def is_proxy_denial(text, http_status):
     return any(marker in flattened for marker in markers)
 
 
-def onenation_sources(path):
+def data_sources(path, host_filter):
     """Return (source id, url) pairs from a wiki data file, in file order."""
     data = json.loads(Path(path).read_text(encoding="utf-8"))
     sources = data.get("sources", {})
@@ -246,29 +281,31 @@ def onenation_sources(path):
         if not isinstance(source, dict):
             continue
         url = source.get("url")
-        if isinstance(url, str) and is_allowed_url(url):
+        if isinstance(url, str) and is_allowed_url(url) and host_matches(url, host_filter):
             found.append((str(source_id), url))
     return found
 
 
-def collect_targets(urls, data_path):
+def collect_targets(urls, data_path, host_filter=None):
     ordered = []
     seen = {}
     for url in urls:
         if not is_allowed_url(url):
-            raise ValueError(f"Only {ALLOWED_HOST} URLs are accepted: {url}")
+            raise ValueError(f"Only http(s) URLs are accepted: {url}")
+        if host_filter and not host_matches(url, host_filter):
+            raise ValueError(f"{url} is outside the requested host {host_filter}.")
         if url not in seen:
             seen[url] = []
             ordered.append(url)
     if data_path is not None:
-        for source_id, url in onenation_sources(data_path):
+        for source_id, url in data_sources(data_path, host_filter):
             if url not in seen:
                 seen[url] = []
                 ordered.append(url)
             if source_id not in seen[url]:
                 seen[url].append(source_id)
     if not ordered:
-        raise ValueError("No One Nation URLs to fetch.")
+        raise ValueError("No page URLs to fetch.")
     return [(url, seen[url]) for url in ordered]
 
 
@@ -343,6 +380,7 @@ def read_page(page):
         "text": clean_text(raw.get("text")),
         "published": raw.get("published") or None,
         "modified": raw.get("modified") or None,
+        "challengeFrame": bool(raw.get("challengeFrame")),
         "finalUrl": page.url,
     }
 
@@ -350,7 +388,7 @@ def read_page(page):
 def page_is_ready(snapshot, http_status):
     if is_edge_error(snapshot["text"], http_status):
         return False
-    if is_challenge_page(snapshot["title"], snapshot["text"]):
+    if is_challenge_page(snapshot["title"], snapshot["text"], snapshot.get("challengeFrame", False)):
         return False
     return len(snapshot["text"]) >= MIN_PAGE_CHARS and bool(snapshot["title"])
 
@@ -387,7 +425,7 @@ def fetch_page(page, url, source_ids, wait_seconds, headless, browser_name, docu
                 access_note=f"Could not read the page: {message}",
             )
         http_status = document_status["value"]
-        if is_challenge_page(last["title"], last["text"]):
+        if is_challenge_page(last["title"], last["text"], last.get("challengeFrame", False)):
             challenge_seen = True
             stable = 0
             previous = None
@@ -412,7 +450,7 @@ def fetch_page(page, url, source_ids, wait_seconds, headless, browser_name, docu
                 access_note=f"The environment proxy refused the connection ({http_status}). Page text was not returned.",
             )
         elif is_edge_error(last["text"], http_status):
-            note = f"Cloudflare returned {http_status or 'an origin error'} and no policy text."
+            note = f"The site returned {http_status or 'an origin error'} and no page text."
             return result_record(
                 url, source_ids, status="error", challenge_seen=challenge_seen,
                 final_url=last["finalUrl"], http_status=http_status, title=last["title"] or None,
@@ -423,16 +461,16 @@ def fetch_page(page, url, source_ids, wait_seconds, headless, browser_name, docu
     http_status = document_status["value"]
     if last and page_is_ready(last, http_status):
         return success_record(url, source_ids, last, http_status, challenge_seen, browser_name, headless)
-    if last and is_challenge_page(last["title"], last["text"]):
+    if last and is_challenge_page(last["title"], last["text"], last.get("challengeFrame", False)):
         waited = int(time.monotonic() - started)
         if headless:
             note = (
-                f"Cloudflare check was still showing after {waited}s in headless {browser_name}. "
+                f"A CAPTCHA or browser check was still showing after {waited}s in headless {browser_name}. "
                 "Page text was not returned."
             )
         else:
             note = (
-                f"Cloudflare check was still showing after {waited}s. "
+                f"A CAPTCHA or browser check was still showing after {waited}s. "
                 "Page text was not returned. Complete the check in the browser window and run again."
             )
         return result_record(
@@ -445,16 +483,16 @@ def fetch_page(page, url, source_ids, wait_seconds, headless, browser_name, docu
         final_url=last["finalUrl"] if last else None,
         http_status=http_status,
         title=(last or {}).get("title") or None,
-        access_note=f"No policy text was available after {int(wait_seconds)}s.",
+        access_note=f"No page text was available after {int(wait_seconds)}s.",
     )
 
 
 def success_record(url, source_ids, snapshot, http_status, challenge_seen, browser_name, headless):
     mode = "headless" if headless else "visible"
     if challenge_seen:
-        note = f"Opened in {mode} {browser_name}. The Cloudflare check cleared before extraction. Visible main text extracted."
+        note = f"Opened in {mode} {browser_name}. The browser check cleared before extraction. Visible page text extracted."
     else:
-        note = f"Opened in {mode} {browser_name}. No Cloudflare interstitial was showing. Visible main text extracted."
+        note = f"Opened in {mode} {browser_name}. No CAPTCHA or browser check was showing. Visible page text extracted."
     return result_record(
         url, source_ids, status="ok", challenge_seen=challenge_seen,
         final_url=snapshot["finalUrl"], http_status=http_status,
@@ -546,10 +584,14 @@ def fetch_all(targets, profile, headless, wait_seconds):
 
 def parse_args(argv):
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("urls", nargs="*", help="One Nation page URLs to open.")
+    parser.add_argument("urls", nargs="*", help="Cited http(s) page URLs to open.")
     parser.add_argument(
         "--from-data", nargs="?", const=str(DEFAULT_DATA), default=None, metavar="PATH",
-        help=f"Also fetch One Nation URLs from a wiki data file (default: {DEFAULT_DATA}).",
+        help=f"Also fetch cited URLs from a wiki data file (default: {DEFAULT_DATA}).",
+    )
+    parser.add_argument(
+        "--host", default=None,
+        help="Limit fetching to this hostname and its subdomains, for example demosau.com.",
     )
     parser.add_argument("--output", type=Path, help="Write JSON to this file as well as stdout.")
     display = parser.add_mutually_exclusive_group()
@@ -572,14 +614,14 @@ def parse_args(argv):
     if args.profile is None:
         args.profile = default_profile()
     if not args.urls and args.from_data is None:
-        parser.error("Pass a One Nation URL or --from-data.")
+        parser.error("Pass a page URL or --from-data.")
     return args
 
 
 def main(argv=None):
     args = parse_args(sys.argv[1:] if argv is None else argv)
     try:
-        targets = collect_targets(args.urls, args.from_data)
+        targets = collect_targets(args.urls, args.from_data, args.host)
     except (OSError, ValueError, json.JSONDecodeError) as error:
         print(str(error), file=sys.stderr)
         return 2

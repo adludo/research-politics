@@ -14,7 +14,34 @@ export const metadata: Metadata = {
 
 const registry = log as VerificationLog;
 const runs = registry.runs;
-const conflicts: FindingStatus[] = ['contradicted', 'partial', 'outdated'];
+const issueKinds = {
+  supported: null,
+  contradicted: 'conflict',
+  partial: 'conflict',
+  outdated: 'conflict',
+  'missing-reference': 'gap',
+  inaccessible: 'gap',
+  unverifiable: 'gap',
+} as const satisfies Record<FindingStatus, 'conflict' | 'gap' | null>;
+
+function countIssues(findings: VerificationFinding[]) {
+  const counts = { conflict: 0, gap: 0 };
+  for (const { status } of findings) {
+    const kind = issueKinds[status];
+    if (kind) counts[kind]++;
+  }
+  return counts;
+}
+
+function IssueBadge({ status }: { status: FindingStatus }) {
+  const kind = issueKinds[status];
+  if (!kind) return null;
+  return (
+    <span className={`${styles.issueBadge} ${styles[kind]}`}>
+      {kind === 'conflict' ? 'Conflict' : 'Gap'} · {status.replaceAll('-', ' ')}
+    </span>
+  );
+}
 
 function timestamp(value: string) {
   return new Intl.DateTimeFormat('en-AU', {
@@ -30,8 +57,14 @@ interface FindingEntry {
   id: string;
 }
 
+interface FindingArea {
+  id: string;
+  title: string;
+  entries: FindingEntry[];
+}
+
 function groupFindings(run: VerificationRun) {
-  const areas = new Map<string, { id: string; title: string; entries: FindingEntry[] }>();
+  const areas = new Map<string, FindingArea>();
   for (const finding of run.findings) {
     const location = /^data\/victoria-2026\.json#\/sections\/\d+\/parties\/\d+\/claims\/\d+ \(assertion \d+; (.+)\)$/.exec(finding.location);
     const policyId = location && /^(.+)-\d+-\d+-\d+$/.exec(finding.claimId)?.[1];
@@ -48,7 +81,10 @@ function Finding({ finding, party, id }: FindingEntry) {
   return (
     <article id={id} className={styles.finding} tabIndex={-1}>
       <h4><code>{finding.claimId}</code>{party && ` · ${party}`}</h4>
-      <p><strong>Status:</strong> {finding.status.replaceAll('-', ' ')}</p>
+      <p>
+        <strong>Status:</strong>{' '}
+        {finding.status === 'supported' ? 'Supported' : <IssueBadge status={finding.status} />}
+      </p>
       <p><strong>Statement:</strong> {finding.statement}</p>
       <p><strong>Location:</strong> <code>{finding.location}</code></p>
       <p>{finding.explanation}</p>
@@ -75,6 +111,65 @@ function Finding({ finding, party, id }: FindingEntry) {
   );
 }
 
+interface FindingAreaProps {
+  runId: string;
+  areas: FindingArea[];
+}
+
+function StatementContents({ runId, areas }: FindingAreaProps) {
+  if (!areas.length) return null;
+
+  return (
+    <nav id={`${runId}-contents`} className={`surface-card ${styles.contents}`} aria-label="Statement contents">
+      <h3>Statement contents</h3>
+      <p>Open a policy area to jump to a statement. For policy IDs, the three numbers identify the party, policy group and statement in that order.</p>
+      {areas.map(area => {
+        const counts = countIssues(area.entries.map(({ finding }) => finding));
+        return (
+          <details key={area.id}>
+            <summary>
+              {area.title} ({area.entries.length})
+              {counts.conflict > 0 && (
+                <span className={`${styles.issueBadge} ${styles.conflict}`}>
+                  {counts.conflict} {counts.conflict === 1 ? 'conflict' : 'conflicts'}
+                </span>
+              )}
+              {counts.gap > 0 && (
+                <span className={`${styles.issueBadge} ${styles.gap}`}>
+                  {counts.gap} {counts.gap === 1 ? 'gap' : 'gaps'}
+                </span>
+              )}
+            </summary>
+            <ul>
+              {area.entries.map(({ finding, party, id }) => (
+                <li key={id}>
+                  <a href={`#${encodeURIComponent(id)}`}>
+                    <code>{finding.claimId}</code>{party && ` · ${party}`}
+                    <IssueBadge status={finding.status} />
+                    <span className={styles.statement}>{finding.statement}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        );
+      })}
+    </nav>
+  );
+}
+
+function FindingAreas({ runId, areas }: FindingAreaProps) {
+  return areas.map(area => (
+    <ExpandableSection key={area.id} id={`${runId}-area-${area.id}`} title={area.title}
+      headingLevel={3} description={`${area.entries.length} statements`}>
+      {area.entries.map(({ finding, party, id }) => (
+        <Finding key={id} finding={finding} party={party} id={id} />
+      ))}
+      <p><a href={`#${runId}-contents`}>Back to statement contents</a></p>
+    </ExpandableSection>
+  ));
+}
+
 export default function VerificationLog() {
   return (
     <main id="main" className="content-page">
@@ -88,36 +183,15 @@ export default function VerificationLog() {
           <p>No page has been audited by this agent yet. An empty log does not mean the wiki has no conflicts or that its claims are verified.</p>
         </section>
       ) : [...runs].sort((a, b) => new Date(b.completedAt).getTime() - new Date(a.completedAt).getTime()).map(run => {
-        const conflictCount = run.findings.filter(f => conflicts.includes(f.status)).length;
-        const supported = run.findings.filter(f => f.status === 'supported').length;
-        const gaps = run.findings.length - supported - conflictCount;
+        const { conflict, gap } = countIssues(run.findings);
+        const supported = run.findings.length - conflict - gap;
         const areas = groupFindings(run);
         return (
           <section key={run.id} className={styles.run}>
             <ExpandableSection id={run.id} title={run.target}
-              description={`${timestamp(run.completedAt)} Melbourne · ${run.status} · ${conflictCount} conflicts · ${gaps} gaps`}>
+              description={`${timestamp(run.completedAt)} Melbourne · ${run.status} · ${conflict} conflicts · ${gap} gaps`}>
               <p>{run.summary}</p>
-              {areas.length > 0 && (
-                <nav id={`${run.id}-contents`} className={`surface-card ${styles.contents}`} aria-label="Statement contents">
-                  <h3>Statement contents</h3>
-                  <p>Open a policy area to jump to a statement. For policy IDs, the three numbers identify the party, policy group and statement in that order.</p>
-                  {areas.map(area => (
-                    <details key={area.id}>
-                      <summary>{area.title} ({area.entries.length})</summary>
-                      <ul>
-                        {area.entries.map(({ finding, party, id }) => (
-                          <li key={id}>
-                            <a href={`#${encodeURIComponent(id)}`}>
-                              <code>{finding.claimId}</code>{party && ` · ${party}`}
-                              <span className={styles.statement}>{finding.statement}</span>
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </details>
-                  ))}
-                </nav>
-              )}
+              <StatementContents runId={run.id} areas={areas} />
               <dl className={styles.metadata}>
                 <dt>Run</dt><dd>{run.id}</dd>
                 <dt>Started</dt><dd><time dateTime={run.startedAt}>{run.startedAt}</time></dd>
@@ -130,15 +204,7 @@ export default function VerificationLog() {
               <details><summary>Reviewed files and SHA-256 hashes</summary><ul>{run.reviewedFiles.map(file => (
                 <li key={file.path}><code>{file.path}: {file.sha256}</code></li>
               ))}</ul></details>
-              {areas.map(area => (
-                <ExpandableSection key={area.id} id={`${run.id}-area-${area.id}`} title={area.title}
-                  headingLevel={3} description={`${area.entries.length} statements`}>
-                  {area.entries.map(({ finding, party, id }) => (
-                    <Finding key={id} finding={finding} party={party} id={id} />
-                  ))}
-                  <p><a href={`#${run.id}-contents`}>Back to statement contents</a></p>
-                </ExpandableSection>
-              ))}
+              <FindingAreas runId={run.id} areas={areas} />
             </ExpandableSection>
           </section>
         );
