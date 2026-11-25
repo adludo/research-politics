@@ -3,6 +3,7 @@ import Link from 'next/link';
 import log from '../../data/verification-runs.json';
 import comparison from '../../data/victoria-2026.json';
 import type { VerificationLog, VerificationRun, VerificationFinding, FindingStatus } from '../../data/verification-types';
+import BackToTop from '../../components/ui/BackToTop';
 import ExpandableSection from '../../components/ui/ExpandableSection';
 import styles from './verification.module.css';
 
@@ -172,7 +173,7 @@ function FindingAreas({ runId, areas }: FindingAreaProps) {
 
 export default function VerificationLog() {
   return (
-    <main id="main" className="content-page">
+    <main id="main" className="content-page" tabIndex={-1}>
       <Link href="/" className="back-link">Back to the wiki</Link>
       <h1>Verification log</h1>
       <p>Source checks run only when requested for a specific page. This log preserves dated findings; it does not automatically correct or approve an article.</p>
@@ -209,6 +210,7 @@ export default function VerificationLog() {
           </section>
         );
       })}
+      <BackToTop />
     </main>
   );
 }

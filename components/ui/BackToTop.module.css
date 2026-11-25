@@ -1,0 +1,25 @@
+.button {
+  position: fixed;
+  z-index: 5;
+  right: calc(var(--gutter) + env(safe-area-inset-right));
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  min-height: 44px;
+  padding: .5rem .85rem;
+  border: 1px solid var(--surface);
+  border-radius: .45rem;
+  color: var(--surface);
+  background: var(--accent);
+  font: inherit;
+  font-size: .85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover { background: var(--accent-hover); }
+
+@media print {
+  .button { display: none; }
+}
