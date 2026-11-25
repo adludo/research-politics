@@ -3,6 +3,7 @@ import Link from 'next/link';
 import comparison from '../../../data/victoria-2026.json';
 import PolicyComparison from '../../../components/policies/PolicyComparison';
 import SourceReference from '../../../components/policies/SourceReference';
+import BackToTop from '../../../components/ui/BackToTop';
 import ExpandableSection from '../../../components/ui/ExpandableSection';
 
 import { getPolicyVerification } from './policy-verification';
@@ -22,7 +23,7 @@ function Reference({ sourceId }: { sourceId: SourceId }) {
 
 export default function VictorianElection() {
   return (
-    <main id="main" className="content-page">
+    <main id="main" className="content-page" tabIndex={-1}>
       <Link href="/" className="back-link">Back to the wiki</Link>
       <h1>2026 Victorian state election: policy comparison</h1>
       <p><Link href="/verification/">Verification history and conflicts</Link></p>
@@ -78,6 +79,7 @@ export default function VictorianElection() {
           and independently check announced spending, savings, forecasts and disputed claims.
         </p>
       </section>
+      <BackToTop />
     </main>
   );
 }

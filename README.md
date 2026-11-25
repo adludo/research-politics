@@ -55,6 +55,10 @@ Party cards are also independently expandable. `PartyPolicyCard` takes a unique 
 
 For secondary article context, use `ExpandableSection` with `variant="subtle"`. The Victoria article uses it for the disclaimer and scope: both start collapsed, while the draft-status title remains visible. Their original text, citations and hash targets are retained.
 
+## Victorian budget source data
+
+The [Victorian budget overview](/budgets/victoria/) charts ten years of general government actuals. The [budget source index](data/victorian-budget/README.md) links to the official workbooks and budget papers.
+
 ## Verify a page on request
 
 See the [wiki verifier instructions](.agents/skills/verify-wiki-page/SKILL.md) for Cursor/Codex invocation and the dated conflict log at `/verification/`. The verifier runs only when explicitly requested for a target page.

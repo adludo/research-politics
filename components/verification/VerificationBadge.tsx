@@ -2,10 +2,17 @@ import type { FindingStatus } from '../../data/verification-types';
 import { issueKinds } from '../../data/verification-status';
 import styles from './VerificationBadge.module.css';
 
-export default function VerificationBadge({ status, href }: {
-  status: FindingStatus | 'pending';
-  href?: string;
-}) {
+type BadgeProps =
+  | { status: FindingStatus | 'pending'; href?: string }
+  | { kind: 'conflict' | 'gap'; count: number };
+
+export default function VerificationBadge(props: BadgeProps) {
+  if ('count' in props) {
+    const { kind, count } = props;
+    return <span className={`${styles.badge} ${styles[kind]}`}>{count} {kind}{count === 1 ? '' : 's'}</span>;
+  }
+
+  const { status, href } = props;
   const kind = status === 'pending' ? 'pending' : issueKinds[status] ?? 'supported';
   const label = kind === 'conflict' || kind === 'gap'
     ? `${kind === 'conflict' ? 'Conflict' : 'Gap'} · ${status.replaceAll('-', ' ')}`

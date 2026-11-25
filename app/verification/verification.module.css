@@ -7,17 +7,6 @@
 .contents details + details { margin-top: .35rem; }
 .contents ul { margin-block: .5rem 1rem; padding-left: 1.5rem; }
 .contents li + li { margin-top: .65rem; }
-.issueBadge {
-  display: inline-block;
-  margin-inline-start: .4rem;
-  padding: .1rem .45rem;
-  border-radius: .35rem;
-  font-size: .75rem;
-  font-weight: 650;
-  text-decoration: none;
-}
-.conflict { color: #8b2525; background: #fbe8e7; }
-.gap { color: #65450c; background: #faedcb; }
 .statement { display: block; font-size: .9rem; color: var(--muted); }
 .contents, .finding { scroll-margin-top: 1.5rem; }
 .finding { margin-top: 1.25rem; }

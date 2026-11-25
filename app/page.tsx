@@ -50,6 +50,13 @@ export default function Home() {
             </div>
           </div>
         </article>
+        <section className={styles.verification} aria-labelledby="budget-heading">
+          <div className={styles.verificationCopy}>
+            <h2 id="budget-heading">Victorian state budget</h2>
+            <p>Ten years of general government revenue, expenses and net debt.</p>
+          </div>
+          <Link href="/budgets/victoria/" className={styles.secondary}>View budget trends <Arrow /></Link>
+        </section>
       </section>
 
       <section className={styles.verification} aria-labelledby="verification-heading">

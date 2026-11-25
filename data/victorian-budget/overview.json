@@ -1,0 +1,84 @@
+{
+  "sources": [
+    {
+      "title": "Operating statement aggregates (XLSX)",
+      "url": "https://www.dtf.vic.gov.au/sites/default/files/2026-11/2.1_2026-PEBU-Operating-Statements-Aggregates-GG.xlsx"
+    },
+    {
+      "title": "Net debt (XLSX)",
+      "url": "https://www.dtf.vic.gov.au/sites/default/files/2026-11/2.3_2026-PEBU-Net-Debt-GG.xlsx"
+    }
+  ],
+  "rows": [
+    {
+      "year": "2016–17",
+      "revenue": 60.918,
+      "expenses": 58.21,
+      "operatingResult": 2.709,
+      "netDebt": 15.762
+    },
+    {
+      "year": "2017–18",
+      "revenue": 64.589,
+      "expenses": 62.276,
+      "operatingResult": 2.313,
+      "netDebt": 21.632
+    },
+    {
+      "year": "2018–19",
+      "revenue": 69.595,
+      "expenses": 68.629,
+      "operatingResult": 0.971,
+      "netDebt": 25.492
+    },
+    {
+      "year": "2019–20",
+      "revenue": 67.948,
+      "expenses": 74.487,
+      "operatingResult": -6.539,
+      "netDebt": 44.312
+    },
+    {
+      "year": "2020–21",
+      "revenue": 72.649,
+      "expenses": 87.207,
+      "operatingResult": -14.558,
+      "netDebt": 72.734
+    },
+    {
+      "year": "2021–22",
+      "revenue": 83.023,
+      "expenses": 96.814,
+      "operatingResult": -13.791,
+      "netDebt": 99.978
+    },
+    {
+      "year": "2022–23",
+      "revenue": 84.72,
+      "expenses": 93.567,
+      "operatingResult": -8.847,
+      "netDebt": 115.044
+    },
+    {
+      "year": "2023–24",
+      "revenue": 93.055,
+      "expenses": 97.279,
+      "operatingResult": -4.223,
+      "netDebt": 133.241
+    },
+    {
+      "year": "2024–25",
+      "revenue": 101.38,
+      "expenses": 104.156,
+      "operatingResult": -2.775,
+      "netDebt": 150.867
+    },
+    {
+      "year": "2025–26",
+      "revenue": 114.469,
+      "expenses": 112.078,
+      "operatingResult": 2.392,
+      "netDebt": 160.672
+    }
+  ]
+}

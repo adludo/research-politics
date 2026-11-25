@@ -4,6 +4,7 @@ import log from '../../data/verification-runs.json';
 import comparison from '../../data/victoria-2026.json';
 import type { VerificationLog, VerificationRun, VerificationFinding } from '../../data/verification-types';
 import { findingAnchor, issueKinds } from '../../data/verification-status';
+import BackToTop from '../../components/ui/BackToTop';
 import VerificationBadge from '../../components/verification/VerificationBadge';
 import ExpandableSection from '../../components/ui/ExpandableSection';
 import styles from './verification.module.css';
@@ -111,25 +112,17 @@ function StatementContents({ runId, areas }: FindingAreaProps) {
           <details key={area.id}>
             <summary>
               {area.title} ({area.entries.length})
-              {counts.conflict > 0 && (
-                <span className={`${styles.issueBadge} ${styles.conflict}`}>
-                  {counts.conflict} {counts.conflict === 1 ? 'conflict' : 'conflicts'}
-                </span>
-              )}
-              {counts.gap > 0 && (
-                <span className={`${styles.issueBadge} ${styles.gap}`}>
-                  {counts.gap} {counts.gap === 1 ? 'gap' : 'gaps'}
-                </span>
-              )}
+              {counts.conflict > 0 && <VerificationBadge kind="conflict" count={counts.conflict} />}
+              {counts.gap > 0 && <VerificationBadge kind="gap" count={counts.gap} />}
             </summary>
             <ul>
               {area.entries.map(({ finding, party, id }) => (
                 <li key={id}>
-                  <a href={`#${encodeURIComponent(id)}`}>
+                  <a href={`#${encodeURIComponent(id)}`} aria-describedby={`contents-${id}`}>
                     <code>{finding.claimId}</code>{party && ` · ${party}`}
-                    {issueKinds[finding.status] && <VerificationBadge status={finding.status} />}
-                    <span className={styles.statement}>{finding.statement}</span>
                   </a>
+                  {issueKinds[finding.status] && <VerificationBadge status={finding.status} />}
+                  <span id={`contents-${id}`} className={styles.statement}>{finding.statement}</span>
                 </li>
               ))}
             </ul>
@@ -154,7 +147,7 @@ function FindingAreas({ runId, areas }: FindingAreaProps) {
 
 export default function VerificationLog() {
   return (
-    <main id="main" className="content-page">
+    <main id="main" className="content-page" tabIndex={-1}>
       <Link href="/" className="back-link">Back to the wiki</Link>
       <h1>Verification log</h1>
       <p>Source checks run only when requested for a specific page. This log preserves dated findings; it does not automatically correct or approve an article.</p>
@@ -191,6 +184,7 @@ export default function VerificationLog() {
           </section>
         );
       })}
+      <BackToTop />
     </main>
   );
 }

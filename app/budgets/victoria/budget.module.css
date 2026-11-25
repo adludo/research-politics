@@ -1,0 +1,9 @@
+.figure { margin: 2rem 0; }
+.figure img { display: block; width: min(100%, 50rem); min-width: 32rem; height: auto; }
+.scroll { overflow-x: auto; }
+.caption { margin-top: .5rem; color: var(--muted); font-size: .85rem; }
+.table { width: 100%; max-width: 50rem; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.table caption { text-align: start; color: var(--muted); margin-bottom: .5rem; }
+.table th, .table td { padding: .55rem .75rem; border-bottom: 1px solid var(--border); text-align: end; }
+.table th:first-child { text-align: start; white-space: nowrap; }
+.table thead { background: var(--surface-accent); }
