@@ -76,17 +76,11 @@ function SourceReview() {
 }
 
 function SuppliedReferences() {
+  const sources = ['poll', 'abc', 'labor-plan', 'coalition-plan', 'greens-plan', 'one-plan'] as const;
   return (
-    <>
-      <ul>
-        <li><Reference sourceId="poll" /></li>
-        <li><Reference sourceId="abc" /></li>
-      </ul>
-      <h3 id="campaigns-heading">Supplied campaign pages</h3>
-      <ul>{(['labor-plan', 'coalition-plan', 'greens-plan', 'one-plan'] as const).map(id => (
-        <li key={id}><Reference sourceId={id} /></li>
-      ))}</ul>
-    </>
+    <ul id="campaigns-heading">
+      {sources.map(sourceId => <li key={sourceId}><Reference sourceId={sourceId} /></li>)}
+    </ul>
   );
 }
 
