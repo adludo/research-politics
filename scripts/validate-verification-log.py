@@ -6,7 +6,7 @@ from pathlib import Path
 import re
 import sys
 from urllib.parse import urlsplit
-from verification_log import expand, SOURCE_FIELDS, EVIDENCE_FIELDS
+from verification_log import expand, pack, unpack, SOURCE_FIELDS, EVIDENCE_FIELDS
 
 STATUSES = {'supported', 'contradicted', 'partial', 'outdated', 'missing-reference', 'inaccessible', 'unverifiable'}
 METHODS = {'direct-http', 'extracted-page', 'search-snippet', 'supplied-document'}
@@ -77,6 +77,14 @@ def validate_runs(log):
 
 
 def validate(log):
+    if isinstance(log, dict) and log.get('schemaVersion') == 3:
+        expanded = unpack(log)
+        require(pack(expanded) == log, 'Packed log contains noncanonical, duplicate or unused records.')
+        return validate_v2(expanded)
+    return validate_v2(log)
+
+
+def validate_v2(log):
     require(isinstance(log, dict) and log.get('schemaVersion') == 2, 'Expected schemaVersion 2; normalize legacy logs first.')
     require(set(log) == {'schemaVersion', 'sources', 'evidence', 'runs'}, 'Unexpected log fields.')
     require(isinstance(log['sources'], dict) and isinstance(log['evidence'], dict), 'Expected shared record maps.')

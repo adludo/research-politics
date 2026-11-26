@@ -44,10 +44,3 @@ export interface VerificationRun {
   summary: string;
   findings: VerificationFinding[];
 }
-
-export interface VerificationLog {
-  schemaVersion: 2;
-  sources: Record<string, VerificationSource>;
-  evidence: Record<string, VerificationEvidence>;
-  runs: VerificationRun[];
-}

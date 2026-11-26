@@ -65,4 +65,9 @@ See the [wiki verifier instructions](.agents/skills/verify-wiki-page/SKILL.md) f
 
 ### Shared verification records
 
-The verification log uses schema version 2: top-level `sources` and `evidence` maps hold reusable records; findings contain `sourceIds` and `evidenceIds`. The verifier's single instruction file documents how to append records. `python3 scripts/verification_log.py --write` losslessly migrates a legacy inline log (or leaves a version-2 log unchanged), and `python3 scripts/validate-verification-log.py` checks all references. The existing audit retains all 209 findings, dates, quotations and provenance; this format change is not a new verification run.
+The verification log stores recurring claim wording, outcomes, source metadata, retrievals and quotations once. The log index shows dated summaries, and each run has a separate page for its findings. The [verifier instructions](.agents/skills/verify-wiki-page/SKILL.md) document how to prepare an append.
+
+- `python3 scripts/verification_log.py --unpack` prints the expanded schema-version-2 representation.
+- `python3 scripts/verification_log.py --append /tmp/new-verification-run.json` validates and appends a single run prepared in the expanded format.
+- `python3 scripts/verification_log.py --write` migrates a legacy archive in place.
+- `python3 scripts/validate-verification-log.py` checks the stored archive and its references.

@@ -43,13 +43,15 @@ No Git hook, CI workflow, watcher, startup script or build hook invokes the veri
 
 ## Dedicated history and conflicts page
 
-The wiki page `/verification/` renders `data/verification-runs.json`. The homepage and election article link to it. It starts empty with an explicit “not audited” message, not a manufactured successful run. Each requested run appears with Melbourne-local completion time, raw ISO timestamps, research-as-of date, target, Git revision, reviewed file hashes, all claim outcomes, quotes, source metadata and suggested corrections. Claim evidence retrieval dates are shown separately from source publication/update/crawl dates.
+The wiki page `/verification/` lists dated run summaries. Each run has its own page at `/verification/<run-id>/` with the complete findings, source quotations, retrieval dates, suggested corrections and provenance. Earlier runs remain available through the index. Claim evidence retrieval dates are recorded separately from source publication, update and crawl dates.
 
 `contradicted`, `partial` and `outdated` findings are conflicts. `inaccessible`, `missing-reference` and `unverifiable` are gaps, not proof of factual falsity. A run with only supported claims is still recorded. Historical conflicts remain visible and do not establish the current article is still wrong. Later runs can link an earlier same-page run via `supersedesRunId`; old records must not be deleted or rewritten. Prior findings must be explicitly reassessed, not silently treated as resolved.
 
 ## Run record contract
 
-See the complete interfaces in `data/verification-types.ts`. The log uses **schemaVersion 2** with shared top-level `sources` and `evidence` ID maps plus the chronological `runs` array. Never embed source metadata or evidence objects in findings. Append a run and only the new shared records it needs; reuse existing identical records across findings and runs.
+See the expanded run interfaces in `data/verification-types.ts`. The repository stores **schemaVersion 3**, which shares claim snapshots, outcomes, retrieval records and quotations across runs. Use the Python tool to read and append records, so the stored archive stays compact and historical findings retain their original wording and evidence.
+
+Read the existing log with `python3 scripts/verification_log.py --unpack` or use `unpack()` from that script in temporary Python code. Prepare a temporary JSON document with `schemaVersion: 2`, `sources` and `evidence` maps, and a `runs` array containing exactly one new run. The source and evidence maps may supply new entries or refer to the existing IDs. Never embed source metadata or evidence objects in findings. Serialize appends through the parent agent, then use `python3 scripts/verification_log.py --append /tmp/new-verification-run.json` to validate and write the archive.
 
 - `sources[sourceId]`: `url`, actual `publisher` and `title` (or null), `publicationDate`, `updateDate` and `crawlDate` (or null).
 - `evidence[evidenceId]`: `sourceId`, `retrievedAt`, `method` (`direct-http`, `extracted-page`, `search-snippet` or `supplied-document`), short exact `quote`, `locator` and `accessNote`.
@@ -77,7 +79,7 @@ npm run build
 npm run typecheck
 ```
 
-The validator checks structure, required provenance, unique IDs, timestamps, reference integrity, duplicate/unused shared records and minimum evidence requirements. It cannot establish that quotes are authentic, claims are exhaustive or conclusions correct; the parent must inspect the actual evidence and review the diff. Re-read the latest log before appending and serialise concurrent writes. Commit/push only when requested separately.
+The validator checks structure, required provenance, unique IDs, timestamps, reference integrity, duplicate/unused shared records and minimum evidence requirements. It cannot establish that quotes are authentic, claims are exhaustive or conclusions correct; the parent must inspect the actual evidence and review the diff. The append command reads the current archive and validates the combined records before writing. Have the parent serialize appends. Commit/push only when requested separately.
 
 ## Verifier task
 
@@ -118,6 +120,6 @@ For each atomic claim use one status:
 
 Append one run, including successful/no-conflict runs, to `data/verification-runs.json` using the Run record contract section in this file. Never fabricate an audit to populate the log. If access fails, still record the actual attempted checks and gaps; mark untouched claims `unverifiable` with a reason and do not imply a complete successful audit. Set run status to `incomplete` when claims remain inaccessible or unverifiable. Record conflicts in the findings with evidence and a suggested correction, but do not apply it.
 
-Preserve all earlier runs and their referenced shared records unchanged, including earlier conflicts. A later run may use `supersedesRunId` to identify a prior run of the same page; it must verify the page anew and explicitly account for earlier findings. Do not equate an absent finding with a resolved conflict. Re-read the log immediately before writing, merge your new uniquely identified run and any new shared records into its latest contents, and have the parent serialise concurrent appends to avoid lost updates. If the file cannot be written, return the complete proposed run and report that persistence failed.
+Preserve all earlier runs and their referenced shared records unchanged, including earlier conflicts. A later run may use `supersedesRunId` to identify a prior run of the same page; it must verify the page anew and explicitly account for earlier findings. Do not equate an absent finding with a resolved conflict. Use the append command with a temporary JSON document and have the parent serialize appends. If the file cannot be written, return the complete proposed run and report that persistence failed.
 
 Return a concise summary with target, run ID, time, counts by outcome, conflicts, gaps and the `/verification/` URL. State whether the audit completed; distinguish source support from independent truth and describe access limitations.
