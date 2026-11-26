@@ -13,3 +13,7 @@ export const issueKinds = {
 export function findingAnchor(runId: string, claimId: string) {
   return `statement-${runId}:${claimId}`;
 }
+
+export function verificationRunHref(runId: string) {
+  return `/verification/${encodeURIComponent(runId)}/`;
+}

@@ -1,11 +1,10 @@
-import log from '../../../data/verification-runs.json';
-import { findingAnchor, issueKinds } from '../../../data/verification-status';
-import type { VerificationLog } from '../../../data/verification-types';
+import { getVerificationRuns } from '../../../data/verification-log';
+import { findingAnchor, issueKinds, verificationRunHref } from '../../../data/verification-status';
 import type { PolicyVerification } from '../../../components/policies/types';
 
 export function getPolicyVerification() {
   const target = '/elections/victoria-2026';
-  const runs = (log as VerificationLog).runs
+  const runs = getVerificationRuns()
     .filter(run => [target, `${target}/`, 'app/elections/victoria-2026/page.tsx'].includes(run.target))
     .sort((a, b) => Date.parse(b.completedAt) - Date.parse(a.completedAt));
   const policies = new Map<string, PolicyVerification>();
@@ -25,7 +24,7 @@ export function getPolicyVerification() {
 
       policies.set(policy, {
         status: finding.status,
-        href: `/verification/#${encodeURIComponent(findingAnchor(run.id, finding.claimId))}`,
+        href: `${verificationRunHref(run.id)}#${encodeURIComponent(findingAnchor(run.id, finding.claimId))}`,
       });
     }
   }
