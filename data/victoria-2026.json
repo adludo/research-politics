@@ -382,6 +382,30 @@
       "publicationDate": "2026-11-25",
       "lastVerified": null,
       "verification": "pending"
+    },
+    "labor-financial-statement": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/news/our-sustainable-plan-reduces-debt-and-protects-health",
+      "title": "Our Sustainable Plan Reduces Debt and Protects Health",
+      "publicationDate": "2026-11-26",
+      "lastVerified": null,
+      "verification": "pending"
+    },
+    "labor-elgar-crossing": {
+      "publisher": "Victorian Labor",
+      "url": "https://www.viclabor.org.au/news/new-pedestrian-crossing-for-elgar-road",
+      "title": "New Pedestrian Crossing for Elgar Road",
+      "publicationDate": "2026-11-27",
+      "lastVerified": null,
+      "verification": "pending"
+    },
+    "abc-nov27-campaign": {
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-11-27/victorian-election-live-coalition-labor-costings-polling-day-eve/107433332",
+      "title": "Victorian election live: Coalition’s election eve kinder cut announcement slammed by union",
+      "publicationDate": "2026-11-27",
+      "lastVerified": null,
+      "verification": "pending"
     }
   },
   "sections": [
@@ -406,6 +430,11 @@
             {
               "text": "Introduce a $350 million manufacturing package, targeting 5,000 jobs through grants and public–private investment.",
               "source": "abc",
+              "status": "verification-pending"
+            },
+            {
+              "text": "In its 26 November financial statement, Labor projected a further $1 billion reduction in state debt and pledged no new or increased taxes.",
+              "source": "labor-financial-statement",
               "status": "verification-pending"
             }
           ]
@@ -660,6 +689,11 @@
               "text": "Repair 500,000 potholes in 2026, upgrade 50 local roads and strengthen government responsibility for road maintenance. The supplied summary describes the pothole program as already underway, rather than entirely a future-term promise.",
               "source": "labor-roads",
               "status": "verification-pending"
+            },
+            {
+              "text": "On 27 November, Labor pledged $2.2 million for a pedestrian crossing on Elgar Road at Windsor Crescent in Mont Albert.",
+              "source": "labor-elgar-crossing",
+              "status": "verification-pending"
             }
           ]
         },
@@ -808,6 +842,11 @@
             {
               "text": "On 26 November, the Coalition said it would keep free kindergarten for four-year-olds at 15 hours a week instead of proceeding with the planned expansion to 30 hours.",
               "source": "abc-coalition-costings",
+              "status": "verification-pending"
+            },
+            {
+              "text": "ABC reported on 27 November that the Coalition would cancel planned government-run early learning centres in areas with childcare shortages and review early learning infrastructure and capacity.",
+              "source": "abc-nov27-campaign",
               "status": "verification-pending"
             }
           ]
