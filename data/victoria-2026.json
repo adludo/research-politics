@@ -342,6 +342,46 @@
       "verification": "pending",
       "lastAccessAttempt": "2026-11-18",
       "accessResult": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    "dtf-labor-nursing": {
+      "publisher": "Victorian Department of Treasury and Finance",
+      "url": "https://www.dtf.vic.gov.au/sites/default/files/2026-11/Election-costing-advice-ALP-More-graduate-nurses-and-midwives,-and-nurse-prescribers-24-November-2026.pdf",
+      "title": "More graduate nurses and midwives, and nurse prescribers",
+      "publicationDate": "2026-11-24",
+      "lastVerified": null,
+      "verification": "pending"
+    },
+    "abc-coalition-costings": {
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-11-26/coalition-costings-victorian-state-election-2026/107430554",
+      "title": "Coalition unveils plans to privatise Melbourne’s sewerage and axe level crossing removals",
+      "publicationDate": "2026-11-26",
+      "lastVerified": null,
+      "verification": "pending"
+    },
+    "greens-don-bosco": {
+      "publisher": "Australian Greens Victoria",
+      "url": "https://greens.org.au/vic/news/media-release/victorian-greens-announce-plan-save-don-bosco-labor-and-liberals-refuse-step",
+      "title": "Victorian Greens announce plan to save Don Bosco as Labor and Liberals refuse to step in",
+      "publicationDate": "2026-11-25",
+      "lastVerified": null,
+      "verification": "pending"
+    },
+    "abc-one-data-centres": {
+      "publisher": "ABC Radio Melbourne",
+      "url": "https://www.abc.net.au/listen/programs/melbourne-mornings/what-would-one-nation-do-with-the-balance-of-power-/107429562",
+      "title": "What would One Nation do with the balance of power?",
+      "publicationDate": "2026-11-26",
+      "lastVerified": null,
+      "verification": "pending"
+    },
+    "abc-nov25-campaign": {
+      "publisher": "ABC News",
+      "url": "https://www.abc.net.au/news/2026-11-25/victoria-election-live-updates-labor-liberals-campaign/107422466",
+      "title": "Carroll heckled by One Nation supporter as Wilson gets cleaning — as it happened",
+      "publicationDate": "2026-11-25",
+      "lastVerified": null,
+      "verification": "pending"
     }
   },
   "sections": [
@@ -386,6 +426,11 @@
             {
               "text": "Restore the $300,000 land-tax threshold over five years; provide business payroll-tax relief and remove payroll taxes applying to schools and GP services.",
               "source": "coalition-costs",
+              "status": "verification-pending"
+            },
+            {
+              "text": "In its 26 November costings release, the Coalition proposed leasing Melbourne Water’s Eastern and Western sewage treatment plants for 90 years. Jess Wilson clarified that the cash surplus target was for the 2033 financial year.",
+              "source": "abc-coalition-costings",
               "status": "verification-pending"
             }
           ]
@@ -486,6 +531,11 @@
               "text": "Expand 12 hospital emergency departments, adding 250 beds and 750 nurses.",
               "source": "labor-health",
               "status": "verification-pending"
+            },
+            {
+              "text": "In costing advice released on 24 November, Victorian Treasury recorded Labor’s plan to support 300 graduate nurses and midwives a year from 1 July 2027, with each cohort employed on a 12-month program.",
+              "source": "dtf-labor-nursing",
+              "status": "verification-pending"
             }
           ]
         },
@@ -495,6 +545,11 @@
             {
               "text": "Deliver 25,000 additional elective operations annually through private-hospital partnerships at no additional patient cost; upgrade regional hospitals including West Gippsland, Wonthaggi and Mildura; establish a $50 million mental-health workforce fund; provide $5 million for a Parkville youth mental-health facility masterplan.",
               "source": "coalition-government",
+              "status": "verification-pending"
+            },
+            {
+              "text": "On 24 November, Jess Wilson said a Coalition government would close the North Richmond medically supervised injecting room.",
+              "source": "abc-nov25-campaign",
               "status": "verification-pending"
             }
           ]
@@ -625,6 +680,11 @@
               "text": "Guarantee regional Victoria at least 25% of infrastructure spending.",
               "source": "coalition-government",
               "status": "verification-pending"
+            },
+            {
+              "text": "On 26 November, the Coalition said it would cancel planned level crossing removals in Yarraville and Spotswood and on the Upfield line in Brunswick and Parkville, and defer the Seaford removals beyond 2030.",
+              "source": "abc-coalition-costings",
+              "status": "verification-pending"
             }
           ]
         },
@@ -707,6 +767,11 @@
               "text": "Scrap net-zero targets and subsidies; cancel VNI West and Western Renewables Link; support coal infrastructure upgrades and offshore gas exploration; reverse the new-home gas ban; repeal Victoria’s nuclear prohibition.",
               "source": "one-energy",
               "status": "verification-pending"
+            },
+            {
+              "text": "On 26 November, Victorian One Nation deputy leader Colleen Harkin said the party would impose a moratorium on AI data centres if elected.",
+              "source": "abc-one-data-centres",
+              "status": "verification-pending"
             }
           ]
         }
@@ -738,6 +803,11 @@
             {
               "text": "Build three selective-entry high schools; introduce a literacy and numeracy guarantee with a long-term 90% NAPLAN proficiency goal.",
               "source": "coalition-government",
+              "status": "verification-pending"
+            },
+            {
+              "text": "On 26 November, the Coalition said it would keep free kindergarten for four-year-olds at 15 hours a week instead of proceeding with the planned expansion to 30 hours.",
+              "source": "abc-coalition-costings",
               "status": "verification-pending"
             }
           ]
@@ -872,6 +942,11 @@
             {
               "text": "Ban major corporate political donations and strengthen anti-corruption oversight.",
               "source": "greens-plan",
+              "status": "verification-pending"
+            },
+            {
+              "text": "On 25 November, the Greens pledged up to $8 million to the successful community group seeking to acquire the Don Bosco Youth Centre in Brunswick.",
+              "source": "greens-don-bosco",
               "status": "verification-pending"
             }
           ]
