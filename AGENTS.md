@@ -50,12 +50,14 @@ See [.agents/skills/verify-wiki-page/SKILL.md](.agents/skills/verify-wiki-page/S
 - Summarize what was verified and disclose unresolved evidence gaps. Run the repository checks appropriate to any accompanying code changes; prose-only edits do not require an application build.
 
 
-## Branch and commit conventions
+## Branch, commit and pull request conventions
 
-For branches and commits created by ChatGPT, Codex, or other coding agents:
+For branches, commits and pull requests created by ChatGPT, Codex, or other coding agents:
 
 - Use descriptive lowercase branch names with hyphens, such as `chore/agent-commit-format`.
-- Follow the existing repository history: use `<TYPE>: <short lowercase description>` for commit subjects.
+- For every new branch created to deliver a change, push it to GitHub and open a pull request once the changes are committed. Use the requested base branch or `main` by default. Honor an explicit request for local-only work.
+- Check for an existing open pull request for the branch before creating one. Keep the PR description succinct. Summarize the change and list the checks run, then report the pull request URL. If GitHub blocks creation, report the blocker and link to the pushed branch.
+- Follow the existing repository history: use `<TYPE>: <short lowercase description>` for commit subjects and pull request titles.
 - Use `FEAT` for new functionality, `FIX` for bug fixes, and `CHORE` for documentation, configuration, maintenance, and agent instructions.
 - Keep the type uppercase, followed by a colon and one space. Describe the concrete change without a trailing period.
 - Examples: `FEAT: insects spawn every 3 seconds on frog game`, `FIX: insects do not stack up while frog game not in focus`, `CHORE: updated agent branch and commit conventions`.
