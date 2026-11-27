@@ -60,8 +60,9 @@ function SourceReview() {
     <>
       <p>
         This comparison draws on a contributor’s 18 November 2026 summary.
-        The initial proxy check blocked all 34 supplied references. Citation labels
-        came from the supplied URLs. See the <Link href="/verification/">verification log</Link> for
+        The <a href="https://github.com/adludo/research-politics/blob/d5fb30e8e3c43b6e1e7f8d15fbdfd7d00912883c/data/victoria-2026.json#L5-L346">wiki dataset</a> records
+        proxy HTTP 403 errors on 18 November 2026 for all 34 sources checked at the time.
+        Citation labels came from the supplied URLs. See the <Link href="/verification/">verification log</Link> for
         later findings and remaining gaps.
       </p>
       <p>

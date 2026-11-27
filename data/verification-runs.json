@@ -108,7 +108,8 @@
     "source-0bb41391e819ea03": {"url": "https://www.viclabor.org.au/news/our-sustainable-plan-reduces-debt-and-protects-health","publisher": "Victorian Labor","title": "Our Sustainable Plan Reduces Debt and Protects Health","publicationDate": "2026-11-26","updateDate": null,"crawlDate": null},
     "source-c4eeef0539f954f1": {"url": "https://www.viclabor.org.au/news/new-pedestrian-crossing-for-elgar-road","publisher": "Victorian Labor","title": "New Pedestrian Crossing for Elgar Road","publicationDate": "2026-11-27","updateDate": null,"crawlDate": null},
     "source-d7c1e9b51c95f327": {"url": "https://www.abc.net.au/news/2026-11-27/victorian-election-live-coalition-labor-costings-polling-day-eve/107433332","publisher": "ABC News","title": "Victorian election live: Coalition's election eve kinder cut announcement slammed by union - ABC News","publicationDate": "2026-11-26T21:43:20+00:00","updateDate": "2026-11-26T22:32:18+00:00","crawlDate": null},
-    "source-61bf50689fa8604f": {"url": "https://vcea.catholic.edu.au/wp-content/uploads/2026/11/Catholic-Education-Election-Scorecard_VCEA-detailed-assessment.pdf","publisher": "Victorian Catholic Education Authority","title": "Catholic Education Election Scorecard - VCEA’s detailed assessment","publicationDate": null,"updateDate": null,"crawlDate": null}
+    "source-61bf50689fa8604f": {"url": "https://vcea.catholic.edu.au/wp-content/uploads/2026/11/Catholic-Education-Election-Scorecard_VCEA-detailed-assessment.pdf","publisher": "Victorian Catholic Education Authority","title": "Catholic Education Election Scorecard - VCEA’s detailed assessment","publicationDate": null,"updateDate": null,"crawlDate": null},
+    "source-1f2927e493312c40": {"url": "https://github.com/adludo/research-politics/blob/d5fb30e8e3c43b6e1e7f8d15fbdfd7d00912883c/data/victoria-2026.json#L5-L346","publisher": "Research Politics","title": "Victorian election dataset — original source access records","publicationDate": null,"updateDate": null,"crawlDate": null}
   },
   "retrievals": {
     "retrieval-151de1bd0ff66cf1": {"sourceId": "source-1d51b9801043d208","retrievedAt": "2026-11-20T01:36:34.852045+00:00","method": "direct-http","accessNote": "HTTP 200; full HTML extracted and reviewed. Line numbers refer to saved /tmp/vic-verifier-evidence/srl.txt; not publisher-authored pagination."},
@@ -315,7 +316,8 @@
     "retrieval-97914869dc8c6e48": {"sourceId": "source-0bb41391e819ea03","retrievedAt": "2026-11-27T10:08:36+11:00","method": "direct-http","accessNote": "Read the current document returned by the cited source."},
     "retrieval-cf7dd9b694498f8c": {"sourceId": "source-c4eeef0539f954f1","retrievedAt": "2026-11-27T10:09:08+11:00","method": "direct-http","accessNote": "Read the current document returned by the cited source."},
     "retrieval-fbc83b0888ccfe8b": {"sourceId": "source-d7c1e9b51c95f327","retrievedAt": "2026-11-27T10:08:36+11:00","method": "direct-http","accessNote": "Read the current document returned by the cited source."},
-    "retrieval-69c51753ee6f707b": {"sourceId": "source-61bf50689fa8604f","retrievedAt": "2026-11-27T10:11:34+11:00","method": "extracted-page","accessNote": "Read the seven-page report through hosted document extraction. The VCEA quotes the Coalition’s written response."}
+    "retrieval-69c51753ee6f707b": {"sourceId": "source-61bf50689fa8604f","retrievedAt": "2026-11-27T10:11:34+11:00","method": "extracted-page","accessNote": "Read the seven-page report through hosted document extraction. The VCEA quotes the Coalition’s written response."},
+    "retrieval-792513b78fbfcd31": {"sourceId": "source-1f2927e493312c40","retrievedAt": "2026-11-28T09:58:44+11:00","method": "supplied-document","accessNote": "Read the local Git blob d5fb30e8e3c43b6e1e7f8d15fbdfd7d00912883c:data/victoria-2026.json. Counted all 34 source records and checked their date and result."}
   },
   "passages": {
     "passage-57027bf137aca4c0": {"quote": "That’s why Labor is making commonsense decisions to save the Budget $2 billion while delivering projects Victoria needs.\n$2 billion in savings on the Suburban Rail Loop\nThe Suburban Rail Loop is an important project for Victoria.\nLabor is making every dollar count while building it.\nThe Government has identified around $1 billion in immediate savings by reducing spending on unnecessary additions to the project’s scope.\nThis means the total estimated investment in SRL is now $33.3 billion.\nWe will also commission an independent, technical review to target a further $1 billion in savings.","locator": "Extracted text lines 11–17"},
@@ -768,7 +770,8 @@
     "passage-01935bc0008aae59": {"quote": "The kinder deserts are areas identified in Victoria with a lack of kinder spots for families, so the state was going to build and operate some centres.","locator": "Extracted text, line 117"},
     "passage-a1382e50276ed6f8": {"quote": "The Coalition is set to undertake an Early Learning Structural Review to help identify gaps in the sector and assess infrastructure capacity.","locator": "Extracted text, line 120"},
     "passage-fb682a9482330502": {"quote": "It says it will ensure future early childhood facilities are built where there is genuine local need.","locator": "Extracted text, line 121"},
-    "passage-77da375fb0dd8aea": {"quote": "Government would undertake an Early Learning Structural Review.","locator": "Early learning infrastructure support, p. 7, lines 313–314"}
+    "passage-77da375fb0dd8aea": {"quote": "Government would undertake an Early Learning Structural Review.","locator": "Early learning infrastructure support, p. 7, lines 313–314"},
+    "passage-f82d2310bf3d6c5f": {"quote": "<urlopen error Tunnel connection failed: 403 Forbidden>","locator": "/sources, lines 5–346; lastAccessAttempt and accessResult on all 34 entries"}
   },
   "evidence": {
     "evidence-d98e6a0cdb7e3515": ["retrieval-151de1bd0ff66cf1","passage-57027bf137aca4c0"],
@@ -1719,7 +1722,8 @@
     "evidence-d94463c5506a1a3e": ["retrieval-fbc83b0888ccfe8b","passage-01935bc0008aae59"],
     "evidence-9110c7cb9dfd4c6b": ["retrieval-fbc83b0888ccfe8b","passage-a1382e50276ed6f8"],
     "evidence-b8a38e276c3bfcc5": ["retrieval-fbc83b0888ccfe8b","passage-fb682a9482330502"],
-    "evidence-62e611f1fe161b32": ["retrieval-69c51753ee6f707b","passage-77da375fb0dd8aea"]
+    "evidence-62e611f1fe161b32": ["retrieval-69c51753ee6f707b","passage-77da375fb0dd8aea"],
+    "evidence-1aefe3dc51e83b0e": ["retrieval-792513b78fbfcd31","passage-f82d2310bf3d6c5f"]
   },
   "claims": {
     "claim-a2be26b5b8e76cf3": {"claimId": "budget-1-1-1","location": "data/victoria-2026.json#/sections/0/parties/0/claims/0 (assertion 1; Labor)","statement": "Seek $2 billion in Suburban Rail Loop savings"},
@@ -2024,7 +2028,8 @@
     "claim-42bdc48ff759eddc": {"claimId": "budget-1-4-2","location": "data/victoria-2026.json#/sections/0/parties/0/claims/3 (assertion 2; Labor)","statement": "pledged no new or increased taxes."},
     "claim-71d3a79149e12ee0": {"claimId": "transport-1-3-1","location": "data/victoria-2026.json#/sections/4/parties/0/claims/2 (assertion 1; Labor)","statement": "On 27 November, Labor pledged $2.2 million for a pedestrian crossing on Elgar Road at Windsor Crescent in Mont Albert."},
     "claim-ad9b78cafa731e50": {"claimId": "education-2-4-1","location": "data/victoria-2026.json#/sections/6/parties/1/claims/3 (assertion 1; Liberal–National Coalition)","statement": "ABC reported on 27 November that the Coalition would cancel planned government-run early learning centres in areas with childcare shortages"},
-    "claim-6008dcd907cf6c62": {"claimId": "education-2-4-2","location": "data/victoria-2026.json#/sections/6/parties/1/claims/3 (assertion 2; Liberal–National Coalition)","statement": "review early learning infrastructure and capacity."}
+    "claim-6008dcd907cf6c62": {"claimId": "education-2-4-2","location": "data/victoria-2026.json#/sections/6/parties/1/claims/3 (assertion 2; Liberal–National Coalition)","statement": "review early learning infrastructure and capacity."},
+    "claim-2ce6d40bc62d381a": {"claimId": "page-historic-access","location": "app/elections/victoria-2026/page.tsx","statement": "The wiki dataset records proxy HTTP 403 errors on 18 November 2026 for all 34 sources checked at the time."}
   },
   "outcomes": {
     "outcome-add3c16bcea56f24": {"status": "supported","explanation": "The respective fuller source supports this as an attributed policy commitment, not an independently validated cost, feasibility or promised outcome.","suggestedCorrection": null},
@@ -2103,7 +2108,8 @@
     "outcome-6e880b469442a06b": {"status": "supported","explanation": "The 26 November party statement explicitly promises no new or increased taxes; ABC also reports the no-new-taxes commitment.","suggestedCorrection": null},
     "outcome-bfe903e64c61a08f": {"status": "supported","explanation": "Victorian Labor’s local announcement names the amount, road, intersection and suburb. The commitment is conditional on re-election.","suggestedCorrection": null},
     "outcome-4253c1a0cd3d2002": {"status": "supported","explanation": "ABC’s 27 November reporting distinguishes cancelling new centres in shortage areas from retaining existing free-kinder hours.","suggestedCorrection": null},
-    "outcome-f41ac4f19d89c1aa": {"status": "supported","explanation": "ABC’s 27 November reporting describes an Early Learning Structural Review to identify gaps, assess capacity and guide where future facilities are built.","suggestedCorrection": null}
+    "outcome-f41ac4f19d89c1aa": {"status": "supported","explanation": "ABC’s 27 November reporting describes an Early Learning Structural Review to identify gaps, assess capacity and guide where future facilities are built.","suggestedCorrection": null},
+    "outcome-9efc1e03992745be": {"status": "supported","explanation": "All 34 entries in the cited Git revision record 18 November 2026 and a proxy tunnel failure with status 403. The current dataset retains those entries.","suggestedCorrection": null}
   },
   "runs": [
     {
@@ -3289,6 +3295,31 @@
         {"claim": "claim-71d3a79149e12ee0","outcome": "outcome-bfe903e64c61a08f","sourceIds": ["source-c4eeef0539f954f1"],"evidenceIds": ["evidence-cac32ab10b7c913e","evidence-4748a4b0015e1403"]},
         {"claim": "claim-ad9b78cafa731e50","outcome": "outcome-4253c1a0cd3d2002","sourceIds": ["source-d7c1e9b51c95f327"],"evidenceIds": ["evidence-545bfe049d732006","evidence-d94463c5506a1a3e"]},
         {"claim": "claim-6008dcd907cf6c62","outcome": "outcome-f41ac4f19d89c1aa","sourceIds": ["source-d7c1e9b51c95f327"],"evidenceIds": ["evidence-9110c7cb9dfd4c6b","evidence-b8a38e276c3bfcc5","evidence-62e611f1fe161b32"]}
+      ]
+    },
+    {
+      "id": "run-20261128t095844-local-provenance-recheck",
+      "target": "/elections/victoria-2026/",
+      "startedAt": "2026-11-27T22:58:44+00:00",
+      "completedAt": "2026-11-28T09:58:44+11:00",
+      "researchAsOf": "2026-11-28",
+      "revision": "cade24ef8c8f35387c43f3a4e4733c3d18bdee3b",
+      "dirty": true,
+      "reviewedFiles": [
+        {
+          "path": "app/elections/victoria-2026/page.tsx",
+          "sha256": "b5df2584144413f3e2b1782f0829c14769a1e6873b0b7a37d8af654f733d1c6d"
+        },
+        {
+          "path": "data/victoria-2026.json",
+          "sha256": "1ecf1919376c8f0e0c1357442906b203390cb48b0cf0b02b1eda473623aca199"
+        }
+      ],
+      "status": "complete",
+      "supersedesRunId": null,
+      "summary": "Targeted recheck of the wiki’s historical access wording using the cited dataset from local Git. The archived file contains 34 proxy 403 entries dated 18 November 2026. The earlier policy findings remain part of the audit history.",
+      "findings": [
+        {"claim": "claim-2ce6d40bc62d381a","outcome": "outcome-9efc1e03992745be","sourceIds": ["source-1f2927e493312c40"],"evidenceIds": ["evidence-1aefe3dc51e83b0e"]}
       ]
     }
   ]

@@ -95,10 +95,18 @@ You have one task: audit statements on an explicitly requested wiki page against
 ## Evidence procedure
 
 - Enumerate every factual statement in the requested page, retaining exact wording, party/context, source-file location and a stable claim ID. Use data locators such as `data/victoria-2026.json#/sections/0/parties/0/claims/0`; add suffixes for individual assertions. Locate prose in the page source as well.
-- Open the actual cited reference. Read enough surrounding content to check wording, units, fiscal period, eligibility, dates, new promises versus standing policies, election relevance and qualifications. Do not substitute a related page silently; record any replacement or corroborating URL separately.
-- Check references to this wiki directly in the repository. Resolve internal routes to their page source and the data or components they render. For links to this repository’s files on GitHub, read the file at the cited ref with Git (for example, `git show <commit>:data/victoria-2026.json`). Use the working tree for current local routes and the exact Git revision for historical references. Record an access gap if the cited revision or local record is unavailable.
-- Record local checks as `supplied-document` evidence. Keep the citation URL and record the revision, path, and precise locator, such as a JSON pointer, in the evidence. Repository records can establish what the wiki displays or previously recorded. Claims about parties, election events, and past network responses require the underlying evidence.
-- For external references, use available hosted web search/browsing for exact-URL or site-restricted search followed by fuller page retrieval. If unavailable, use permitted direct retrieval or supplied documents and record the method. Never bypass environment network policy. A direct proxy 403 does not establish a hosted retrieval failure. A snippet, successful HTTP status, AI summary or existing wiki entry alone cannot verify a claim.
+- Check the current statement wording before reusing a prior finding. Confirm that the evidence supports the exact claim, including its scope, units, eligibility, dates and qualifications. Record any replacement or corroborating source separately.
+
+### Repository citations
+
+- Classify citations before assembling any web search, browser, HTTP or browser-retriever batch. Exclude this wiki’s routes and links to this repository’s files, including GitHub blob and raw links. A public URL for a local file is a reader-facing citation. Retrieve the file from local Git.
+- For current wiki routes, inspect the working-tree page and the data and components it renders. For a repository file link, resolve the cited ref locally and read its exact blob (for example, `git show <commit>:data/victoria-2026.json`). If that ref or file is missing locally, record a local evidence gap.
+- Log the method as `supplied-document` and use the time you read the file. Cite a clickable URL pinned to the full commit and file path, with a GitHub line range when practical. Preserve the original locator in the evidence, such as a JSON pointer, and identify the Git revision and read method in the access note. For a working-tree change, record its path and hash in `reviewedFiles` and mark the run dirty. A pinned URL may only describe committed content that you actually inspected.
+- Treat repository content as primary evidence for what the wiki displays or what its records contain. For example, count the recorded 18 November proxy failures in the historical dataset to verify a statement about the archive. Confirming the original network event requires the original response evidence. A live fetch cannot establish that earlier network result. Do not record an HTTP status for the local file read.
+
+### External citations
+
+- Use available hosted web search or browsing for exact URLs or site-restricted searches, followed by fuller page retrieval. If unavailable, use permitted direct retrieval or supplied documents and record the method. Follow the environment network policy. A direct proxy 403 does not establish a hosted retrieval failure. A snippet, successful HTTP status, AI summary or existing wiki entry alone cannot verify a claim.
 - If an external cited URL returns a CAPTCHA or browser-check interstitial, run the repository's browser retriever against that exact cited URL. This includes One Nation pages and other cited hosts, such as the DemosAU poll:
   ```sh
   python3 scripts/fetch_onenation_page.py '<cited URL>'
