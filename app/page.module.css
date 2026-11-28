@@ -35,4 +35,7 @@
 .tile time { grid-column: 1 / -1; color: var(--muted); font-size: .85rem; font-weight: 600; }
 .name { font-size: clamp(1.35rem, 2.5vw, 1.75rem); font-weight: 600; letter-spacing: -.035em; line-height: 1.15; }
 .arrow { color: var(--accent); font-size: 1.2rem; line-height: 1; }
+.coalitionTile { background: linear-gradient(to right, var(--surface-accent) 62%, #2364b3 93%); }
+.coalitionTile .name { max-inline-size: 70%; }
+.coalitionTile .arrow { color: var(--surface); }
 .budgetLink { display: inline-block; margin-top: 1.5rem; font-size: .85rem; }

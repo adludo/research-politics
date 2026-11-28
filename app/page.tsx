@@ -7,6 +7,7 @@ const elections = [
     name: 'Victorian state election',
     date: comparison.electionDateSupplied,
     href: '/elections/victoria-2026/',
+    tileStyle: styles.coalitionTile,
   },
 ];
 
@@ -22,9 +23,9 @@ export default function Home() {
     <main id="main" className={styles.home}>
       <h1>Elections</h1>
       <ul className={styles.elections}>
-        {elections.map(({ name, date, href }) => (
+        {elections.map(({ name, date, href, tileStyle }) => (
           <li key={href}>
-            <Link className={styles.tile} href={href}>
+            <Link className={`${styles.tile} ${tileStyle}`} href={href}>
               <time dateTime={date}>{electionDate.format(new Date(date))}</time>
               <span className={styles.name}>{name}</span>
               <span className={styles.arrow} aria-hidden="true">→</span>
