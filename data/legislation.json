@@ -86,6 +86,7 @@
       "acts": {
         "2023-1": {
           "title": "Building and Planning Legislation Amendment Act 2023",
+          "summary": "Provides for recognition of certain interstate occupational registrations in building, plumbing, architecture and surveying, and amends planning rules protecting green wedges and distinctive landscapes.",
           "citation": "1/2023",
           "enactedOn": "2023-02-28",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-and-planning-legislation-amendment-act-2023",
@@ -93,6 +94,7 @@
         },
         "2023-2": {
           "title": "Racing Amendment (Unauthorised Access) Act 2023",
+          "summary": "Prohibits unauthorised entry to restricted areas of racecourses and certain disruptive conduct during race meetings and official trials.",
           "citation": "2/2023",
           "enactedOn": "2023-03-07",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/racing-amendment-unauthorised-access-act-2023",
@@ -100,6 +102,7 @@
         },
         "2023-3": {
           "title": "Local Government (Moira Shire Council) Act 2023",
+          "summary": "Dismisses Moira Shire Council, provides for interim administrators and sets arrangements for a further council election.",
           "citation": "3/2023",
           "enactedOn": "2023-03-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/local-government-moira-shire-council-act-2023",
@@ -107,6 +110,7 @@
         },
         "2023-4": {
           "title": "Health Legislation Amendment (Information Sharing) Act 2023",
+          "summary": "Creates a central electronic system for public hospitals and other specified health services to share patient information for treatment.",
           "citation": "4/2023",
           "enactedOn": "2023-03-28",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/health-legislation-amendment-information-sharing-act-2023",
@@ -114,6 +118,7 @@
         },
         "2023-5": {
           "title": "Heritage Amendment Act 2023",
+          "summary": "Changes heritage notice, document access and hearing procedures and provides for determinations excluding places or objects from registration consideration.",
           "citation": "5/2023",
           "enactedOn": "2023-03-28",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/heritage-amendment-act-2023",
@@ -121,6 +126,7 @@
         },
         "2023-6": {
           "title": "Statute Law Amendment Act 2023",
+          "summary": "Makes technical corrections across Victorian statutes, including minor amendments to competition policy legislation.",
           "citation": "6/2023",
           "enactedOn": "2023-05-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-amendment-act-2023",
@@ -128,6 +134,7 @@
         },
         "2023-7": {
           "title": "Drugs, Poisons and Controlled Substances Amendment (Medically Supervised Injecting Centre) Act 2023",
+          "summary": "Enables the licensed medically supervised injecting centre to continue beyond the trial period, with repeatable licence renewals and only one licence in force at a time.",
           "citation": "7/2023",
           "enactedOn": "2023-05-16",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-medically-supervised-injecting-0",
@@ -135,6 +142,7 @@
         },
         "2023-8": {
           "title": "Human Source Management Act 2023",
+          "summary": "Sets rules for Victoria Police to register, use and manage confidential human sources and provides for external oversight.",
           "citation": "8/2023",
           "enactedOn": "2023-05-16",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/human-source-management-act-2023",
@@ -142,6 +150,7 @@
         },
         "2023-9": {
           "title": "Disability and Social Services Regulation Amendment Act 2023",
+          "summary": "Revises disability service registration, information sharing, accommodation and compulsory treatment rules, and changes oversight powers for social services.",
           "citation": "9/2023",
           "enactedOn": "2023-05-23",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/disability-and-social-services-regulation-amendment-act-2023",
@@ -149,6 +158,7 @@
         },
         "2023-10": {
           "title": "Water Legislation Amendment Act 2023",
+          "summary": "Extends the deadline for earlier water reforms to commence and refines rules governing when, where and at what rate water may be taken.",
           "citation": "10/2023",
           "enactedOn": "2023-05-23",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/water-legislation-amendment-act-2023",
@@ -156,6 +166,7 @@
         },
         "2023-11": {
           "title": "Building Legislation Amendment Act 2023",
+          "summary": "Provides for a State Building Surveyor and Building Monitor and changes practitioner categories, building permit information and building manual requirements.",
           "citation": "11/2023",
           "enactedOn": "2023-06-06",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-act-2023",
@@ -163,6 +174,7 @@
         },
         "2023-12": {
           "title": "Energy Legislation Amendment (Electricity Outage Emergency Response and Other Matters) Act 2023",
+          "summary": "Allows government directions to electricity distributors during specified outage emergencies and changes fees and enforcement under the Victorian Energy Upgrades scheme.",
           "citation": "12/2023",
           "enactedOn": "2023-06-06",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-legislation-amendment-electricity-outage-emergency-response-and-other-matters",
@@ -170,6 +182,7 @@
         },
         "2023-13": {
           "title": "Gambling Regulation Amendment Act 2023",
+          "summary": "Revises rules for wagering and betting, including operator licensing, betting exchanges, licence conditions and complaint investigations.",
           "citation": "13/2023",
           "enactedOn": "2023-06-06",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-regulation-amendment-act-2023",
@@ -177,6 +190,7 @@
         },
         "2023-14": {
           "title": "Gambling Taxation Act 2023",
+          "summary": "Consolidates and amends Victorian gambling taxes and makes related changes to casino, gambling and tax administration laws.",
           "citation": "14/2023",
           "enactedOn": "2023-06-06",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-taxation-act-2023",
@@ -184,6 +198,7 @@
         },
         "2023-15": {
           "title": "Appropriation (2023-2024) Act 2023",
+          "summary": "Authorises spending from the Consolidated Fund for ordinary Victorian Government services in 2023–24.",
           "citation": "15/2023",
           "enactedOn": "2023-06-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-2023-2024-act-2023",
@@ -191,6 +206,7 @@
         },
         "2023-16": {
           "title": "Appropriation (Parliament 2023-2024) Act 2023",
+          "summary": "Authorises spending from the Consolidated Fund for the Parliament of Victoria in 2023–24.",
           "citation": "16/2023",
           "enactedOn": "2023-06-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-parliament-2023-2024-act-2023",
@@ -198,6 +214,7 @@
         },
         "2023-17": {
           "title": "Children and Health Legislation Amendment (Statement of Recognition, Aboriginal Self-determination and Other Matters) Act 2023",
+          "summary": "Recognises Aboriginal self-determination in child protection, expands placement principles and changes the powers of authorised Aboriginal agencies and judicial registrars.",
           "citation": "17/2023",
           "enactedOn": "2023-06-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/children-and-health-legislation-amendment-statement-recognition-aboriginal-self",
@@ -205,6 +222,7 @@
         },
         "2023-18": {
           "title": "State Taxation Acts Amendment Act 2023",
+          "summary": "Changes state duties and taxes, including disability and concession relief, treatment of collective investment vehicles and the phase-out of business insurance duty.",
           "citation": "18/2023",
           "enactedOn": "2023-06-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-acts-amendment-act-2023",
@@ -212,6 +230,7 @@
         },
         "2023-19": {
           "title": "Victorian Future Fund Act 2023",
+          "summary": "Establishes the Victorian Future Fund to help reduce state debt and sets rules for its administration, payments, reporting and audit.",
           "citation": "19/2023",
           "enactedOn": "2023-06-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-future-fund-act-2023",
@@ -219,6 +238,7 @@
         },
         "2023-20": {
           "title": "Mental Health and Wellbeing Amendment Act 2023",
+          "summary": "Makes minor changes to the Mental Health and Wellbeing Act 2022 and consequential changes to the law on reporting judicial proceedings.",
           "citation": "20/2023",
           "enactedOn": "2023-08-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/mental-health-and-wellbeing-amendment-act-2023",
@@ -226,6 +246,7 @@
         },
         "2023-21": {
           "title": "Drugs, Poisons and Controlled Substances Amendment (Authorising Pharmacists) Act 2023",
+          "summary": "Allows regulations authorising pharmacists to supply or administer specified prescription medicines without a prescription in defined circumstances.",
           "citation": "21/2023",
           "enactedOn": "2023-08-15",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-authorising-pharmacists-act-2023",
@@ -233,6 +254,7 @@
         },
         "2023-22": {
           "title": "Energy Legislation Amendment (Energy Safety) Act 2023",
+          "summary": "Updates electricity safety duties, bushfire mitigation and safety management plans, incident preservation and enforcement powers.",
           "citation": "22/2023",
           "enactedOn": "2023-08-22",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-legislation-amendment-energy-safety-act-2023",
@@ -240,6 +262,7 @@
         },
         "2023-23": {
           "title": "Mineral Resources (Sustainable Development) Amendment Act 2023",
+          "summary": "Replaces some mining and quarrying work-plan requirements with risk-based duties to prevent harm, while retaining and updating rehabilitation planning.",
           "citation": "23/2023",
           "enactedOn": "2023-08-29",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/mineral-resources-sustainable-development-amendment-act-2023",
@@ -247,6 +270,7 @@
         },
         "2023-24": {
           "title": "Energy Legislation Amendment Act 2023",
+          "summary": "Sets decision criteria for Victoria’s electricity reliability intervention and enables civil penalties for certain breaches of gas system rules.",
           "citation": "24/2023",
           "enactedOn": "2023-09-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-legislation-amendment-act-2023",
@@ -254,6 +278,7 @@
         },
         "2023-25": {
           "title": "Statute Law Amendment (References to the Sovereign) Act 2023",
+          "summary": "Updates how Victorian statutes refer to the Sovereign following the death of Queen Elizabeth II.",
           "citation": "25/2023",
           "enactedOn": "2023-09-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-amendment-references-sovereign-act-2023",
@@ -261,6 +286,7 @@
         },
         "2023-26": {
           "title": "Justice Legislation Amendment Act 2023",
+          "summary": "Makes alternative forms of public access to proceedings and court health safeguards permanent, and changes coronial investigation, information-sharing and firefighter compensation rules.",
           "citation": "26/2023",
           "enactedOn": "2023-10-10",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-act-2023",
@@ -268,6 +294,7 @@
         },
         "2023-27": {
           "title": "Summary Offences Amendment (Nazi Salute Prohibition) Act 2023",
+          "summary": "Creates an offence for publicly displaying or performing Nazi gestures and extends the offence concerning public display of Nazi symbols.",
           "citation": "27/2023",
           "enactedOn": "2023-10-20",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/summary-offences-amendment-nazi-salute-prohibition-act-2023",
@@ -275,6 +302,7 @@
         },
         "2023-28": {
           "title": "Bail Amendment Act 2023",
+          "summary": "Changes bail tests and the considerations for children and Aboriginal people, and repeals two offences related to being on bail.",
           "citation": "28/2023",
           "enactedOn": "2023-10-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/bail-amendment-act-2023",
@@ -282,6 +310,7 @@
         },
         "2023-29": {
           "title": "Education and Training Reform Amendment (Land Powers) Act 2023",
+          "summary": "Expands powers to acquire, use and develop land for early childhood education, care and related services.",
           "citation": "29/2023",
           "enactedOn": "2023-10-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-land-powers-act-2023",
@@ -289,6 +318,7 @@
         },
         "2023-30": {
           "title": "Gambling Legislation Amendment Act 2023",
+          "summary": "Changes casino management, winnings and pre-commitment rules, restricts gaming venue hours and extends certain wagering restrictions to interstate providers.",
           "citation": "30/2023",
           "enactedOn": "2023-11-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-legislation-amendment-act-2023",
@@ -296,6 +326,7 @@
         },
         "2023-31": {
           "title": "Special Investigator Repeal Act 2023",
+          "summary": "Repeals the Special Investigator Act, abolishes the Office of the Special Investigator and sets transitional arrangements while preserving specified offences.",
           "citation": "31/2023",
           "enactedOn": "2023-11-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/special-investigator-repeal-act-2023",
@@ -303,6 +334,7 @@
         },
         "2023-32": {
           "title": "Triple Zero Victoria Act 2023",
+          "summary": "Establishes Triple Zero Victoria to replace the Emergency Services Telecommunications Authority.",
           "citation": "32/2023",
           "enactedOn": "2023-11-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/triple-zero-victoria-act-2023",
@@ -310,6 +342,7 @@
         },
         "2023-33": {
           "title": "Early Childhood Legislation Amendment (Premises Approval in Principle) Act 2023",
+          "summary": "Provides for approval in principle of certain proposed childcare premises and allows it to be required before service approval.",
           "citation": "33/2023",
           "enactedOn": "2023-11-21",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/early-childhood-legislation-amendment-premises-approval-principle-act-2023",
@@ -317,6 +350,7 @@
         },
         "2023-34": {
           "title": "Transport Legislation Amendment Act 2023",
+          "summary": "Aligns commercial bus driver accreditation with other passenger transport accreditation and revises decision review, information-sharing and transport infrastructure consultation rules.",
           "citation": "34/2023",
           "enactedOn": "2023-11-21",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/transport-legislation-amendment-act-2023",
@@ -324,6 +358,7 @@
         },
         "2023-35": {
           "title": "Environment Legislation Amendment (Circular Economy and Other Matters) Act 2023",
+          "summary": "Refines the container deposit and waste-to-energy schemes, including cost recovery, and updates environmental protection law.",
           "citation": "35/2023",
           "enactedOn": "2023-11-28",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/environment-legislation-amendment-circular-economy-and-other-matters-act-2023",
@@ -331,6 +366,7 @@
         },
         "2023-36": {
           "title": "Corrections Amendment (Parole Reform) Act 2023",
+          "summary": "Restricts parole for Paul Denyer and changes how the Adult Parole Board can set periods of parole ineligibility.",
           "citation": "36/2023",
           "enactedOn": "2023-12-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/corrections-amendment-parole-reform-act-2023",
@@ -338,6 +374,7 @@
         },
         "2023-37": {
           "title": "Crimes Amendment (Non-fatal Strangulation) Act 2023",
+          "summary": "Creates two offences of non-fatal strangulation and makes a related amendment to family violence law.",
           "citation": "37/2023",
           "enactedOn": "2023-12-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-non-fatal-strangulation-act-2023",
@@ -345,6 +382,7 @@
         },
         "2023-38": {
           "title": "State Taxation Acts and Other Acts Amendment Act 2023",
+          "summary": "Changes state tax rules on land sub-sales, concession and corporate reconstruction duties, land valuation, first-home grants and certain property tax adjustments.",
           "citation": "38/2023",
           "enactedOn": "2023-12-12",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-acts-and-other-acts-amendment-act-2023",
@@ -352,6 +390,7 @@
         },
         "2024-1": {
           "title": "Biosecurity Legislation Amendment (Incident Response) Act 2024",
+          "summary": "Expands biosecurity information sharing, emergency controls, compensation and enforcement for livestock disease outbreaks.",
           "citation": "1/2024",
           "enactedOn": "2024-02-13",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/biosecurity-legislation-amendment-incident-response-act-2024",
@@ -359,6 +398,7 @@
         },
         "2024-2": {
           "title": "Justice Legislation Amendment (Police and Other Matters) Act 2024",
+          "summary": "Changes working-with-children check exemptions, firearms surrender and licensing, vehicle immobilisation powers and arrangements between fire services.",
           "citation": "2/2024",
           "enactedOn": "2024-02-20",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-police-and-other-matters-act-2024",
@@ -366,6 +406,7 @@
         },
         "2024-3": {
           "title": "Land (Revocation of Reservations) Act 2024",
+          "summary": "Revokes or changes Crown land reservations at specified sites, including Victoria Park Lake, Toolangi, Seaspray and former Mechanics Institute properties.",
           "citation": "3/2024",
           "enactedOn": "2024-02-20",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/land-revocation-reservations-act-2024",
@@ -373,6 +414,7 @@
         },
         "2024-4": {
           "title": "Building Legislation Amendment (Domestic Building Insurance New Offences) Act 2024",
+          "summary": "Makes it an offence for builders to demand or receive payments under major domestic building contracts without the required insurance and gives the building regulator enforcement powers.",
           "citation": "4/2024",
           "enactedOn": "2024-02-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-domestic-building-insurance-new-offences-act-2024",
@@ -380,6 +422,7 @@
         },
         "2024-5": {
           "title": "Service Victoria Amendment Act 2024",
+          "summary": "Allows Service Victoria to deliver services with or for non-government bodies and expands its functions and digital identity verification powers.",
           "citation": "5/2024",
           "enactedOn": "2024-02-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/service-victoria-amendment-act-2024",
@@ -387,6 +430,7 @@
         },
         "2024-6": {
           "title": "Regulatory Legislation Amendment (Reform) Act 2024",
+          "summary": "Updates regulatory and enforcement provisions across several laws, including fee units, essential services, meat and seafood regulation, and food safety.",
           "citation": "6/2024",
           "enactedOn": "2024-03-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/regulatory-legislation-amendment-reform-act-2024",
@@ -394,6 +438,7 @@
         },
         "2024-7": {
           "title": "Education and Training Reform Amendment (Early Childhood Employment Powers) Act 2024",
+          "summary": "Allows the education department to hire staff for government early learning centres, sets employment entitlements and enables fees for those centres.",
           "citation": "7/2024",
           "enactedOn": "2024-03-13",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-early-childhood-employment-powers-act-2024",
@@ -401,6 +446,7 @@
         },
         "2024-8": {
           "title": "Workplace Injury Rehabilitation and Compensation Amendment (WorkCover Scheme Modernisation) Act 2024",
+          "summary": "Changes eligibility for WorkCover mental injury benefits and introduces an impairment threshold for weekly payments beyond 130 weeks.",
           "citation": "8/2024",
           "enactedOn": "2024-03-13",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/workplace-injury-rehabilitation-and-compensation-amendment-workcover-scheme",
@@ -408,6 +454,7 @@
         },
         "2024-9": {
           "title": "Climate Change and Energy Legislation Amendment (Renewable Energy and Storage Targets) Act 2024",
+          "summary": "Moves Victoria’s net zero target to 2045, raises the 2030 renewable electricity target to 65%, and sets further renewable energy and storage targets.",
           "citation": "9/2024",
           "enactedOn": "2024-03-26",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/climate-change-and-energy-legislation-amendment-renewable-energy-and-storage-targets",
@@ -415,6 +462,7 @@
         },
         "2024-10": {
           "title": "Firearms and Control of Weapons (Machetes) Amendment Act 2024",
+          "summary": "Changes how firearm prohibition orders are served and clarifies that machetes are classified as knives under weapons law.",
           "citation": "10/2024",
           "enactedOn": "2024-03-26",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/firearms-and-control-weapons-machetes-amendment-act-2024",
@@ -422,6 +470,7 @@
         },
         "2024-11": {
           "title": "State Electricity Commission Amendment Act 2024",
+          "summary": "Abolishes the former statutory State Electricity Commission of Victoria and transfers its remaining functions, property, rights and liabilities to the Minister or State.",
           "citation": "11/2024",
           "enactedOn": "2024-03-26",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-electricity-commission-amendment-act-2024",
@@ -429,6 +478,7 @@
         },
         "2024-12": {
           "title": "Private Security and County Court Amendment Act 2024",
+          "summary": "Overhauls private security licensing and complaints, introduces subcontracting offences and risk management requirements, and amends County Court legislation.",
           "citation": "12/2024",
           "enactedOn": "2024-04-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/private-security-and-county-court-amendment-act-2024",
@@ -436,6 +486,7 @@
         },
         "2024-13": {
           "title": "Statute Law Revision Act 2024",
+          "summary": "Makes technical revisions and corrections across Victorian statutes.",
           "citation": "13/2024",
           "enactedOn": "2024-04-23",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-revision-act-2024",
@@ -443,6 +494,7 @@
         },
         "2024-14": {
           "title": "Energy and Public Land Legislation Amendment (Enabling Offshore Wind Energy) Act 2024",
+          "summary": "Allows longer Crown land licences to assess offshore transmission projects and changes national park arrangements to support offshore wind infrastructure.",
           "citation": "14/2024",
           "enactedOn": "2024-05-07",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-and-public-land-legislation-amendment-enabling-offshore-wind-energy-act-2024",
@@ -450,6 +502,7 @@
         },
         "2024-15": {
           "title": "National Electricity (Victoria) Amendment (VicGrid) Act 2024",
+          "summary": "Establishes VicGrid’s chief executive and transmission planning functions, provides for renewable energy zones and enables payments to affected landholders.",
           "citation": "15/2024",
           "enactedOn": "2024-05-14",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/national-electricity-victoria-amendment-vicgrid-act-2024",
@@ -457,6 +510,7 @@
         },
         "2024-16": {
           "title": "Commercial and Industrial Property Tax Reform Act 2024",
+          "summary": "Introduces an annual commercial and industrial property tax and provides for eligible properties to transition from transfer duty into the new scheme.",
           "citation": "16/2024",
           "enactedOn": "2024-05-21",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/commercial-and-industrial-property-tax-reform-act-2024",
@@ -464,6 +518,7 @@
         },
         "2024-17": {
           "title": "Estate Agents, Residential Tenancies and Other Acts Amendment (Funding) Act 2024",
+          "summary": "Changes funding for estate agent and tenancy dispute resolution and advocacy, abolishes the Estate Agents Council and facilitates closure of the Sex Work Regulation Fund.",
           "citation": "17/2024",
           "enactedOn": "2024-05-21",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/estate-agents-residential-tenancies-and-other-acts-amendment-funding-act-2024",
@@ -471,6 +526,7 @@
         },
         "2024-18": {
           "title": "National Energy Retail Law (Victoria) Act 2024",
+          "summary": "Applies national retailer-of-last-resort rules in Victoria so electricity and gas customers can be transferred when a retailer fails.",
           "citation": "18/2024",
           "enactedOn": "2024-05-21",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/national-energy-retail-law-victoria-act-2024",
@@ -478,6 +534,7 @@
         },
         "2024-19": {
           "title": "Appropriation (2024-2025) Act 2024",
+          "summary": "Authorises spending from the Consolidated Fund for ordinary Victorian Government services in 2024–25.",
           "citation": "19/2024",
           "enactedOn": "2024-06-04",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-2024-2025-act-2024",
@@ -485,6 +542,7 @@
         },
         "2024-20": {
           "title": "Appropriation (Parliament 2024-2025) Act 2024",
+          "summary": "Authorises spending from the Consolidated Fund for the Parliament of Victoria in 2024–25.",
           "citation": "20/2024",
           "enactedOn": "2024-06-04",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-parliament-2024-2025-act-2024",
@@ -492,6 +550,7 @@
         },
         "2024-21": {
           "title": "Financial Management Amendment (Gender Responsive Budgeting) Act 2024",
+          "summary": "Requires gender equality and inclusion to be considered in fiscal policy and provides for an annual statement on the budget’s gender impacts.",
           "citation": "21/2024",
           "enactedOn": "2024-06-04",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/financial-management-amendment-gender-responsive-budgeting-act-2024",
@@ -499,6 +558,7 @@
         },
         "2024-22": {
           "title": "State Taxation Amendment Act 2024",
+          "summary": "Changes business insurance duty, casino tax reporting, payroll tax and land tax rules, including exemptions for specified housing and holiday homes.",
           "citation": "22/2024",
           "enactedOn": "2024-06-04",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-amendment-act-2024",
@@ -506,6 +566,7 @@
         },
         "2024-23": {
           "title": "Local Government Amendment (Governance and Integrity) Act 2024",
+          "summary": "Requires ongoing mayoral and councillor training, strengthens council conduct rules and expands suspension, disqualification and inspector powers.",
           "citation": "23/2024",
           "enactedOn": "2024-06-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/local-government-amendment-governance-and-integrity-act-2024",
@@ -513,6 +574,7 @@
         },
         "2024-24": {
           "title": "Sustainable Forests (Timber) Repeal Act 2024",
+          "summary": "Repeals the law governing commercial native forest timber harvesting, abolishes VicForests and transfers its property, rights and liabilities to the Crown.",
           "citation": "24/2024",
           "enactedOn": "2024-06-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/sustainable-forests-timber-repeal-act-2024",
@@ -520,6 +582,7 @@
         },
         "2024-25": {
           "title": "Victorian Responsible Gambling Foundation Repeal and Advisory Councils Act 2024",
+          "summary": "Abolishes the Victorian Responsible Gambling Foundation, creates the Gambling Harm Response Fund and changes gambling advisory and regulatory arrangements.",
           "citation": "25/2024",
           "enactedOn": "2024-06-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-responsible-gambling-foundation-repeal-and-advisory-councils-act-2024",
@@ -527,6 +590,7 @@
         },
         "2024-26": {
           "title": "Confiscation Amendment (Unexplained Wealth) Act 2024",
+          "summary": "Expands the unexplained wealth regime by enabling court orders for debts to the State and forfeiture of property that cannot be shown to come from lawful sources.",
           "citation": "26/2024",
           "enactedOn": "2024-08-06",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/confiscation-amendment-unexplained-wealth-act-2024",
@@ -534,6 +598,7 @@
         },
         "2024-27": {
           "title": "Parliamentary Workplace Standards and Integrity Act 2024",
+          "summary": "Establishes the Parliamentary Workplace Standards and Integrity Commission, Parliamentary Integrity Adviser and Parliamentary Ethics Committee.",
           "citation": "27/2024",
           "enactedOn": "2024-08-20",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/parliamentary-workplace-standards-and-integrity-act-2024",
@@ -541,6 +606,7 @@
         },
         "2024-28": {
           "title": "State Sporting Legislation Amendment Act 2024",
+          "summary": "Changes the scope of Anzac Day sport rules and updates governance and event management arrangements for Kardinia Park and Melbourne and Olympic Parks.",
           "citation": "28/2024",
           "enactedOn": "2024-08-20",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-sporting-legislation-amendment-act-2024",
@@ -548,6 +614,7 @@
         },
         "2024-29": {
           "title": "Aboriginal Land Legislation Amendment Act 2024",
+          "summary": "Updates Aboriginal land trust governance, membership and share transfers, financial reporting, and provisions for specified Aboriginal land.",
           "citation": "29/2024",
           "enactedOn": "2024-09-03",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/aboriginal-land-legislation-amendment-act-2024",
@@ -555,6 +622,7 @@
         },
         "2024-30": {
           "title": "Prahran Mechanics' Institute Repeal Act 2024",
+          "summary": "Dissolves the statutory Prahran Mechanics’ Institution and Circulating Library and transfers its property, rights and liabilities to PMI Victorian History Library Inc.",
           "citation": "30/2024",
           "enactedOn": "2024-09-03",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/prahran-mechanics-institute-repeal-act-2024",
@@ -562,6 +630,7 @@
         },
         "2024-31": {
           "title": "Justice Legislation Amendment (Integrity, Defamation and Other Matters) Act 2024",
+          "summary": "Changes defamation rules for third-party online content and absolute privilege, and updates access to court data and the use of electronic signatures in criminal proceedings.",
           "citation": "31/2024",
           "enactedOn": "2024-09-10",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-integrity-defamation-and-other-matters-act-2024",
@@ -569,6 +638,7 @@
         },
         "2024-32": {
           "title": "Youth Justice Act 2024",
+          "summary": "Raises the minimum age of criminal responsibility to 12 and sets a statutory framework for youth justice, including Children’s Court procedures and oversight.",
           "citation": "32/2024",
           "enactedOn": "2024-09-10",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/youth-justice-act-2024",
@@ -576,6 +646,7 @@
         },
         "2024-33": {
           "title": "Residential Tenancies and Funerals Amendment Act 2024",
+          "summary": "Revises disclosure and rent increase rules for residential park site agreements and requires funeral providers to publish price lists online and at their premises.",
           "citation": "33/2024",
           "enactedOn": "2024-09-17",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/residential-tenancies-and-funerals-amendment-act-2024",
@@ -583,6 +654,7 @@
         },
         "2024-34": {
           "title": "Victorian Institute of Forensic Medicine Act 2024",
+          "summary": "Re-establishes the Victorian Institute of Forensic Medicine under updated legislation and repeals its 1985 Act.",
           "citation": "34/2024",
           "enactedOn": "2024-09-17",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-institute-forensic-medicine-act-2024",
@@ -590,6 +662,7 @@
         },
         "2024-35": {
           "title": "State Civil Liability (Police Informants) Act 2024",
+          "summary": "Caps the total civil compensation payable by the State for claims relating to information or assistance from specified police informants.",
           "citation": "35/2024",
           "enactedOn": "2024-09-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-civil-liability-police-informants-act-2024",
@@ -597,6 +670,7 @@
         },
         "2024-36": {
           "title": "Constitution Amendment (SEC) Act 2024",
+          "summary": "Requires the State to retain a controlling interest in the SEC, sets its statutory objectives and restricts changes to those constitutional protections.",
           "citation": "36/2024",
           "enactedOn": "2024-10-22",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/constitution-amendment-sec-act-2024",
@@ -604,6 +678,7 @@
         },
         "2024-37": {
           "title": "Criminal Organisations Control Amendment Act 2024",
+          "summary": "Reforms unlawful association rules, adds independent oversight and serious crime prevention orders, and prohibits public display of insignia of specified organisations.",
           "citation": "37/2024",
           "enactedOn": "2024-10-22",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/criminal-organisations-control-amendment-act-2024",
@@ -611,6 +686,7 @@
         },
         "2024-38": {
           "title": "Melbourne Convention and Exhibition Trust Amendment Act 2024",
+          "summary": "Renames the Melbourne Convention and Exhibition Trust, expands its functions and updates its membership and governance arrangements.",
           "citation": "38/2024",
           "enactedOn": "2024-10-22",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/melbourne-convention-and-exhibition-trust-amendment-act-2024",
@@ -618,6 +694,7 @@
         },
         "2024-39": {
           "title": "Health Legislation Amendment (Regulatory Reform) Act 2024",
+          "summary": "Abolishes the Victorian Assisted Reproductive Treatment Authority, transfers regulatory and donor information duties and changes requirements for donor material and access to records.",
           "citation": "39/2024",
           "enactedOn": "2024-10-29",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/health-legislation-amendment-regulatory-reform-act-2024",
@@ -625,6 +702,7 @@
         },
         "2024-40": {
           "title": "Short Stay Levy Act 2024",
+          "summary": "Introduces a levy on short-stay accommodation and enables owners corporations to prohibit certain short-stay use.",
           "citation": "40/2024",
           "enactedOn": "2024-10-29",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/short-stay-levy-act-2024",
@@ -632,6 +710,7 @@
         },
         "2024-41": {
           "title": "Drugs, Poisons and Controlled Substances Amendment (Pill Testing) Act 2024",
+          "summary": "Provides for drug-checking services and permits automatic dispensing machines to supply certain medicines used to treat opioid overdose.",
           "citation": "41/2024",
           "enactedOn": "2024-11-06",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-pill-testing-act-2024",
@@ -639,6 +718,7 @@
         },
         "2024-42": {
           "title": "Offshore Petroleum and Greenhouse Gas Storage Amendment Act 2024",
+          "summary": "Changes offshore petroleum production licensing, including licensee rights, access to infrastructure and monitoring powers.",
           "citation": "42/2024",
           "enactedOn": "2024-11-06",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/offshore-petroleum-and-greenhouse-gas-storage-amendment-act-2024",
@@ -646,6 +726,7 @@
         },
         "2024-43": {
           "title": "Building Legislation Amendment and Other Matters Act 2024",
+          "summary": "Updates building notices and orders, access to adjoining owner details for protection work and time limits for certain building and plumbing actions.",
           "citation": "43/2024",
           "enactedOn": "2024-11-12",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-and-other-matters-act-2024",
@@ -653,6 +734,7 @@
         },
         "2024-44": {
           "title": "Agriculture and Food Safety Legislation Amendment Act 2024",
+          "summary": "Creates offences concerning the sale and supply of raw milk and updates food safety enforcement and information display requirements.",
           "citation": "44/2024",
           "enactedOn": "2024-11-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/agriculture-and-food-safety-legislation-amendment-act-2024",
@@ -660,6 +742,7 @@
         },
         "2024-45": {
           "title": "Duties Amendment (More Homes) Act 2024",
+          "summary": "Introduces temporary transfer duty relief for newly constructed dwellings in strata developments.",
           "citation": "45/2024",
           "enactedOn": "2024-11-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/duties-amendment-more-homes-act-2024",
@@ -667,6 +750,7 @@
         },
         "2024-46": {
           "title": "Roads and Road Safety Legislation Amendment Act 2024",
+          "summary": "Allows camera enforcement of no-truck zones and changes registration number transfers, accessible parking terminology and refunds of fees attached to fines.",
           "citation": "46/2024",
           "enactedOn": "2024-11-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/roads-and-road-safety-legislation-amendment-act-2024",
@@ -674,6 +758,7 @@
         },
         "2024-47": {
           "title": "Subordinate Legislation and Administrative Arrangements Amendment Act 2024",
+          "summary": "Updates the laws governing subordinate legislation, fee units and administrative arrangements.",
           "citation": "47/2024",
           "enactedOn": "2024-11-26",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/subordinate-legislation-and-administrative-arrangements-amendment-act-2024",
@@ -681,6 +766,7 @@
         },
         "2024-48": {
           "title": "Transport Infrastructure and Planning Legislation Amendment Act 2024",
+          "summary": "Expands declaration, delegation and delivery powers for major transport projects and applies those powers to specified precinct projects.",
           "citation": "48/2024",
           "enactedOn": "2024-11-26",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/transport-infrastructure-and-planning-legislation-amendment-act-2024",
@@ -688,6 +774,7 @@
         },
         "2024-49": {
           "title": "Aged Care Restrictive Practices Substitute Decision-maker Act 2024",
+          "summary": "Provides for appointing substitute decision-makers for the use of restrictive practices under Commonwealth aged care law.",
           "citation": "49/2024",
           "enactedOn": "2024-12-03",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/aged-care-restrictive-practices-substitute-decision-maker-act-2024",
@@ -695,6 +782,7 @@
         },
         "2024-50": {
           "title": "State Taxation Further Amendment Act 2024",
+          "summary": "Updates duty concessions and foreign purchaser duty, and allows first-home grant applications on behalf of beneficiaries of special disability trusts.",
           "citation": "50/2024",
           "enactedOn": "2024-12-03",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-further-amendment-act-2024",
@@ -702,6 +790,7 @@
         },
         "2024-51": {
           "title": "Tobacco Amendment (Tobacco Retailer and Wholesaler Licensing Scheme) Act 2024",
+          "summary": "Introduces tobacco retailer and wholesaler licensing, provides for forfeiture of prohibited products and repeals specified e-cigarette and specialist tobacconist rules.",
           "citation": "51/2024",
           "enactedOn": "2024-12-03",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/tobacco-amendment-tobacco-retailer-and-wholesaler-licensing-scheme-act-2024",
@@ -709,6 +798,7 @@
         },
         "2025-1": {
           "title": "Drugs, Poisons and Controlled Substances Amendment (Paramedic Practitioners) Act 2025",
+          "summary": "Establishes paramedic practitioners as a class of registered paramedics and authorises them to handle and supply specified medicines.",
           "citation": "1/2025",
           "enactedOn": "2025-02-11",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-paramedic-practitioners-act-2025",
@@ -716,6 +806,7 @@
         },
         "2025-2": {
           "title": "Education and Training Reform Amendment Act 2025",
+          "summary": "Changes registration and enforcement for training providers, non-government schools and boarding premises, and updates work experience and workplace learning rules.",
           "citation": "2/2025",
           "enactedOn": "2025-02-11",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-act-2025",
@@ -723,6 +814,7 @@
         },
         "2025-3": {
           "title": "Statute Law Repeals Act 2025",
+          "summary": "Repeals redundant or spent provisions in Victorian Acts.",
           "citation": "3/2025",
           "enactedOn": "2025-02-11",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-repeals-act-2025",
@@ -730,6 +822,7 @@
         },
         "2025-4": {
           "title": "Inquiries Amendment (Yoorrook Justice Commission Records and Other Matters) Act 2025",
+          "summary": "Lets the Yoorrook Justice Commission restrict access to specified records after it ends and updates how records of concluded inquiries are handled.",
           "citation": "4/2025",
           "enactedOn": "2025-02-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/inquiries-amendment-yoorrook-justice-commission-records-and-other-matters-act-2025",
@@ -737,6 +830,7 @@
         },
         "2025-5": {
           "title": "Justice Legislation Amendment (Committals) Act 2025",
+          "summary": "Removes the committal test, tightens witnesses’ cross-examination rules and provides for earlier committal for trial in the Supreme Court.",
           "citation": "5/2025",
           "enactedOn": "2025-02-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-committals-act-2025",
@@ -744,6 +838,7 @@
         },
         "2025-6": {
           "title": "Consumer and Planning Legislation Amendment (Housing Statement Reform) Act 2025",
+          "summary": "Removes end-of-fixed-term eviction notices, prohibits acceptance of unsolicited rent offers and changes other rental and planning rules.",
           "citation": "6/2025",
           "enactedOn": "2025-03-18",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/consumer-and-planning-legislation-amendment-housing-statement-reform-act-2025",
@@ -751,6 +846,7 @@
         },
         "2025-7": {
           "title": "Family Violence Protection Amendment Act 2025",
+          "summary": "Corrects defects in specified copies of family violence intervention orders served or purportedly served from 15 November 2024.",
           "citation": "7/2025",
           "enactedOn": "2025-03-18",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/family-violence-protection-amendment-act-2025",
@@ -758,6 +854,7 @@
         },
         "2025-8": {
           "title": "Bail Amendment Act 2025",
+          "summary": "Changes bail tests, emphasises community safety and revises the treatment of children and people accused of offending while on bail.",
           "citation": "8/2025",
           "enactedOn": "2025-03-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/bail-amendment-act-2025",
@@ -765,6 +862,7 @@
         },
         "2025-9": {
           "title": "Terrorism (Community Protection) and Control of Weapons Amendment Act 2025",
+          "summary": "Updates countering violent extremism arrangements, including multi-agency case management, and amends weapons control law.",
           "citation": "9/2025",
           "enactedOn": "2025-03-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/terrorism-community-protection-and-control-weapons-amendment-act-2025",
@@ -772,6 +870,7 @@
         },
         "2025-10": {
           "title": "Help to Buy (Commonwealth Powers) Act 2025",
+          "summary": "Adopts parts of the Commonwealth Help to Buy legislation and refers power to amend the shared-equity housing scheme to the Commonwealth Parliament.",
           "citation": "10/2025",
           "enactedOn": "2025-04-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/help-buy-commonwealth-powers-act-2025",
@@ -779,6 +878,7 @@
         },
         "2025-11": {
           "title": "Justice Legislation Amendment (Anti-vilification and Social Cohesion) Act 2025",
+          "summary": "Expands civil protections against vilification and creates serious criminal vilification offences based on protected attributes.",
           "citation": "11/2025",
           "enactedOn": "2025-04-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-anti-vilification-and-social-cohesion-act-2025",
@@ -786,6 +886,7 @@
         },
         "2025-12": {
           "title": "Safe Patient Care (Nurse to Patient and Midwife to Patient Ratios) Amendment Act 2025",
+          "summary": "Changes staffing calculations and minimum nurse or midwife ratios in specified hospital units, including intensive care, coronary care and emergency departments.",
           "citation": "12/2025",
           "enactedOn": "2025-04-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/safe-patient-care-nurse-patient-and-midwife-patient-ratios-amendment-act-2025",
@@ -793,6 +894,7 @@
         },
         "2025-13": {
           "title": "Energy and Land Legislation Amendment (Energy Safety) Act 2025",
+          "summary": "Updates electricity bushfire mitigation obligations, enforcement powers and penalties, and abolishes two electricity safety advisory committees.",
           "citation": "13/2025",
           "enactedOn": "2025-05-20",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-and-land-legislation-amendment-energy-safety-act-2025",
@@ -800,6 +902,7 @@
         },
         "2025-14": {
           "title": "Regulatory Legislation Amendment (Reform) Act 2025",
+          "summary": "Updates several regulatory schemes, including access to adoption information, authorisation of Aboriginal agency officers and enforcement of circular economy rules.",
           "citation": "14/2025",
           "enactedOn": "2025-05-20",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/regulatory-legislation-amendment-reform-act-2025",
@@ -807,6 +910,7 @@
         },
         "2025-15": {
           "title": "Victorian Energy Efficiency Target Amendment (Energy Upgrades for the Future) Act 2025",
+          "summary": "Extends the Victorian Energy Upgrades scheme’s target-setting framework through 2045 and updates rules for eligible activities and participants.",
           "citation": "15/2025",
           "enactedOn": "2025-05-20",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-energy-efficiency-target-amendment-energy-upgrades-future-act-2025",
@@ -814,6 +918,7 @@
         },
         "2025-16": {
           "title": "Fire Services Property Amendment (Emergency Services and Volunteers Fund) Act 2025",
+          "summary": "Broadens the Fire Services Property Levy framework to cover emergency services and volunteers.",
           "citation": "16/2025",
           "enactedOn": "2025-05-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/fire-services-property-amendment-emergency-services-and-volunteers-fund-act-2025",
@@ -821,6 +926,7 @@
         },
         "2025-17": {
           "title": "Building Legislation Amendment (Buyer Protections) Act 2025",
+          "summary": "Creates statutory insurance for specified domestic building work and revises protections for buyers of new homes.",
           "citation": "17/2025",
           "enactedOn": "2025-06-03",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-buyer-protections-act-2025",
@@ -828,6 +934,7 @@
         },
         "2025-18": {
           "title": "Gambling Legislation Amendment (Pre-commitment and Carded Play) Act 2025",
+          "summary": "Updates gambling pre-commitment and carded play rules and changes gaming machine spin-rate requirements and enforcement.",
           "citation": "18/2025",
           "enactedOn": "2025-06-03",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-legislation-amendment-pre-commitment-and-carded-play-act-2025",
@@ -835,6 +942,7 @@
         },
         "2025-19": {
           "title": "Retirement Villages Amendment Act 2025",
+          "summary": "Revises retirement village regulation and consumer protections, including occupation rights, refunds and procedures when residents leave.",
           "citation": "19/2025",
           "enactedOn": "2025-06-03",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/retirement-villages-amendment-act-2025",
@@ -842,6 +950,7 @@
         },
         "2025-20": {
           "title": "Justice Legislation Amendment (Miscellaneous) Act 2025",
+          "summary": "Amends trustee replacement offences, criminal procedure and sentencing in the Magistrates’ Court, and revises commencement or repeal dates for specified laws.",
           "citation": "20/2025",
           "enactedOn": "2025-06-18",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-miscellaneous-act-2025",
@@ -849,6 +958,7 @@
         },
         "2025-21": {
           "title": "Appropriation (2025-2026) Act 2025",
+          "summary": "Authorises spending from the Consolidated Fund for ordinary Victorian Government services in 2025–26.",
           "citation": "21/2025",
           "enactedOn": "2025-06-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-2025-2026-act-2025",
@@ -856,6 +966,7 @@
         },
         "2025-22": {
           "title": "Appropriation (Parliament 2025-2026) Act 2025",
+          "summary": "Authorises spending from the Consolidated Fund for the Parliament of Victoria in 2025–26.",
           "citation": "22/2025",
           "enactedOn": "2025-06-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-parliament-2025-2026-act-2025",
@@ -863,6 +974,7 @@
         },
         "2025-23": {
           "title": "Gambling Legislation Amendment Act 2025",
+          "summary": "Updates gambling monitoring and public lottery licensing and makes related operational changes to gambling and casino legislation.",
           "citation": "23/2025",
           "enactedOn": "2025-06-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-legislation-amendment-act-2025",
@@ -870,6 +982,7 @@
         },
         "2025-24": {
           "title": "State Taxation Acts Amendment Act 2025",
+          "summary": "Changes commercial and industrial property tax and transfer duty rules, including treatment of subdivided land and relief for people affected by family violence.",
           "citation": "24/2025",
           "enactedOn": "2025-06-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-acts-amendment-act-2025",
@@ -877,6 +990,7 @@
         },
         "2025-25": {
           "title": "Roads and Ports Legislation Amendment (Road Safety and Other Matters) Act 2025",
+          "summary": "Expands who can collect samples for road safety testing and who can enforce certain road offences, and updates traffic fine and ports provisions.",
           "citation": "25/2025",
           "enactedOn": "2025-08-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/roads-and-ports-legislation-amendment-road-safety-and-other-matters-act-2025",
@@ -884,6 +998,7 @@
         },
         "2025-26": {
           "title": "Transport Legislation Amendment (Vehicle Sharing Scheme Safety and Standards) Act 2025",
+          "summary": "Moves vehicle-sharing scheme regulation into transport compliance legislation and updates electric scooter offences and transitional arrangements.",
           "citation": "26/2025",
           "enactedOn": "2025-08-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/transport-legislation-amendment-vehicle-sharing-scheme-safety-and-standards-act-2025",
@@ -891,6 +1006,7 @@
         },
         "2025-27": {
           "title": "Workplace Injury Rehabilitation and Compensation Amendment Act 2025",
+          "summary": "Provides for a workers’ compensation claimants’ code of rights, requires training for return-to-work coordinators and changes support for injured workers and their families.",
           "citation": "27/2025",
           "enactedOn": "2025-08-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/workplace-injury-rehabilitation-and-compensation-amendment-act-2025",
@@ -898,6 +1014,7 @@
         },
         "2025-28": {
           "title": "Corrections Legislation Amendment Act 2025",
+          "summary": "Revises post-sentence supervision of serious offenders, including order conditions, victim submissions, arrest powers and information sharing.",
           "citation": "28/2025",
           "enactedOn": "2025-08-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/corrections-legislation-amendment-act-2025",
@@ -905,6 +1022,7 @@
         },
         "2025-29": {
           "title": "Crimes Amendment (Performance Crime) Act 2025",
+          "summary": "Makes it an offence for a person to publish material to draw attention to specified crimes they committed, including carjacking and robbery.",
           "citation": "29/2025",
           "enactedOn": "2025-08-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-performance-crime-act-2025",
@@ -912,6 +1030,7 @@
         },
         "2025-30": {
           "title": "Financial Management Legislation Amendment Act 2025",
+          "summary": "Removes the requirement for warrants to issue public money and updates Victoria’s financial management and constitutional legislation.",
           "citation": "30/2025",
           "enactedOn": "2025-08-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/financial-management-legislation-amendment-act-2025",
@@ -919,6 +1038,7 @@
         },
         "2025-31": {
           "title": "Local Jobs First Amendment Act 2025",
+          "summary": "Clarifies Local Jobs First procurement obligations for agencies and suppliers and expands the commissioner’s enforcement powers and penalties.",
           "citation": "31/2025",
           "enactedOn": "2025-08-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/local-jobs-first-amendment-act-2025",
@@ -926,6 +1046,7 @@
         },
         "2025-32": {
           "title": "Superannuation Legislation Amendment Act 2025",
+          "summary": "Changes salary definitions, contributions and board membership under emergency services superannuation law, and updates state superannuation contributions.",
           "citation": "32/2025",
           "enactedOn": "2025-08-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/superannuation-legislation-amendment-act-2025",
@@ -933,6 +1054,7 @@
         },
         "2025-33": {
           "title": "Worker Screening Amendment (Strengthening the Working with Children Check) Act 2025",
+          "summary": "Restricts certain people from child-related work while checks are pending and strengthens powers to suspend or cancel Working with Children clearances.",
           "citation": "33/2025",
           "enactedOn": "2025-08-27",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/worker-screening-amendment-strengthening-working-children-check-act-2025",
@@ -940,6 +1062,7 @@
         },
         "2025-34": {
           "title": "Bail Further Amendment Act 2025",
+          "summary": "Tightens bail rules for specified unacceptable risks and alleged offending while on bail, and updates electronic monitoring conditions.",
           "citation": "34/2025",
           "enactedOn": "2025-09-02",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/bail-further-amendment-act-2025",
@@ -947,6 +1070,7 @@
         },
         "2025-35": {
           "title": "Wage Theft Amendment Act 2025",
+          "summary": "Repeals Victoria’s wage theft offences, renames the regulator Workforce Inspectorate Victoria and gives it revised functions.",
           "citation": "35/2025",
           "enactedOn": "2025-09-02",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/wage-theft-amendment-act-2025",
@@ -954,6 +1078,7 @@
         },
         "2025-36": {
           "title": "Domestic Building Contracts Amendment Act 2025",
+          "summary": "Updates domestic building contract requirements, including implied warranties, deposits, cost escalation, variations and progress payments.",
           "citation": "36/2025",
           "enactedOn": "2025-09-16",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/domestic-building-contracts-amendment-act-2025",
@@ -961,6 +1086,7 @@
         },
         "2025-37": {
           "title": "Drugs, Poisons and Controlled Substances Amendment (Medication Administration in Residential Aged Care) Act 2025",
+          "summary": "Revises who may administer specified controlled medicines in residential aged care and aligns Victorian provisions with the new Commonwealth aged care legislation.",
           "citation": "37/2025",
           "enactedOn": "2025-09-16",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-medication-administration-residential-aged-care",
@@ -968,6 +1094,7 @@
         },
         "2025-38": {
           "title": "National Electricity (Victoria) Amendment (VicGrid Stage 2 Reform) Act 2025",
+          "summary": "Updates the governance and functions of VicGrid as a statutory body and transfers to it powers previously held by its chief executive.",
           "citation": "38/2025",
           "enactedOn": "2025-09-16",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/national-electricity-victoria-amendment-vicgrid-stage-2-reform-act-2025",
@@ -975,6 +1102,7 @@
         },
         "2025-39": {
           "title": "Australian Grands Prix Amendment Act 2025",
+          "summary": "Extends the permitted Grand Prix race period, updates insignia and payment rules, and allows the event corporation to host approved non-motorsport events.",
           "citation": "39/2025",
           "enactedOn": "2025-10-21",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/australian-grands-prix-amendment-act-2025",
@@ -982,6 +1110,7 @@
         },
         "2025-40": {
           "title": "Casino and Gambling Legislation Amendment Act 2025",
+          "summary": "Changes casino oversight, disciplinary powers, player activity statements, cashless and carded play, and club gaming machine entitlements.",
           "citation": "40/2025",
           "enactedOn": "2025-10-21",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/casino-and-gambling-legislation-amendment-act-2025",
@@ -989,6 +1118,7 @@
         },
         "2025-41": {
           "title": "Statute Law Revision Act 2025",
+          "summary": "Makes technical corrections and updates statutory references to reflect administrative arrangements.",
           "citation": "41/2025",
           "enactedOn": "2025-10-21",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-revision-act-2025",
@@ -996,6 +1126,7 @@
         },
         "2025-42": {
           "title": "Domestic Animals Amendment (Rehoming Cats and Dogs and Other Matters) Act 2025",
+          "summary": "Creates a voluntary authorisation scheme for pet rehoming organisations and improves council notification and reporting on fostered or rehomed dogs and cats.",
           "citation": "42/2025",
           "enactedOn": "2025-11-05",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/domestic-animals-amendment-rehoming-cats-and-dogs-and-other-matters-act-2025",
@@ -1003,6 +1134,7 @@
         },
         "2025-43": {
           "title": "Building Legislation Amendment (Fairer Payments on Jobsites and Other Matters) Act 2025",
+          "summary": "Reforms construction payment and performance security claims and the process for adjudicating disputes over them, and addresses unfair contract terms.",
           "citation": "43/2025",
           "enactedOn": "2025-11-13",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-fairer-payments-jobsites-and-other-matters-act-2025",
@@ -1010,6 +1142,7 @@
         },
         "2025-44": {
           "title": "Mental Health Legislation Amendment Act 2025",
+          "summary": "Updates mental health tribunal and information-sharing rules, abolishes the Forensic Leave Panel and gives specified forensic functions to the Mental Health Tribunal.",
           "citation": "44/2025",
           "enactedOn": "2025-11-13",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/mental-health-legislation-amendment-act-2025",
@@ -1017,6 +1150,7 @@
         },
         "2025-45": {
           "title": "Statewide Treaty Act 2025",
+          "summary": "Gives effect to the Statewide Treaty, establishes Gellung Warl and provides for First Peoples’ representation, consultation, accountability and truth-telling.",
           "citation": "45/2025",
           "enactedOn": "2025-11-13",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statewide-treaty-act-2025",
@@ -1024,6 +1158,7 @@
         },
         "2025-46": {
           "title": "Consumer Legislation Amendment Act 2025",
+          "summary": "Allows rental bond transfers, changes evidence requirements for bond claims, broadens fee prohibitions and updates gas and electrical safety checks.",
           "citation": "46/2025",
           "enactedOn": "2025-11-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/consumer-legislation-amendment-act-2025",
@@ -1031,6 +1166,7 @@
         },
         "2025-47": {
           "title": "Parks and Public Land Legislation Amendment (Central West and Other Matters) Act 2025",
+          "summary": "Changes the designation and management of specified public land, including creating Wandong Regional Park and altering land at Princes Park and Bendigo Regional Park.",
           "citation": "47/2025",
           "enactedOn": "2025-11-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/parks-and-public-land-legislation-amendment-central-west-and-other-matters-act-2025",
@@ -1038,6 +1174,7 @@
         },
         "2025-48": {
           "title": "State Taxation Further Amendment Act 2025",
+          "summary": "Changes entry into the commercial and industrial property tax scheme and revises the parking congestion levy, including its rates and residential parking exemption.",
           "citation": "48/2025",
           "enactedOn": "2025-11-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-further-amendment-act-2025",
@@ -1045,6 +1182,7 @@
         },
         "2025-49": {
           "title": "Victorian Early Childhood Regulatory Authority Act 2025",
+          "summary": "Establishes the Victorian Early Childhood Regulatory Authority and provides for a register of early childhood workers.",
           "citation": "49/2025",
           "enactedOn": "2025-11-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-early-childhood-regulatory-authority-act-2025",
@@ -1052,6 +1190,7 @@
         },
         "2025-50": {
           "title": "Voluntary Assisted Dying Amendment Act 2025",
+          "summary": "Changes voluntary assisted dying eligibility, including the expected time to death, and revises assessment, objection and access procedures.",
           "citation": "50/2025",
           "enactedOn": "2025-11-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/voluntary-assisted-dying-amendment-act-2025",
@@ -1059,6 +1198,7 @@
         },
         "2025-51": {
           "title": "Restricting Non-disclosure Agreements (Sexual Harassment at Work) Act 2025",
+          "summary": "Restricts when non-disclosure agreements concerning workplace sexual harassment may be made, what they may contain and when they can be enforced.",
           "citation": "51/2025",
           "enactedOn": "2025-12-02",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/restricting-non-disclosure-agreements-sexual-harassment-work-act-2025",
@@ -1066,6 +1206,7 @@
         },
         "2025-52": {
           "title": "Crimes Amendment (Retail, Fast Food, Hospitality and Transport Worker Harm) Act 2025",
+          "summary": "Creates an offence of assaulting or threatening specified frontline workers and treats burglary involving a ram raid as aggravated burglary.",
           "citation": "52/2025",
           "enactedOn": "2025-12-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-retail-fast-food-hospitality-and-transport-worker-harm-act-2025",
@@ -1073,6 +1214,7 @@
         },
         "2025-53": {
           "title": "Early Childhood Legislation Amendment (Child Safety) Act 2025",
+          "summary": "Expands child safety information sharing, changes time limits for prosecutions and increases maximum penalties under the national education and care law.",
           "citation": "53/2025",
           "enactedOn": "2025-12-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/early-childhood-legislation-amendment-child-safety-act-2025",
@@ -1080,6 +1222,7 @@
         },
         "2025-54": {
           "title": "Justice Legislation Amendment (Community Safety) Act 2025",
+          "summary": "Increases penalties for specified offences, criminalises knife use in specified indictable offences and expands carjacking to cover vehicle theft with a child under 10 inside.",
           "citation": "54/2025",
           "enactedOn": "2025-12-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-community-safety-act-2025",
@@ -1087,6 +1230,7 @@
         },
         "2025-55": {
           "title": "Justice Legislation Amendment (Police and Other Matters) Act 2025",
+          "summary": "Changes unexplained wealth and weapons search area provisions and permits audiovisual appearances for specified applications involving samples or physical examinations.",
           "citation": "55/2025",
           "enactedOn": "2025-12-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-police-and-other-matters-act-2025",
@@ -1094,6 +1238,7 @@
         },
         "2025-56": {
           "title": "Transport Legislation Amendment Act 2025",
+          "summary": "Changes bus accreditation requirements and requires specified booking services and commercial passenger vehicle drivers to report information to the regulator.",
           "citation": "56/2025",
           "enactedOn": "2025-12-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/transport-legislation-amendment-act-2025",
@@ -1101,6 +1246,7 @@
         },
         "2025-57": {
           "title": "Labour Hire Legislation Amendment (Licensing) Act 2025",
+          "summary": "Revises labour hire licensing coverage and fitness requirements and expands the regulator’s monitoring, enforcement and information-sharing powers.",
           "citation": "57/2025",
           "enactedOn": "2025-12-16",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/labour-hire-legislation-amendment-licensing-act-2025",
@@ -1108,6 +1254,7 @@
         },
         "2025-58": {
           "title": "Social Services Regulation Amendment (Child Safety, Complaints and Worker Regulation) Act 2025",
+          "summary": "Transfers child safety standards and reportable conduct functions to the Social Services Regulator and changes complaints and worker regulation.",
           "citation": "58/2025",
           "enactedOn": "2025-12-16",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/social-services-regulation-amendment-child-safety-complaints-and-worker-regulation-act-2025",
@@ -1115,6 +1262,7 @@
         },
         "2026-1": {
           "title": "Justice Legislation Amendment (Family Violence, Stalking and Other Matters) Act 2026",
+          "summary": "Changes family violence and stalking intervention order procedures, including service and duration, and requires consideration of possible misidentification in family violence cases.",
           "citation": "1/2026",
           "enactedOn": "2026-02-10",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-family-violence-stalking-and-other-matters-act-2026",
@@ -1122,6 +1270,7 @@
         },
         "2026-2": {
           "title": "Mineral Resources (Sustainable Development) Amendment (Financial Assurance) Act 2026",
+          "summary": "Makes specified former mine operators or related parties liable for rehabilitation in certain circumstances and updates rehabilitation plans and change-of-control notices.",
           "citation": "2/2026",
           "enactedOn": "2026-02-10",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/mineral-resources-sustainable-development-amendment-financial-assurance-act-2026",
@@ -1129,6 +1278,7 @@
         },
         "2026-3": {
           "title": "Planning Amendment (Better Decisions Made Faster) Act 2026",
+          "summary": "Overhauls planning objectives, strategies and procedures for preparing and amending planning schemes, including the roles of councils and the Minister.",
           "citation": "3/2026",
           "enactedOn": "2026-02-17",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/planning-amendment-better-decisions-made-faster-act-2026",
@@ -1136,6 +1286,7 @@
         },
         "2026-4": {
           "title": "Health Safeguards for People Born with Variations in Sex Characteristics Act 2026",
+          "summary": "Creates consent and approval safeguards for specified medical treatment of people with innate variations in sex characteristics, and prohibits treatment in certain circumstances.",
           "citation": "4/2026",
           "enactedOn": "2026-02-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/health-safeguards-people-born-variations-sex-characteristics-act-2026",
@@ -1143,6 +1294,7 @@
         },
         "2026-5": {
           "title": "Justice Legislation Amendment (Vicarious Liability for Child Abuse) Act 2026",
+          "summary": "Changes organisations’ vicarious liability for child abuse, including historical abuse, and provides for specified settlements or judgments to be set aside.",
           "citation": "5/2026",
           "enactedOn": "2026-02-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-vicarious-liability-child-abuse-act-2026",
@@ -1150,6 +1302,7 @@
         },
         "2026-6": {
           "title": "Children, Youth and Families Amendment (Stability) Act 2026",
+          "summary": "Changes the duration and extension of family reunification orders, removes adoption from the case-planning hierarchy and adds stability to the best-interests principles.",
           "citation": "6/2026",
           "enactedOn": "2026-03-11",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/children-youth-and-families-amendment-stability-act-2026",
@@ -1157,6 +1310,7 @@
         },
         "2026-7": {
           "title": "Children, Youth and Families Amendment (Supporting Stable and Strong Families) Act 2026",
+          "summary": "Assigns responsibilities to partner agencies for supporting stable and strong families and expands the Children’s Services Co-ordination Board’s role.",
           "citation": "7/2026",
           "enactedOn": "2026-03-11",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/children-youth-and-families-amendment-supporting-stable-and-strong-families-act-2026",
@@ -1164,6 +1318,7 @@
         },
         "2026-8": {
           "title": "Crimes Amendment Act 2026",
+          "summary": "Limits prosecution of specified criminal vilification offences to police or the Director of Public Prosecutions and requires the Director’s consent for prosecution of a person under 18.",
           "citation": "8/2026",
           "enactedOn": "2026-03-11",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-act-2026",
@@ -1171,6 +1326,7 @@
         },
         "2026-9": {
           "title": "Energy and Other Legislation Amendment (Resilience Reforms and Other Matters) Act 2026",
+          "summary": "Requires electricity distributors to prepare network resilience plans, updates retailer obligations to life-support customers and changes easement acquisition rules.",
           "citation": "9/2026",
           "enactedOn": "2026-03-11",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-and-other-legislation-amendment-resilience-reforms-and-other-matters-act-2026",
@@ -1178,6 +1334,7 @@
         },
         "2026-10": {
           "title": "National Gas (Victoria) Amendment Act 2026",
+          "summary": "Allows ministerial orders to expedite increases in gas transmission capacity and supports upgrades to Victoria’s declared transmission systems.",
           "citation": "10/2026",
           "enactedOn": "2026-03-24",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/national-gas-victoria-amendment-act-2026",
@@ -1185,6 +1342,7 @@
         },
         "2026-11": {
           "title": "Entities Legislation Amendment (Consolidation and Other Matters) Act 2026",
+          "summary": "Transfers specified Recycling Victoria functions to the Environment Protection Authority and abolishes the Victorian Environmental Assessment Council and Marine and Coastal Council.",
           "citation": "11/2026",
           "enactedOn": "2026-03-31",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/entities-legislation-amendment-consolidation-and-other-matters-act-2026",
@@ -1192,6 +1350,7 @@
         },
         "2026-12": {
           "title": "Education and Training Reform Amendment (Free TAFE Guarantee) Act 2026",
+          "summary": "Guarantees specified tuition-free TAFE courses and provides for a TAFE funding guarantee and network planning framework.",
           "citation": "12/2026",
           "enactedOn": "2026-04-14",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-free-tafe-guarantee-act-2026",
@@ -1199,6 +1358,7 @@
         },
         "2026-13": {
           "title": "Electoral Amendment Act 2026",
+          "summary": "Changes electoral procedures, including supplementary elections, re-elections, party registration and authorisation of electoral advertising and material.",
           "citation": "13/2026",
           "enactedOn": "2026-04-14",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/electoral-amendment-act-2026",
@@ -1206,6 +1366,7 @@
         },
         "2026-14": {
           "title": "Justice Legislation Further Amendment (Miscellaneous) Act 2026",
+          "summary": "Changes powers to vary or revoke court orders, streamlines the closing and reopening of coronial investigations and expands which doctors may register deaths.",
           "citation": "14/2026",
           "enactedOn": "2026-04-14",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-further-amendment-miscellaneous-act-2026",
@@ -1213,6 +1374,7 @@
         },
         "2026-15": {
           "title": "Regulatory Legislation Amendment (Reform) Act 2026",
+          "summary": "Makes operational and technical changes across regulatory laws, including waste reporting, recycling infrastructure plans, environmental licences and gas-sector reporting.",
           "citation": "15/2026",
           "enactedOn": "2026-04-14",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/regulatory-legislation-amendment-reform-act-2026",
@@ -1220,6 +1382,7 @@
         },
         "2026-16": {
           "title": "Safe Food Victoria Act 2026",
+          "summary": "Creates Safe Food Victoria, replaces Dairy Food Safety Victoria and PrimeSafe, and extends regulation to novel foods and production technologies.",
           "citation": "16/2026",
           "enactedOn": "2026-04-14",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/safe-food-victoria-act-2026",
@@ -1227,6 +1390,7 @@
         },
         "2026-17": {
           "title": "Building and Plumbing Administration and Enforcement Act 2026",
+          "summary": "Recasts building and plumbing regulation and enforcement, establishes the Building and Plumbing Commission and updates practitioner discipline.",
           "citation": "17/2026",
           "enactedOn": "2026-05-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-and-plumbing-administration-and-enforcement-act-2026",
@@ -1234,6 +1398,7 @@
         },
         "2026-18": {
           "title": "Cladding Safety Victoria Repeal Act 2026",
+          "summary": "Abolishes Cladding Safety Victoria, transfers its property, rights and liabilities to the Victorian Building Authority and revises the building permit levy for non-regional buildings.",
           "citation": "18/2026",
           "enactedOn": "2026-05-19",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/cladding-safety-victoria-repeal-act-2026",
@@ -1241,6 +1406,7 @@
         },
         "2026-19": {
           "title": "Electoral Further Amendment Act 2026",
+          "summary": "Revises political donation disclosure, reporting and public funding rules, including a higher general donation cap for new entrants.",
           "citation": "19/2026",
           "enactedOn": "2026-06-09",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/electoral-further-amendment-act-2026",
@@ -1248,6 +1414,7 @@
         },
         "2026-20": {
           "title": "Appropriation (2026-2027) Act 2026",
+          "summary": "Authorises spending from the Consolidated Fund for ordinary Victorian Government services in 2026–27.",
           "citation": "20/2026",
           "enactedOn": "2026-06-10",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-2026-2027-act-2026",
@@ -1255,6 +1422,7 @@
         },
         "2026-21": {
           "title": "Appropriation (Parliament 2026-2027) Act 2026",
+          "summary": "Authorises spending from the Consolidated Fund for the Parliament of Victoria in 2026–27.",
           "citation": "21/2026",
           "enactedOn": "2026-06-23",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-parliament-2026-2027-act-2026",
@@ -1262,6 +1430,7 @@
         },
         "2026-22": {
           "title": "Building Legislation and Treasury Legislation (Tax Relief) Amendment Act 2026",
+          "summary": "Changes building orders, insurance and construction payment adjudication, and revises duty concessions for new dwellings and specified land tax rules.",
           "citation": "22/2026",
           "enactedOn": "2026-06-23",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-and-treasury-legislation-tax-relief-amendment-act-2026",
@@ -1269,6 +1438,7 @@
         },
         "2026-23": {
           "title": "Victoria Police Amendment (Police Reservists) Act 2026",
+          "summary": "Updates eligibility and appointment rules for police reservists and sets out their duties, oath and resignation arrangements.",
           "citation": "23/2026",
           "enactedOn": "2026-06-23",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victoria-police-amendment-police-reservists-act-2026",
@@ -1276,6 +1446,7 @@
         },
         "2026-24": {
           "title": "Dangerous Goods Transport Act 2026",
+          "summary": "Establishes a framework for transporting dangerous goods by road, rail and inland waterways and repeals the Dangerous Goods Act 1985.",
           "citation": "24/2026",
           "enactedOn": "2026-08-04",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/dangerous-goods-transport-act-2026",
@@ -1283,6 +1454,7 @@
         },
         "2026-25": {
           "title": "Education and Training Reform Amendment Act 2026",
+          "summary": "Strengthens Aboriginal recognition and self-determination across education and training, and changes registration, information-sharing and interim suspension rules.",
           "citation": "25/2026",
           "enactedOn": "2026-08-04",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-act-2026",
@@ -1290,6 +1462,7 @@
         },
         "2026-26": {
           "title": "Health Legislation Amendment (Regulatory Reform) Act 2026",
+          "summary": "Introduces accreditation requirements for assisted reproductive treatment providers, expands registration and inspection powers and updates non-emergency patient transport regulation.",
           "citation": "26/2026",
           "enactedOn": "2026-08-04",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/health-legislation-amendment-regulatory-reform-act-2026",
@@ -1297,6 +1470,7 @@
         },
         "2026-27": {
           "title": "Occupational Health and Safety Amendment (Dangerous Goods) Act 2026",
+          "summary": "Brings dangerous goods handling at workplaces and other places within occupational health and safety law.",
           "citation": "27/2026",
           "enactedOn": "2026-08-04",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/occupational-health-and-safety-amendment-dangerous-goods-act-2026",
@@ -1304,6 +1478,7 @@
         },
         "2026-28": {
           "title": "Electoral Amendment (Miscellaneous Matters) Act 2026",
+          "summary": "Abolishes group voting tickets for Legislative Council elections and updates rules for above-the-line and below-the-line voting.",
           "citation": "28/2026",
           "enactedOn": "2026-08-18",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/electoral-amendment-miscellaneous-matters-act-2026",
@@ -1311,6 +1486,7 @@
         },
         "2026-29": {
           "title": "Firearms Amendment Act 2026",
+          "summary": "Continues the firearm prohibition order scheme, changes firearm categories, introduces citizenship and background-check requirements for licensing, and increases specified penalties.",
           "citation": "29/2026",
           "enactedOn": "2026-08-18",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/firearms-amendment-act-2026",
@@ -1318,6 +1494,7 @@
         },
         "2026-30": {
           "title": "Fishing, Hunting and Outdoor Victoria Act 2026",
+          "summary": "Establishes Fishing, Hunting and Outdoor Victoria and the Land and Aquatic Access Panel, and repeals the laws establishing the former game and fisheries regulators.",
           "citation": "30/2026",
           "enactedOn": "2026-08-25",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/fishing-hunting-and-outdoor-victoria-act-2026",
@@ -1325,6 +1502,7 @@
         },
         "2026-31": {
           "title": "Corrections Amendment Act 2026",
+          "summary": "Makes prisoners’ access to open air subject to operational considerations, revises police gaol detention provisions and validates specified past actions.",
           "citation": "31/2026",
           "enactedOn": "2026-09-01",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/corrections-amendment-act-2026",
@@ -1332,6 +1510,7 @@
         },
         "2026-32": {
           "title": "Crimes Amendment (Recruitment of Children for Criminal Activity and Production Notices) Act 2026",
+          "summary": "Creates a further offence of recruiting children for criminal activity and establishes a process for requiring financial institutions to produce documents.",
           "citation": "32/2026",
           "enactedOn": "2026-09-01",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-recruitment-children-criminal-activity-and-production-notices-act-2026",
@@ -1339,6 +1518,7 @@
         },
         "2026-33": {
           "title": "Racing Legislation Amendment (Entity Governance and Other Matters) Act 2026",
+          "summary": "Provides for recognised governing bodies for harness and greyhound racing and restructures racing integrity arrangements.",
           "citation": "33/2026",
           "enactedOn": "2026-09-01",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/racing-legislation-amendment-entity-governance-and-other-matters-act-2026",
@@ -1346,6 +1526,7 @@
         },
         "2026-34": {
           "title": "Safe Patient Care (Nurse to Patient and Midwife to Patient Ratios) Amendment Act 2026",
+          "summary": "Assigns or changes specified hospitals’ categories for the purpose of minimum nurse-to-patient and midwife-to-patient ratios.",
           "citation": "34/2026",
           "enactedOn": "2026-09-01",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/safe-patient-care-nurse-patient-and-midwife-patient-ratios-amendment-act-2026",
@@ -1353,6 +1534,7 @@
         },
         "2026-35": {
           "title": "Workplace Protection Orders Act 2026",
+          "summary": "Enables the Magistrates’ Court and Children’s Court to make orders restricting unacceptable conduct connected to specified workplaces.",
           "citation": "35/2026",
           "enactedOn": "2026-09-01",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/workplace-protection-orders-act-2026",
@@ -1360,6 +1542,7 @@
         },
         "2026-36": {
           "title": "Consumer Legislation Amendment Act 2026",
+          "summary": "Updates consumer enforcement rules for seized property and debt collection, and provides for licence suspension where conveyancers fail specified trust account audit requirements.",
           "citation": "36/2026",
           "enactedOn": "2026-09-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/consumer-legislation-amendment-act-2026",
@@ -1367,6 +1550,7 @@
         },
         "2026-37": {
           "title": "Energy and Resources Legislation Amendment (VEET Strategic Review and Other Matters) Act 2026",
+          "summary": "Revises the Victorian Energy Upgrades framework, including accreditation and the range of activities eligible for energy efficiency certificates.",
           "citation": "37/2026",
           "enactedOn": "2026-09-08",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-and-resources-legislation-amendment-veet-strategic-review-and-other-matters-act-2026",
@@ -1374,6 +1558,7 @@
         },
         "2026-38": {
           "title": "Education and Training Reform Amendment (Apprenticeships, Traineeships, Schools and Other Matters) Act 2026",
+          "summary": "Creates a new apprenticeship and traineeship regulatory and licensing scheme and transfers specified functions to Workforce Inspectorate Victoria.",
           "citation": "38/2026",
           "enactedOn": "2026-09-15",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-apprenticeships-traineeships-schools-and-other-matters-act",
@@ -1381,6 +1566,7 @@
         },
         "2026-39": {
           "title": "Fair Work (Commonwealth Powers) Amendment Act 2026",
+          "summary": "Changes Victoria’s referral of workplace relations powers to the Commonwealth, including enterprise bargaining rules for specified public sector employees and provisions affecting law enforcement officers.",
           "citation": "39/2026",
           "enactedOn": "2026-09-15",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/fair-work-commonwealth-powers-amendment-act-2026",
@@ -1388,6 +1574,7 @@
         },
         "2026-40": {
           "title": "Multicultural Victoria Amendment (Multicultural and Multifaith Victoria) Act 2026",
+          "summary": "Establishes Multicultural and Multifaith Victoria and provides for community and regional advisory groups, revised multicultural principles and reporting.",
           "citation": "40/2026",
           "enactedOn": "2026-09-15",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/multicultural-victoria-amendment-multicultural-and-multifaith-victoria-act-2026",
@@ -1395,6 +1582,7 @@
         },
         "2026-41": {
           "title": "Justice Legislation Amendment (Family Violence, Coercive Control, Good Character, Risk Assessment and Other Matters) Act 2026",
+          "summary": "Enables extension or variation of family violence intervention orders in criminal proceedings and changes information sharing, risk assessment and sentencing rules on good character.",
           "citation": "41/2026",
           "enactedOn": "2026-09-22",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-family-violence-coercive-control-good-character-risk-assessment-and",
@@ -1402,6 +1590,7 @@
         },
         "2026-42": {
           "title": "Local Government Legislation Amendment (Stronger Communities) Act 2026",
+          "summary": "Strengthens council governance and integrity requirements and enables a local government Fair Jobs Code and regulator.",
           "citation": "42/2026",
           "enactedOn": "2026-09-29",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/local-government-legislation-amendment-stronger-communities-act-2026",
@@ -1409,6 +1598,7 @@
         },
         "2026-43": {
           "title": "Independent Broad-based Anti-corruption Commission Amendment Act 2026",
+          "summary": "Broadens the definition of corrupt conduct and expands the anti-corruption commission’s powers to trace financial dealings.",
           "citation": "43/2026",
           "enactedOn": "2026-10-01",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/independent-broad-based-anti-corruption-commission-amendment-act-2026",
@@ -1416,6 +1606,7 @@
         },
         "2026-44": {
           "title": "Inquiries Amendment (Special Prosecutor) Act 2026",
+          "summary": "Creates a Special Prosecutor to assist the Construction Royal Commission and strengthens royal commissions’ information-gathering powers.",
           "citation": "44/2026",
           "enactedOn": "2026-10-01",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/inquiries-amendment-special-prosecutor-act-2026",
@@ -1423,6 +1614,7 @@
         },
         "2026-45": {
           "title": "Workplace Legislation Amendment (Accident Compensation and Other Matters) Act 2026",
+          "summary": "Updates workplace reckless endangerment offences, accident compensation rules for supported accommodation and damages claims for specified dust-related conditions.",
           "citation": "45/2026",
           "enactedOn": "2026-10-01",
           "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/workplace-legislation-amendment-accident-compensation-and-other-matters-act-2026",
