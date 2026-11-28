@@ -83,7 +83,7 @@
 .oneNation { --party-colour: #cc5b09; }
 .announcementDay[aria-expanded="true"] .partyDot { outline: 1px solid var(--surface); }
 
-.electionDay {
+.votingDay {
   display: block;
   border-radius: .25rem;
   background: var(--accent);
@@ -93,7 +93,7 @@
   padding: .15rem 0;
 }
 
-.electionDay span { display: block; font-size: .625rem; overflow-wrap: anywhere; }
+.votingDay span { display: block; font-size: .625rem; overflow-wrap: anywhere; }
 .calendar { position: relative; }
 
 

@@ -18,8 +18,9 @@ function getMonthWeeks(month: Date) {
 }
 
 /** Shows the election month and the preceding two months for an ISO calendar date. */
-export default function ElectionCalendar({ electionDate, announcementsByDate }: {
+export default function ElectionCalendar({ electionDate, earlyVotingDate, announcementsByDate }: {
   electionDate: string;
+  earlyVotingDate?: string;
   announcementsByDate: Readonly<Record<string, readonly CalendarAnnouncement[]>>;
 }) {
   const [selection, setSelection] = useState<{ date: string; button: HTMLButtonElement } | null>(null);
@@ -50,6 +51,8 @@ export default function ElectionCalendar({ electionDate, announcementsByDate }: 
   }, [selection]);
 
   const election = new Date(electionDate);
+  const milestones = new Map([[electionDate, 'Election day']]);
+  if (earlyVotingDate) milestones.set(earlyVotingDate, 'Early voting opens');
   const months = [-2, -1, 0].map(offset =>
     new Date(Date.UTC(election.getUTCFullYear(), election.getUTCMonth() + offset, 1)),
   );
@@ -76,6 +79,7 @@ export default function ElectionCalendar({ electionDate, announcementsByDate }: 
                     {week.map((day, weekday) => {
                       if (day === null) return <td key={weekday} />;
                       const date = `${monthKey}-${String(day).padStart(2, '0')}`;
+                      const milestone = milestones.get(date);
 
                       return (
                         <td key={weekday}>
@@ -83,7 +87,7 @@ export default function ElectionCalendar({ electionDate, announcementsByDate }: 
                             <AnnouncementDayButton
                               date={date}
                               parties={announcementsByDate[date].map(announcement => announcement.party)}
-                              isElectionDay={date === electionDate}
+                              milestone={milestone}
                               expanded={selection?.date === date}
                               panelId={panelId}
                               onClick={event => {
@@ -91,9 +95,9 @@ export default function ElectionCalendar({ electionDate, announcementsByDate }: 
                                 else setSelection({ date, button: event.currentTarget });
                               }}
                             />
-                          ) : date === electionDate ? (
-                            <time dateTime={date} className={styles.electionDay}>
-                              {day}<span>Election day</span>
+                          ) : milestone ? (
+                            <time dateTime={date} className={styles.votingDay}>
+                              {day}<span>{milestone}</span>
                             </time>
                           ) : day}
                         </td>

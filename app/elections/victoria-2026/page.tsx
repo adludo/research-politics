@@ -118,7 +118,12 @@ function Calendar() {
     <>
       <p>Outlined dates mark policy announcements.</p>
       <CalendarPartyLegend />
-      <ElectionCalendar electionDate={comparison.electionDateSupplied} announcementsByDate={announcementsByDate} />
+      <ElectionCalendar
+        electionDate={comparison.electionDateSupplied}
+        earlyVotingDate={comparison.earlyVoting.opens}
+        announcementsByDate={announcementsByDate}
+      />
+      <p><a href={comparison.earlyVoting.sourceUrl}>Victorian Electoral Commission election timetable</a></p>
     </>
   );
 }
