@@ -1,0 +1,1434 @@
+{
+  "schemaVersion": 1,
+  "jurisdictions": {
+    "AU-VIC": {
+      "name": "Victoria",
+      "countryCode": "AU",
+      "legislature": "Parliament of Victoria",
+      "coverage": [
+        {
+          "fromInclusive": "2022-11-27",
+          "throughInclusive": "2026-11-28",
+          "dateBasis": "royal-assent",
+          "scope": "Acts of the Parliament of Victoria receiving Royal Assent after the 2022 state election through the 2026 state election. Excludes bills without Royal Assent and subordinate legislation.",
+          "checkedOn": "2026-11-28",
+          "sourceIds": [
+            "election-2022",
+            "election-2026",
+            "register"
+          ]
+        }
+      ],
+      "sources": {
+        "register": {
+          "title": "Acts as made",
+          "url": "https://www.legislation.vic.gov.au/as-made/acts"
+        },
+        "assent-through-2025": {
+          "title": "Commencement information for Acts enacted from 1958 to last year",
+          "url": "https://www.legislation.vic.gov.au/sites/default/files/2026-08/Commencement-information-for-Acts-enacted-from-1958-to-last-year.pdf",
+          "publishedOn": "2026-08-17"
+        },
+        "assent-2026-august": {
+          "title": "Commencement information for Acts enacted this year",
+          "url": "https://www.legislation.vic.gov.au/sites/default/files/2026-08/Commencement-information-for-Acts-enacted-this-year.pdf",
+          "publishedOn": "2026-08-17"
+        },
+        "election-2022": {
+          "title": "Victorian Electoral Commission 2022 state election report, election timeline",
+          "url": "https://www.vec.vic.gov.au/-/media/2cf7d4413e9a4878858e6ed282f46c61.pdf#page=23"
+        },
+        "election-2026": {
+          "title": "Victorian Electoral Commission 2026 state election",
+          "url": "https://www.vec.vic.gov.au/voting/2026-state-election"
+        },
+        "gazette-2026-s452": {
+          "title": "Victoria Government Gazette, Special No. S 452",
+          "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S452.pdf",
+          "publishedOn": "2026-08-18"
+        },
+        "gazette-2026-s466": {
+          "title": "Victoria Government Gazette, Special No. S 466",
+          "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S466.pdf",
+          "publishedOn": "2026-08-25"
+        },
+        "gazette-2026-s482": {
+          "title": "Victoria Government Gazette, Special No. S 482",
+          "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S482.pdf",
+          "publishedOn": "2026-09-01"
+        },
+        "gazette-2026-s497": {
+          "title": "Victoria Government Gazette, Special No. S 497",
+          "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S497.pdf",
+          "publishedOn": "2026-09-08"
+        },
+        "gazette-2026-s512": {
+          "title": "Victoria Government Gazette, Special No. S 512",
+          "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S512.pdf",
+          "publishedOn": "2026-09-15"
+        },
+        "gazette-2026-s530": {
+          "title": "Victoria Government Gazette, Special No. S 530",
+          "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S530.pdf",
+          "publishedOn": "2026-09-22"
+        },
+        "gazette-2026-s547": {
+          "title": "Victoria Government Gazette, Special No. S 547",
+          "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S547.pdf",
+          "publishedOn": "2026-09-29"
+        },
+        "gazette-2026-s559": {
+          "title": "Victoria Government Gazette, Special No. S 559",
+          "url": "https://www.gazette.vic.gov.au/gazette/Gazettes2026/GG2026S559.pdf",
+          "publishedOn": "2026-10-01"
+        }
+      },
+      "acts": {
+        "2023-1": {
+          "title": "Building and Planning Legislation Amendment Act 2023",
+          "citation": "1/2023",
+          "enactedOn": "2023-02-28",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-and-planning-legislation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-2": {
+          "title": "Racing Amendment (Unauthorised Access) Act 2023",
+          "citation": "2/2023",
+          "enactedOn": "2023-03-07",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/racing-amendment-unauthorised-access-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-3": {
+          "title": "Local Government (Moira Shire Council) Act 2023",
+          "citation": "3/2023",
+          "enactedOn": "2023-03-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/local-government-moira-shire-council-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-4": {
+          "title": "Health Legislation Amendment (Information Sharing) Act 2023",
+          "citation": "4/2023",
+          "enactedOn": "2023-03-28",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/health-legislation-amendment-information-sharing-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-5": {
+          "title": "Heritage Amendment Act 2023",
+          "citation": "5/2023",
+          "enactedOn": "2023-03-28",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/heritage-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-6": {
+          "title": "Statute Law Amendment Act 2023",
+          "citation": "6/2023",
+          "enactedOn": "2023-05-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-7": {
+          "title": "Drugs, Poisons and Controlled Substances Amendment (Medically Supervised Injecting Centre) Act 2023",
+          "citation": "7/2023",
+          "enactedOn": "2023-05-16",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-medically-supervised-injecting-0",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-8": {
+          "title": "Human Source Management Act 2023",
+          "citation": "8/2023",
+          "enactedOn": "2023-05-16",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/human-source-management-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-9": {
+          "title": "Disability and Social Services Regulation Amendment Act 2023",
+          "citation": "9/2023",
+          "enactedOn": "2023-05-23",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/disability-and-social-services-regulation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-10": {
+          "title": "Water Legislation Amendment Act 2023",
+          "citation": "10/2023",
+          "enactedOn": "2023-05-23",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/water-legislation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-11": {
+          "title": "Building Legislation Amendment Act 2023",
+          "citation": "11/2023",
+          "enactedOn": "2023-06-06",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-12": {
+          "title": "Energy Legislation Amendment (Electricity Outage Emergency Response and Other Matters) Act 2023",
+          "citation": "12/2023",
+          "enactedOn": "2023-06-06",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-legislation-amendment-electricity-outage-emergency-response-and-other-matters",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-13": {
+          "title": "Gambling Regulation Amendment Act 2023",
+          "citation": "13/2023",
+          "enactedOn": "2023-06-06",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-regulation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-14": {
+          "title": "Gambling Taxation Act 2023",
+          "citation": "14/2023",
+          "enactedOn": "2023-06-06",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-taxation-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-15": {
+          "title": "Appropriation (2023-2024) Act 2023",
+          "citation": "15/2023",
+          "enactedOn": "2023-06-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-2023-2024-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-16": {
+          "title": "Appropriation (Parliament 2023-2024) Act 2023",
+          "citation": "16/2023",
+          "enactedOn": "2023-06-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-parliament-2023-2024-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-17": {
+          "title": "Children and Health Legislation Amendment (Statement of Recognition, Aboriginal Self-determination and Other Matters) Act 2023",
+          "citation": "17/2023",
+          "enactedOn": "2023-06-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/children-and-health-legislation-amendment-statement-recognition-aboriginal-self",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-18": {
+          "title": "State Taxation Acts Amendment Act 2023",
+          "citation": "18/2023",
+          "enactedOn": "2023-06-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-acts-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-19": {
+          "title": "Victorian Future Fund Act 2023",
+          "citation": "19/2023",
+          "enactedOn": "2023-06-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-future-fund-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-20": {
+          "title": "Mental Health and Wellbeing Amendment Act 2023",
+          "citation": "20/2023",
+          "enactedOn": "2023-08-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/mental-health-and-wellbeing-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-21": {
+          "title": "Drugs, Poisons and Controlled Substances Amendment (Authorising Pharmacists) Act 2023",
+          "citation": "21/2023",
+          "enactedOn": "2023-08-15",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-authorising-pharmacists-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-22": {
+          "title": "Energy Legislation Amendment (Energy Safety) Act 2023",
+          "citation": "22/2023",
+          "enactedOn": "2023-08-22",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-legislation-amendment-energy-safety-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-23": {
+          "title": "Mineral Resources (Sustainable Development) Amendment Act 2023",
+          "citation": "23/2023",
+          "enactedOn": "2023-08-29",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/mineral-resources-sustainable-development-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-24": {
+          "title": "Energy Legislation Amendment Act 2023",
+          "citation": "24/2023",
+          "enactedOn": "2023-09-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-legislation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-25": {
+          "title": "Statute Law Amendment (References to the Sovereign) Act 2023",
+          "citation": "25/2023",
+          "enactedOn": "2023-09-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-amendment-references-sovereign-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-26": {
+          "title": "Justice Legislation Amendment Act 2023",
+          "citation": "26/2023",
+          "enactedOn": "2023-10-10",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-27": {
+          "title": "Summary Offences Amendment (Nazi Salute Prohibition) Act 2023",
+          "citation": "27/2023",
+          "enactedOn": "2023-10-20",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/summary-offences-amendment-nazi-salute-prohibition-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-28": {
+          "title": "Bail Amendment Act 2023",
+          "citation": "28/2023",
+          "enactedOn": "2023-10-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/bail-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-29": {
+          "title": "Education and Training Reform Amendment (Land Powers) Act 2023",
+          "citation": "29/2023",
+          "enactedOn": "2023-10-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-land-powers-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-30": {
+          "title": "Gambling Legislation Amendment Act 2023",
+          "citation": "30/2023",
+          "enactedOn": "2023-11-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-legislation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-31": {
+          "title": "Special Investigator Repeal Act 2023",
+          "citation": "31/2023",
+          "enactedOn": "2023-11-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/special-investigator-repeal-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-32": {
+          "title": "Triple Zero Victoria Act 2023",
+          "citation": "32/2023",
+          "enactedOn": "2023-11-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/triple-zero-victoria-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-33": {
+          "title": "Early Childhood Legislation Amendment (Premises Approval in Principle) Act 2023",
+          "citation": "33/2023",
+          "enactedOn": "2023-11-21",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/early-childhood-legislation-amendment-premises-approval-principle-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-34": {
+          "title": "Transport Legislation Amendment Act 2023",
+          "citation": "34/2023",
+          "enactedOn": "2023-11-21",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/transport-legislation-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-35": {
+          "title": "Environment Legislation Amendment (Circular Economy and Other Matters) Act 2023",
+          "citation": "35/2023",
+          "enactedOn": "2023-11-28",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/environment-legislation-amendment-circular-economy-and-other-matters-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-36": {
+          "title": "Corrections Amendment (Parole Reform) Act 2023",
+          "citation": "36/2023",
+          "enactedOn": "2023-12-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/corrections-amendment-parole-reform-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-37": {
+          "title": "Crimes Amendment (Non-fatal Strangulation) Act 2023",
+          "citation": "37/2023",
+          "enactedOn": "2023-12-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-non-fatal-strangulation-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2023-38": {
+          "title": "State Taxation Acts and Other Acts Amendment Act 2023",
+          "citation": "38/2023",
+          "enactedOn": "2023-12-12",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-acts-and-other-acts-amendment-act-2023",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-1": {
+          "title": "Biosecurity Legislation Amendment (Incident Response) Act 2024",
+          "citation": "1/2024",
+          "enactedOn": "2024-02-13",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/biosecurity-legislation-amendment-incident-response-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-2": {
+          "title": "Justice Legislation Amendment (Police and Other Matters) Act 2024",
+          "citation": "2/2024",
+          "enactedOn": "2024-02-20",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-police-and-other-matters-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-3": {
+          "title": "Land (Revocation of Reservations) Act 2024",
+          "citation": "3/2024",
+          "enactedOn": "2024-02-20",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/land-revocation-reservations-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-4": {
+          "title": "Building Legislation Amendment (Domestic Building Insurance New Offences) Act 2024",
+          "citation": "4/2024",
+          "enactedOn": "2024-02-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-domestic-building-insurance-new-offences-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-5": {
+          "title": "Service Victoria Amendment Act 2024",
+          "citation": "5/2024",
+          "enactedOn": "2024-02-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/service-victoria-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-6": {
+          "title": "Regulatory Legislation Amendment (Reform) Act 2024",
+          "citation": "6/2024",
+          "enactedOn": "2024-03-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/regulatory-legislation-amendment-reform-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-7": {
+          "title": "Education and Training Reform Amendment (Early Childhood Employment Powers) Act 2024",
+          "citation": "7/2024",
+          "enactedOn": "2024-03-13",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-early-childhood-employment-powers-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-8": {
+          "title": "Workplace Injury Rehabilitation and Compensation Amendment (WorkCover Scheme Modernisation) Act 2024",
+          "citation": "8/2024",
+          "enactedOn": "2024-03-13",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/workplace-injury-rehabilitation-and-compensation-amendment-workcover-scheme",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-9": {
+          "title": "Climate Change and Energy Legislation Amendment (Renewable Energy and Storage Targets) Act 2024",
+          "citation": "9/2024",
+          "enactedOn": "2024-03-26",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/climate-change-and-energy-legislation-amendment-renewable-energy-and-storage-targets",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-10": {
+          "title": "Firearms and Control of Weapons (Machetes) Amendment Act 2024",
+          "citation": "10/2024",
+          "enactedOn": "2024-03-26",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/firearms-and-control-weapons-machetes-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-11": {
+          "title": "State Electricity Commission Amendment Act 2024",
+          "citation": "11/2024",
+          "enactedOn": "2024-03-26",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-electricity-commission-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-12": {
+          "title": "Private Security and County Court Amendment Act 2024",
+          "citation": "12/2024",
+          "enactedOn": "2024-04-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/private-security-and-county-court-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-13": {
+          "title": "Statute Law Revision Act 2024",
+          "citation": "13/2024",
+          "enactedOn": "2024-04-23",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-revision-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-14": {
+          "title": "Energy and Public Land Legislation Amendment (Enabling Offshore Wind Energy) Act 2024",
+          "citation": "14/2024",
+          "enactedOn": "2024-05-07",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-and-public-land-legislation-amendment-enabling-offshore-wind-energy-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-15": {
+          "title": "National Electricity (Victoria) Amendment (VicGrid) Act 2024",
+          "citation": "15/2024",
+          "enactedOn": "2024-05-14",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/national-electricity-victoria-amendment-vicgrid-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-16": {
+          "title": "Commercial and Industrial Property Tax Reform Act 2024",
+          "citation": "16/2024",
+          "enactedOn": "2024-05-21",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/commercial-and-industrial-property-tax-reform-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-17": {
+          "title": "Estate Agents, Residential Tenancies and Other Acts Amendment (Funding) Act 2024",
+          "citation": "17/2024",
+          "enactedOn": "2024-05-21",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/estate-agents-residential-tenancies-and-other-acts-amendment-funding-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-18": {
+          "title": "National Energy Retail Law (Victoria) Act 2024",
+          "citation": "18/2024",
+          "enactedOn": "2024-05-21",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/national-energy-retail-law-victoria-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-19": {
+          "title": "Appropriation (2024-2025) Act 2024",
+          "citation": "19/2024",
+          "enactedOn": "2024-06-04",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-2024-2025-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-20": {
+          "title": "Appropriation (Parliament 2024-2025) Act 2024",
+          "citation": "20/2024",
+          "enactedOn": "2024-06-04",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-parliament-2024-2025-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-21": {
+          "title": "Financial Management Amendment (Gender Responsive Budgeting) Act 2024",
+          "citation": "21/2024",
+          "enactedOn": "2024-06-04",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/financial-management-amendment-gender-responsive-budgeting-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-22": {
+          "title": "State Taxation Amendment Act 2024",
+          "citation": "22/2024",
+          "enactedOn": "2024-06-04",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-23": {
+          "title": "Local Government Amendment (Governance and Integrity) Act 2024",
+          "citation": "23/2024",
+          "enactedOn": "2024-06-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/local-government-amendment-governance-and-integrity-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-24": {
+          "title": "Sustainable Forests (Timber) Repeal Act 2024",
+          "citation": "24/2024",
+          "enactedOn": "2024-06-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/sustainable-forests-timber-repeal-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-25": {
+          "title": "Victorian Responsible Gambling Foundation Repeal and Advisory Councils Act 2024",
+          "citation": "25/2024",
+          "enactedOn": "2024-06-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-responsible-gambling-foundation-repeal-and-advisory-councils-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-26": {
+          "title": "Confiscation Amendment (Unexplained Wealth) Act 2024",
+          "citation": "26/2024",
+          "enactedOn": "2024-08-06",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/confiscation-amendment-unexplained-wealth-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-27": {
+          "title": "Parliamentary Workplace Standards and Integrity Act 2024",
+          "citation": "27/2024",
+          "enactedOn": "2024-08-20",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/parliamentary-workplace-standards-and-integrity-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-28": {
+          "title": "State Sporting Legislation Amendment Act 2024",
+          "citation": "28/2024",
+          "enactedOn": "2024-08-20",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-sporting-legislation-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-29": {
+          "title": "Aboriginal Land Legislation Amendment Act 2024",
+          "citation": "29/2024",
+          "enactedOn": "2024-09-03",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/aboriginal-land-legislation-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-30": {
+          "title": "Prahran Mechanics' Institute Repeal Act 2024",
+          "citation": "30/2024",
+          "enactedOn": "2024-09-03",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/prahran-mechanics-institute-repeal-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-31": {
+          "title": "Justice Legislation Amendment (Integrity, Defamation and Other Matters) Act 2024",
+          "citation": "31/2024",
+          "enactedOn": "2024-09-10",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-integrity-defamation-and-other-matters-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-32": {
+          "title": "Youth Justice Act 2024",
+          "citation": "32/2024",
+          "enactedOn": "2024-09-10",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/youth-justice-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-33": {
+          "title": "Residential Tenancies and Funerals Amendment Act 2024",
+          "citation": "33/2024",
+          "enactedOn": "2024-09-17",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/residential-tenancies-and-funerals-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-34": {
+          "title": "Victorian Institute of Forensic Medicine Act 2024",
+          "citation": "34/2024",
+          "enactedOn": "2024-09-17",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-institute-forensic-medicine-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-35": {
+          "title": "State Civil Liability (Police Informants) Act 2024",
+          "citation": "35/2024",
+          "enactedOn": "2024-09-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-civil-liability-police-informants-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-36": {
+          "title": "Constitution Amendment (SEC) Act 2024",
+          "citation": "36/2024",
+          "enactedOn": "2024-10-22",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/constitution-amendment-sec-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-37": {
+          "title": "Criminal Organisations Control Amendment Act 2024",
+          "citation": "37/2024",
+          "enactedOn": "2024-10-22",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/criminal-organisations-control-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-38": {
+          "title": "Melbourne Convention and Exhibition Trust Amendment Act 2024",
+          "citation": "38/2024",
+          "enactedOn": "2024-10-22",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/melbourne-convention-and-exhibition-trust-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-39": {
+          "title": "Health Legislation Amendment (Regulatory Reform) Act 2024",
+          "citation": "39/2024",
+          "enactedOn": "2024-10-29",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/health-legislation-amendment-regulatory-reform-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-40": {
+          "title": "Short Stay Levy Act 2024",
+          "citation": "40/2024",
+          "enactedOn": "2024-10-29",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/short-stay-levy-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-41": {
+          "title": "Drugs, Poisons and Controlled Substances Amendment (Pill Testing) Act 2024",
+          "citation": "41/2024",
+          "enactedOn": "2024-11-06",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-pill-testing-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-42": {
+          "title": "Offshore Petroleum and Greenhouse Gas Storage Amendment Act 2024",
+          "citation": "42/2024",
+          "enactedOn": "2024-11-06",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/offshore-petroleum-and-greenhouse-gas-storage-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-43": {
+          "title": "Building Legislation Amendment and Other Matters Act 2024",
+          "citation": "43/2024",
+          "enactedOn": "2024-11-12",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-and-other-matters-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-44": {
+          "title": "Agriculture and Food Safety Legislation Amendment Act 2024",
+          "citation": "44/2024",
+          "enactedOn": "2024-11-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/agriculture-and-food-safety-legislation-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-45": {
+          "title": "Duties Amendment (More Homes) Act 2024",
+          "citation": "45/2024",
+          "enactedOn": "2024-11-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/duties-amendment-more-homes-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-46": {
+          "title": "Roads and Road Safety Legislation Amendment Act 2024",
+          "citation": "46/2024",
+          "enactedOn": "2024-11-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/roads-and-road-safety-legislation-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-47": {
+          "title": "Subordinate Legislation and Administrative Arrangements Amendment Act 2024",
+          "citation": "47/2024",
+          "enactedOn": "2024-11-26",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/subordinate-legislation-and-administrative-arrangements-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-48": {
+          "title": "Transport Infrastructure and Planning Legislation Amendment Act 2024",
+          "citation": "48/2024",
+          "enactedOn": "2024-11-26",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/transport-infrastructure-and-planning-legislation-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-49": {
+          "title": "Aged Care Restrictive Practices Substitute Decision-maker Act 2024",
+          "citation": "49/2024",
+          "enactedOn": "2024-12-03",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/aged-care-restrictive-practices-substitute-decision-maker-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-50": {
+          "title": "State Taxation Further Amendment Act 2024",
+          "citation": "50/2024",
+          "enactedOn": "2024-12-03",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-further-amendment-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2024-51": {
+          "title": "Tobacco Amendment (Tobacco Retailer and Wholesaler Licensing Scheme) Act 2024",
+          "citation": "51/2024",
+          "enactedOn": "2024-12-03",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/tobacco-amendment-tobacco-retailer-and-wholesaler-licensing-scheme-act-2024",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-1": {
+          "title": "Drugs, Poisons and Controlled Substances Amendment (Paramedic Practitioners) Act 2025",
+          "citation": "1/2025",
+          "enactedOn": "2025-02-11",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-paramedic-practitioners-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-2": {
+          "title": "Education and Training Reform Amendment Act 2025",
+          "citation": "2/2025",
+          "enactedOn": "2025-02-11",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-3": {
+          "title": "Statute Law Repeals Act 2025",
+          "citation": "3/2025",
+          "enactedOn": "2025-02-11",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-repeals-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-4": {
+          "title": "Inquiries Amendment (Yoorrook Justice Commission Records and Other Matters) Act 2025",
+          "citation": "4/2025",
+          "enactedOn": "2025-02-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/inquiries-amendment-yoorrook-justice-commission-records-and-other-matters-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-5": {
+          "title": "Justice Legislation Amendment (Committals) Act 2025",
+          "citation": "5/2025",
+          "enactedOn": "2025-02-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-committals-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-6": {
+          "title": "Consumer and Planning Legislation Amendment (Housing Statement Reform) Act 2025",
+          "citation": "6/2025",
+          "enactedOn": "2025-03-18",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/consumer-and-planning-legislation-amendment-housing-statement-reform-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-7": {
+          "title": "Family Violence Protection Amendment Act 2025",
+          "citation": "7/2025",
+          "enactedOn": "2025-03-18",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/family-violence-protection-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-8": {
+          "title": "Bail Amendment Act 2025",
+          "citation": "8/2025",
+          "enactedOn": "2025-03-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/bail-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-9": {
+          "title": "Terrorism (Community Protection) and Control of Weapons Amendment Act 2025",
+          "citation": "9/2025",
+          "enactedOn": "2025-03-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/terrorism-community-protection-and-control-weapons-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-10": {
+          "title": "Help to Buy (Commonwealth Powers) Act 2025",
+          "citation": "10/2025",
+          "enactedOn": "2025-04-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/help-buy-commonwealth-powers-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-11": {
+          "title": "Justice Legislation Amendment (Anti-vilification and Social Cohesion) Act 2025",
+          "citation": "11/2025",
+          "enactedOn": "2025-04-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-anti-vilification-and-social-cohesion-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-12": {
+          "title": "Safe Patient Care (Nurse to Patient and Midwife to Patient Ratios) Amendment Act 2025",
+          "citation": "12/2025",
+          "enactedOn": "2025-04-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/safe-patient-care-nurse-patient-and-midwife-patient-ratios-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-13": {
+          "title": "Energy and Land Legislation Amendment (Energy Safety) Act 2025",
+          "citation": "13/2025",
+          "enactedOn": "2025-05-20",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-and-land-legislation-amendment-energy-safety-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-14": {
+          "title": "Regulatory Legislation Amendment (Reform) Act 2025",
+          "citation": "14/2025",
+          "enactedOn": "2025-05-20",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/regulatory-legislation-amendment-reform-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-15": {
+          "title": "Victorian Energy Efficiency Target Amendment (Energy Upgrades for the Future) Act 2025",
+          "citation": "15/2025",
+          "enactedOn": "2025-05-20",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-energy-efficiency-target-amendment-energy-upgrades-future-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-16": {
+          "title": "Fire Services Property Amendment (Emergency Services and Volunteers Fund) Act 2025",
+          "citation": "16/2025",
+          "enactedOn": "2025-05-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/fire-services-property-amendment-emergency-services-and-volunteers-fund-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-17": {
+          "title": "Building Legislation Amendment (Buyer Protections) Act 2025",
+          "citation": "17/2025",
+          "enactedOn": "2025-06-03",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-buyer-protections-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-18": {
+          "title": "Gambling Legislation Amendment (Pre-commitment and Carded Play) Act 2025",
+          "citation": "18/2025",
+          "enactedOn": "2025-06-03",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-legislation-amendment-pre-commitment-and-carded-play-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-19": {
+          "title": "Retirement Villages Amendment Act 2025",
+          "citation": "19/2025",
+          "enactedOn": "2025-06-03",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/retirement-villages-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-20": {
+          "title": "Justice Legislation Amendment (Miscellaneous) Act 2025",
+          "citation": "20/2025",
+          "enactedOn": "2025-06-18",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-miscellaneous-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-21": {
+          "title": "Appropriation (2025-2026) Act 2025",
+          "citation": "21/2025",
+          "enactedOn": "2025-06-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-2025-2026-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-22": {
+          "title": "Appropriation (Parliament 2025-2026) Act 2025",
+          "citation": "22/2025",
+          "enactedOn": "2025-06-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-parliament-2025-2026-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-23": {
+          "title": "Gambling Legislation Amendment Act 2025",
+          "citation": "23/2025",
+          "enactedOn": "2025-06-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/gambling-legislation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-24": {
+          "title": "State Taxation Acts Amendment Act 2025",
+          "citation": "24/2025",
+          "enactedOn": "2025-06-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-acts-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-25": {
+          "title": "Roads and Ports Legislation Amendment (Road Safety and Other Matters) Act 2025",
+          "citation": "25/2025",
+          "enactedOn": "2025-08-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/roads-and-ports-legislation-amendment-road-safety-and-other-matters-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-26": {
+          "title": "Transport Legislation Amendment (Vehicle Sharing Scheme Safety and Standards) Act 2025",
+          "citation": "26/2025",
+          "enactedOn": "2025-08-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/transport-legislation-amendment-vehicle-sharing-scheme-safety-and-standards-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-27": {
+          "title": "Workplace Injury Rehabilitation and Compensation Amendment Act 2025",
+          "citation": "27/2025",
+          "enactedOn": "2025-08-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/workplace-injury-rehabilitation-and-compensation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-28": {
+          "title": "Corrections Legislation Amendment Act 2025",
+          "citation": "28/2025",
+          "enactedOn": "2025-08-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/corrections-legislation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-29": {
+          "title": "Crimes Amendment (Performance Crime) Act 2025",
+          "citation": "29/2025",
+          "enactedOn": "2025-08-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-performance-crime-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-30": {
+          "title": "Financial Management Legislation Amendment Act 2025",
+          "citation": "30/2025",
+          "enactedOn": "2025-08-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/financial-management-legislation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-31": {
+          "title": "Local Jobs First Amendment Act 2025",
+          "citation": "31/2025",
+          "enactedOn": "2025-08-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/local-jobs-first-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-32": {
+          "title": "Superannuation Legislation Amendment Act 2025",
+          "citation": "32/2025",
+          "enactedOn": "2025-08-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/superannuation-legislation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-33": {
+          "title": "Worker Screening Amendment (Strengthening the Working with Children Check) Act 2025",
+          "citation": "33/2025",
+          "enactedOn": "2025-08-27",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/worker-screening-amendment-strengthening-working-children-check-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-34": {
+          "title": "Bail Further Amendment Act 2025",
+          "citation": "34/2025",
+          "enactedOn": "2025-09-02",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/bail-further-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-35": {
+          "title": "Wage Theft Amendment Act 2025",
+          "citation": "35/2025",
+          "enactedOn": "2025-09-02",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/wage-theft-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-36": {
+          "title": "Domestic Building Contracts Amendment Act 2025",
+          "citation": "36/2025",
+          "enactedOn": "2025-09-16",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/domestic-building-contracts-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-37": {
+          "title": "Drugs, Poisons and Controlled Substances Amendment (Medication Administration in Residential Aged Care) Act 2025",
+          "citation": "37/2025",
+          "enactedOn": "2025-09-16",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/drugs-poisons-and-controlled-substances-amendment-medication-administration-residential-aged-care",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-38": {
+          "title": "National Electricity (Victoria) Amendment (VicGrid Stage 2 Reform) Act 2025",
+          "citation": "38/2025",
+          "enactedOn": "2025-09-16",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/national-electricity-victoria-amendment-vicgrid-stage-2-reform-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-39": {
+          "title": "Australian Grands Prix Amendment Act 2025",
+          "citation": "39/2025",
+          "enactedOn": "2025-10-21",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/australian-grands-prix-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-40": {
+          "title": "Casino and Gambling Legislation Amendment Act 2025",
+          "citation": "40/2025",
+          "enactedOn": "2025-10-21",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/casino-and-gambling-legislation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-41": {
+          "title": "Statute Law Revision Act 2025",
+          "citation": "41/2025",
+          "enactedOn": "2025-10-21",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statute-law-revision-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-42": {
+          "title": "Domestic Animals Amendment (Rehoming Cats and Dogs and Other Matters) Act 2025",
+          "citation": "42/2025",
+          "enactedOn": "2025-11-05",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/domestic-animals-amendment-rehoming-cats-and-dogs-and-other-matters-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-43": {
+          "title": "Building Legislation Amendment (Fairer Payments on Jobsites and Other Matters) Act 2025",
+          "citation": "43/2025",
+          "enactedOn": "2025-11-13",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-amendment-fairer-payments-jobsites-and-other-matters-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-44": {
+          "title": "Mental Health Legislation Amendment Act 2025",
+          "citation": "44/2025",
+          "enactedOn": "2025-11-13",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/mental-health-legislation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-45": {
+          "title": "Statewide Treaty Act 2025",
+          "citation": "45/2025",
+          "enactedOn": "2025-11-13",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/statewide-treaty-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-46": {
+          "title": "Consumer Legislation Amendment Act 2025",
+          "citation": "46/2025",
+          "enactedOn": "2025-11-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/consumer-legislation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-47": {
+          "title": "Parks and Public Land Legislation Amendment (Central West and Other Matters) Act 2025",
+          "citation": "47/2025",
+          "enactedOn": "2025-11-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/parks-and-public-land-legislation-amendment-central-west-and-other-matters-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-48": {
+          "title": "State Taxation Further Amendment Act 2025",
+          "citation": "48/2025",
+          "enactedOn": "2025-11-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/state-taxation-further-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-49": {
+          "title": "Victorian Early Childhood Regulatory Authority Act 2025",
+          "citation": "49/2025",
+          "enactedOn": "2025-11-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victorian-early-childhood-regulatory-authority-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-50": {
+          "title": "Voluntary Assisted Dying Amendment Act 2025",
+          "citation": "50/2025",
+          "enactedOn": "2025-11-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/voluntary-assisted-dying-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-51": {
+          "title": "Restricting Non-disclosure Agreements (Sexual Harassment at Work) Act 2025",
+          "citation": "51/2025",
+          "enactedOn": "2025-12-02",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/restricting-non-disclosure-agreements-sexual-harassment-work-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-52": {
+          "title": "Crimes Amendment (Retail, Fast Food, Hospitality and Transport Worker Harm) Act 2025",
+          "citation": "52/2025",
+          "enactedOn": "2025-12-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-retail-fast-food-hospitality-and-transport-worker-harm-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-53": {
+          "title": "Early Childhood Legislation Amendment (Child Safety) Act 2025",
+          "citation": "53/2025",
+          "enactedOn": "2025-12-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/early-childhood-legislation-amendment-child-safety-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-54": {
+          "title": "Justice Legislation Amendment (Community Safety) Act 2025",
+          "citation": "54/2025",
+          "enactedOn": "2025-12-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-community-safety-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-55": {
+          "title": "Justice Legislation Amendment (Police and Other Matters) Act 2025",
+          "citation": "55/2025",
+          "enactedOn": "2025-12-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-police-and-other-matters-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-56": {
+          "title": "Transport Legislation Amendment Act 2025",
+          "citation": "56/2025",
+          "enactedOn": "2025-12-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/transport-legislation-amendment-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-57": {
+          "title": "Labour Hire Legislation Amendment (Licensing) Act 2025",
+          "citation": "57/2025",
+          "enactedOn": "2025-12-16",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/labour-hire-legislation-amendment-licensing-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2025-58": {
+          "title": "Social Services Regulation Amendment (Child Safety, Complaints and Worker Regulation) Act 2025",
+          "citation": "58/2025",
+          "enactedOn": "2025-12-16",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/social-services-regulation-amendment-child-safety-complaints-and-worker-regulation-act-2025",
+          "enactmentSource": "assent-through-2025"
+        },
+        "2026-1": {
+          "title": "Justice Legislation Amendment (Family Violence, Stalking and Other Matters) Act 2026",
+          "citation": "1/2026",
+          "enactedOn": "2026-02-10",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-family-violence-stalking-and-other-matters-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-2": {
+          "title": "Mineral Resources (Sustainable Development) Amendment (Financial Assurance) Act 2026",
+          "citation": "2/2026",
+          "enactedOn": "2026-02-10",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/mineral-resources-sustainable-development-amendment-financial-assurance-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-3": {
+          "title": "Planning Amendment (Better Decisions Made Faster) Act 2026",
+          "citation": "3/2026",
+          "enactedOn": "2026-02-17",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/planning-amendment-better-decisions-made-faster-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-4": {
+          "title": "Health Safeguards for People Born with Variations in Sex Characteristics Act 2026",
+          "citation": "4/2026",
+          "enactedOn": "2026-02-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/health-safeguards-people-born-variations-sex-characteristics-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-5": {
+          "title": "Justice Legislation Amendment (Vicarious Liability for Child Abuse) Act 2026",
+          "citation": "5/2026",
+          "enactedOn": "2026-02-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-vicarious-liability-child-abuse-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-6": {
+          "title": "Children, Youth and Families Amendment (Stability) Act 2026",
+          "citation": "6/2026",
+          "enactedOn": "2026-03-11",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/children-youth-and-families-amendment-stability-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-7": {
+          "title": "Children, Youth and Families Amendment (Supporting Stable and Strong Families) Act 2026",
+          "citation": "7/2026",
+          "enactedOn": "2026-03-11",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/children-youth-and-families-amendment-supporting-stable-and-strong-families-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-8": {
+          "title": "Crimes Amendment Act 2026",
+          "citation": "8/2026",
+          "enactedOn": "2026-03-11",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-9": {
+          "title": "Energy and Other Legislation Amendment (Resilience Reforms and Other Matters) Act 2026",
+          "citation": "9/2026",
+          "enactedOn": "2026-03-11",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-and-other-legislation-amendment-resilience-reforms-and-other-matters-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-10": {
+          "title": "National Gas (Victoria) Amendment Act 2026",
+          "citation": "10/2026",
+          "enactedOn": "2026-03-24",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/national-gas-victoria-amendment-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-11": {
+          "title": "Entities Legislation Amendment (Consolidation and Other Matters) Act 2026",
+          "citation": "11/2026",
+          "enactedOn": "2026-03-31",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/entities-legislation-amendment-consolidation-and-other-matters-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-12": {
+          "title": "Education and Training Reform Amendment (Free TAFE Guarantee) Act 2026",
+          "citation": "12/2026",
+          "enactedOn": "2026-04-14",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-free-tafe-guarantee-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-13": {
+          "title": "Electoral Amendment Act 2026",
+          "citation": "13/2026",
+          "enactedOn": "2026-04-14",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/electoral-amendment-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-14": {
+          "title": "Justice Legislation Further Amendment (Miscellaneous) Act 2026",
+          "citation": "14/2026",
+          "enactedOn": "2026-04-14",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-further-amendment-miscellaneous-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-15": {
+          "title": "Regulatory Legislation Amendment (Reform) Act 2026",
+          "citation": "15/2026",
+          "enactedOn": "2026-04-14",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/regulatory-legislation-amendment-reform-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-16": {
+          "title": "Safe Food Victoria Act 2026",
+          "citation": "16/2026",
+          "enactedOn": "2026-04-14",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/safe-food-victoria-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-17": {
+          "title": "Building and Plumbing Administration and Enforcement Act 2026",
+          "citation": "17/2026",
+          "enactedOn": "2026-05-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-and-plumbing-administration-and-enforcement-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-18": {
+          "title": "Cladding Safety Victoria Repeal Act 2026",
+          "citation": "18/2026",
+          "enactedOn": "2026-05-19",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/cladding-safety-victoria-repeal-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-19": {
+          "title": "Electoral Further Amendment Act 2026",
+          "citation": "19/2026",
+          "enactedOn": "2026-06-09",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/electoral-further-amendment-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-20": {
+          "title": "Appropriation (2026-2027) Act 2026",
+          "citation": "20/2026",
+          "enactedOn": "2026-06-10",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-2026-2027-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-21": {
+          "title": "Appropriation (Parliament 2026-2027) Act 2026",
+          "citation": "21/2026",
+          "enactedOn": "2026-06-23",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/appropriation-parliament-2026-2027-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-22": {
+          "title": "Building Legislation and Treasury Legislation (Tax Relief) Amendment Act 2026",
+          "citation": "22/2026",
+          "enactedOn": "2026-06-23",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/building-legislation-and-treasury-legislation-tax-relief-amendment-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-23": {
+          "title": "Victoria Police Amendment (Police Reservists) Act 2026",
+          "citation": "23/2026",
+          "enactedOn": "2026-06-23",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/victoria-police-amendment-police-reservists-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-24": {
+          "title": "Dangerous Goods Transport Act 2026",
+          "citation": "24/2026",
+          "enactedOn": "2026-08-04",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/dangerous-goods-transport-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-25": {
+          "title": "Education and Training Reform Amendment Act 2026",
+          "citation": "25/2026",
+          "enactedOn": "2026-08-04",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-26": {
+          "title": "Health Legislation Amendment (Regulatory Reform) Act 2026",
+          "citation": "26/2026",
+          "enactedOn": "2026-08-04",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/health-legislation-amendment-regulatory-reform-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-27": {
+          "title": "Occupational Health and Safety Amendment (Dangerous Goods) Act 2026",
+          "citation": "27/2026",
+          "enactedOn": "2026-08-04",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/occupational-health-and-safety-amendment-dangerous-goods-act-2026",
+          "enactmentSource": "assent-2026-august"
+        },
+        "2026-28": {
+          "title": "Electoral Amendment (Miscellaneous Matters) Act 2026",
+          "citation": "28/2026",
+          "enactedOn": "2026-08-18",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/electoral-amendment-miscellaneous-matters-act-2026",
+          "enactmentSource": "gazette-2026-s452"
+        },
+        "2026-29": {
+          "title": "Firearms Amendment Act 2026",
+          "citation": "29/2026",
+          "enactedOn": "2026-08-18",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/firearms-amendment-act-2026",
+          "enactmentSource": "gazette-2026-s452"
+        },
+        "2026-30": {
+          "title": "Fishing, Hunting and Outdoor Victoria Act 2026",
+          "citation": "30/2026",
+          "enactedOn": "2026-08-25",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/fishing-hunting-and-outdoor-victoria-act-2026",
+          "enactmentSource": "gazette-2026-s466"
+        },
+        "2026-31": {
+          "title": "Corrections Amendment Act 2026",
+          "citation": "31/2026",
+          "enactedOn": "2026-09-01",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/corrections-amendment-act-2026",
+          "enactmentSource": "gazette-2026-s482"
+        },
+        "2026-32": {
+          "title": "Crimes Amendment (Recruitment of Children for Criminal Activity and Production Notices) Act 2026",
+          "citation": "32/2026",
+          "enactedOn": "2026-09-01",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/crimes-amendment-recruitment-children-criminal-activity-and-production-notices-act-2026",
+          "enactmentSource": "gazette-2026-s482"
+        },
+        "2026-33": {
+          "title": "Racing Legislation Amendment (Entity Governance and Other Matters) Act 2026",
+          "citation": "33/2026",
+          "enactedOn": "2026-09-01",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/racing-legislation-amendment-entity-governance-and-other-matters-act-2026",
+          "enactmentSource": "gazette-2026-s482"
+        },
+        "2026-34": {
+          "title": "Safe Patient Care (Nurse to Patient and Midwife to Patient Ratios) Amendment Act 2026",
+          "citation": "34/2026",
+          "enactedOn": "2026-09-01",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/safe-patient-care-nurse-patient-and-midwife-patient-ratios-amendment-act-2026",
+          "enactmentSource": "gazette-2026-s482"
+        },
+        "2026-35": {
+          "title": "Workplace Protection Orders Act 2026",
+          "citation": "35/2026",
+          "enactedOn": "2026-09-01",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/workplace-protection-orders-act-2026",
+          "enactmentSource": "gazette-2026-s482"
+        },
+        "2026-36": {
+          "title": "Consumer Legislation Amendment Act 2026",
+          "citation": "36/2026",
+          "enactedOn": "2026-09-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/consumer-legislation-amendment-act-2026",
+          "enactmentSource": "gazette-2026-s497"
+        },
+        "2026-37": {
+          "title": "Energy and Resources Legislation Amendment (VEET Strategic Review and Other Matters) Act 2026",
+          "citation": "37/2026",
+          "enactedOn": "2026-09-08",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/energy-and-resources-legislation-amendment-veet-strategic-review-and-other-matters-act-2026",
+          "enactmentSource": "gazette-2026-s497"
+        },
+        "2026-38": {
+          "title": "Education and Training Reform Amendment (Apprenticeships, Traineeships, Schools and Other Matters) Act 2026",
+          "citation": "38/2026",
+          "enactedOn": "2026-09-15",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/education-and-training-reform-amendment-apprenticeships-traineeships-schools-and-other-matters-act",
+          "enactmentSource": "gazette-2026-s512"
+        },
+        "2026-39": {
+          "title": "Fair Work (Commonwealth Powers) Amendment Act 2026",
+          "citation": "39/2026",
+          "enactedOn": "2026-09-15",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/fair-work-commonwealth-powers-amendment-act-2026",
+          "enactmentSource": "gazette-2026-s512"
+        },
+        "2026-40": {
+          "title": "Multicultural Victoria Amendment (Multicultural and Multifaith Victoria) Act 2026",
+          "citation": "40/2026",
+          "enactedOn": "2026-09-15",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/multicultural-victoria-amendment-multicultural-and-multifaith-victoria-act-2026",
+          "enactmentSource": "gazette-2026-s512"
+        },
+        "2026-41": {
+          "title": "Justice Legislation Amendment (Family Violence, Coercive Control, Good Character, Risk Assessment and Other Matters) Act 2026",
+          "citation": "41/2026",
+          "enactedOn": "2026-09-22",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/justice-legislation-amendment-family-violence-coercive-control-good-character-risk-assessment-and",
+          "enactmentSource": "gazette-2026-s530"
+        },
+        "2026-42": {
+          "title": "Local Government Legislation Amendment (Stronger Communities) Act 2026",
+          "citation": "42/2026",
+          "enactedOn": "2026-09-29",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/local-government-legislation-amendment-stronger-communities-act-2026",
+          "enactmentSource": "gazette-2026-s547"
+        },
+        "2026-43": {
+          "title": "Independent Broad-based Anti-corruption Commission Amendment Act 2026",
+          "citation": "43/2026",
+          "enactedOn": "2026-10-01",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/independent-broad-based-anti-corruption-commission-amendment-act-2026",
+          "enactmentSource": "gazette-2026-s559"
+        },
+        "2026-44": {
+          "title": "Inquiries Amendment (Special Prosecutor) Act 2026",
+          "citation": "44/2026",
+          "enactedOn": "2026-10-01",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/inquiries-amendment-special-prosecutor-act-2026",
+          "enactmentSource": "gazette-2026-s559"
+        },
+        "2026-45": {
+          "title": "Workplace Legislation Amendment (Accident Compensation and Other Matters) Act 2026",
+          "citation": "45/2026",
+          "enactedOn": "2026-10-01",
+          "textUrl": "https://www.legislation.vic.gov.au/as-made/acts/workplace-legislation-amendment-accident-compensation-and-other-matters-act-2026",
+          "enactmentSource": "gazette-2026-s559"
+        }
+      }
+    }
+  }
+}
