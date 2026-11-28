@@ -110,7 +110,7 @@ export default function VictorianElection() {
       <ScopeAndContext />
       <nav className="surface-card" aria-labelledby="contents-heading">
         <h2 id="contents-heading">Contents</h2>
-        <ul className={styles.sectionLinks}>
+        <ol className={styles.sectionLinks}>
           {sections.map(({ id, title, topics }) => (
             <li key={id}>
               <a href={`#${id}`}>{title}</a>
@@ -126,11 +126,13 @@ export default function VictorianElection() {
               )}
             </li>
           ))}
-        </ul>
+        </ol>
       </nav>
-      {sections.map(({ id, title, Content, headingId = `${id}-heading` }) => (
+      {sections.map(({ id, title, Content, headingId = `${id}-heading` }, index) => (
         <section key={id} id={id} className={styles.detailSection} aria-labelledby={headingId}>
-          <h2 id={headingId}>{title}</h2>
+          <h2 id={headingId} className={styles.sectionHeading}>
+            {index + 1}. {title}
+          </h2>
           <Content />
         </section>
       ))}
