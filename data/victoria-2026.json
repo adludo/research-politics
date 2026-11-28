@@ -1,6 +1,10 @@
 {
   "researchDate": "2026-11-18",
   "electionDateSupplied": "2026-11-28",
+  "earlyVoting": {
+    "opens": "2026-11-18",
+    "sourceUrl": "https://www.vec.vic.gov.au/voting/types-of-elections/state-elections"
+  },
   "provenance": "User-supplied summary; claims, dates, rankings and election relevance not independently verified.",
   "sources": {
     "abc": {

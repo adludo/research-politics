@@ -22,10 +22,10 @@ export function CalendarPartyLegend() {
   );
 }
 
-export default function AnnouncementDayButton({ date, parties, isElectionDay, expanded, panelId, onClick }: {
+export default function AnnouncementDayButton({ date, parties, milestone, expanded, panelId, onClick }: {
   date: string;
   parties: readonly string[];
-  isElectionDay: boolean;
+  milestone?: string;
   expanded: boolean;
   panelId: string;
   onClick: MouseEventHandler<HTMLButtonElement>;
@@ -33,7 +33,7 @@ export default function AnnouncementDayButton({ date, parties, isElectionDay, ex
   const day = new Date(date);
   const partyNames = [...new Set(parties)];
   const markers = calendarParties.filter(party => partyNames.includes(party.name));
-  const label = `${dateFormat.format(day)}, policy announcements from ${partyNames.join(', ')}${isElectionDay ? ', election day' : ''}`;
+  const label = `${dateFormat.format(day)}, policy announcements from ${partyNames.join(', ')}${milestone ? `, ${milestone}` : ''}`;
 
   return (
     <button
@@ -44,8 +44,8 @@ export default function AnnouncementDayButton({ date, parties, isElectionDay, ex
       aria-controls={expanded ? panelId : undefined}
       onClick={onClick}
     >
-      <time dateTime={date} className={isElectionDay ? styles.electionDay : undefined}>
-        {day.getUTCDate()}{isElectionDay && <span>Election day</span>}
+      <time dateTime={date} className={milestone ? styles.votingDay : undefined}>
+        {day.getUTCDate()}{milestone && <span>{milestone}</span>}
       </time>
       {markers.length > 0 && (
         <span className={styles.partyDots} aria-hidden="true">
