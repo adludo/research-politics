@@ -45,6 +45,44 @@
 .announcementDay[aria-expanded="true"] { background: var(--accent); color: var(--surface); }
 .announcementDay:focus-visible { outline-offset: 1px; }
 
+.partyLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1rem;
+  margin: 0 0 .75rem;
+  padding: 0;
+  list-style: none;
+  font-size: .875rem;
+}
+
+.partyLegend li, .partyDots {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
+.partyDots {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .125rem;
+  padding-block-end: .125rem;
+}
+
+.partyDot {
+  display: inline-block;
+  flex: 0 0 .375rem;
+  width: .375rem;
+  height: .375rem;
+  border-radius: 50%;
+  background: var(--party-colour);
+}
+
+.labor { --party-colour: #c22430; }
+.coalition { --party-colour: #2364b3; }
+.greens { --party-colour: #218039; }
+.oneNation { --party-colour: #cc5b09; }
+.announcementDay[aria-expanded="true"] .partyDot { outline: 1px solid var(--surface); }
+
 .electionDay {
   display: block;
   border-radius: .25rem;

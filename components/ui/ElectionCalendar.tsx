@@ -82,6 +82,7 @@ export default function ElectionCalendar({ electionDate, announcementsByDate }: 
                           {announcementsByDate[date] ? (
                             <AnnouncementDayButton
                               date={date}
+                              parties={announcementsByDate[date].map(announcement => announcement.party)}
                               isElectionDay={date === electionDate}
                               expanded={selection?.date === date}
                               panelId={panelId}
