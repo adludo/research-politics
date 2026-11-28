@@ -28,6 +28,22 @@
 .month th { color: var(--muted); font-size: .75rem; }
 .month td { height: 2.5rem; }
 
+.announcementDay {
+  width: 100%;
+  min-height: 1.75rem;
+  padding: .125rem;
+  border: 1px solid var(--accent);
+  border-radius: .25rem;
+  background: var(--surface-accent);
+  color: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.announcementDay:hover { background: var(--border); }
+.announcementDay:focus-visible { outline-offset: 1px; }
+
 .electionDay {
   display: block;
   border-radius: .25rem;

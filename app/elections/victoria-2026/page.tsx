@@ -96,8 +96,23 @@ function StateBudget() {
   );
 }
 
+function Calendar() {
+  const announcementDates = new Set(comparison.sections.flatMap(section =>
+    section.parties.flatMap(party =>
+      party.claims.filter(claim => claim.date.isAnnouncement).map(claim => claim.date.value),
+    ),
+  ));
+
+  return (
+    <>
+      <p>Outlined dates mark policy announcements.</p>
+      <ElectionCalendar electionDate={comparison.electionDateSupplied} announcementDates={announcementDates} />
+    </>
+  );
+}
+
 const sections = [
-  { id: 'calendar', title: 'Calendar', Content: () => <ElectionCalendar electionDate={comparison.electionDateSupplied} /> },
+  { id: 'calendar', title: 'Calendar', Content: Calendar },
   { id: 'policies', title: 'Policies', Content: ElectionPolicies, topics: comparison.sections },
   { id: 'state-budget', title: 'State budget', Content: StateBudget },
   { id: 'verification-heading', title: 'Verification and source review', Content: SourceReview, headingId: 'review-heading' },
