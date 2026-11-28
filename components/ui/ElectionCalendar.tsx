@@ -1,3 +1,4 @@
+import AnnouncementDayButton from './AnnouncementDayButton';
 import styles from './ElectionCalendar.module.css';
 
 const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -13,7 +14,10 @@ function getMonthWeeks(month: Date) {
 }
 
 /** Shows the election month and the preceding two months for an ISO calendar date. */
-export default function ElectionCalendar({ electionDate }: { electionDate: string }) {
+export default function ElectionCalendar({ electionDate, announcementDates }: {
+  electionDate: string;
+  announcementDates: ReadonlySet<string>;
+}) {
   const election = new Date(electionDate);
   const months = [-2, -1, 0].map(offset =>
     new Date(Date.UTC(election.getUTCFullYear(), election.getUTCMonth() + offset, 1)),
@@ -41,7 +45,9 @@ export default function ElectionCalendar({ electionDate }: { electionDate: strin
 
                     return (
                       <td key={weekday}>
-                        {date === electionDate ? (
+                        {announcementDates.has(date) ? (
+                          <AnnouncementDayButton date={date} isElectionDay={date === electionDate} />
+                        ) : date === electionDate ? (
                           <time dateTime={date} className={styles.electionDay}>
                             {day}<span>Election day</span>
                           </time>
