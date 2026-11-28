@@ -6,6 +6,7 @@ import PolicyComparison from '../../../components/policies/PolicyComparison';
 import SourceReference from '../../../components/policies/SourceReference';
 import BackToTop from '../../../components/ui/BackToTop';
 import ElectionCalendar from '../../../components/ui/ElectionCalendar';
+import { CalendarPartyLegend } from '../../../components/ui/AnnouncementDayButton';
 import type { CalendarAnnouncement } from '../../../components/ui/CalendarAnnouncementPanel';
 import ExpandableSection from '../../../components/ui/ExpandableSection';
 
@@ -116,6 +117,7 @@ function Calendar() {
   return (
     <>
       <p>Outlined dates mark policy announcements.</p>
+      <CalendarPartyLegend />
       <ElectionCalendar electionDate={comparison.electionDateSupplied} announcementsByDate={announcementsByDate} />
     </>
   );
