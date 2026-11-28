@@ -6,6 +6,7 @@ import PolicyComparison from '../../../components/policies/PolicyComparison';
 import SourceReference from '../../../components/policies/SourceReference';
 import BackToTop from '../../../components/ui/BackToTop';
 import ElectionCalendar from '../../../components/ui/ElectionCalendar';
+import type { CalendarAnnouncement } from '../../../components/ui/CalendarAnnouncementPanel';
 import ExpandableSection from '../../../components/ui/ExpandableSection';
 
 import { getPolicyVerification } from './policy-verification';
@@ -97,16 +98,25 @@ function StateBudget() {
 }
 
 function Calendar() {
-  const announcementDates = new Set(comparison.sections.flatMap(section =>
-    section.parties.flatMap(party =>
-      party.claims.filter(claim => claim.date.isAnnouncement).map(claim => claim.date.value),
-    ),
-  ));
+  const announcementsByDate: Record<string, CalendarAnnouncement[]> = {};
+  for (const section of comparison.sections) {
+    for (const party of section.parties) {
+      for (const claim of party.claims) {
+        if (!claim.date?.isAnnouncement) continue;
+        (announcementsByDate[claim.date.value] ??= []).push({
+          party: party.name,
+          area: section.title,
+          text: claim.text,
+          sourceUrl: claim.date.url,
+        });
+      }
+    }
+  }
 
   return (
     <>
       <p>Outlined dates mark policy announcements.</p>
-      <ElectionCalendar electionDate={comparison.electionDateSupplied} announcementDates={announcementDates} />
+      <ElectionCalendar electionDate={comparison.electionDateSupplied} announcementsByDate={announcementsByDate} />
     </>
   );
 }
