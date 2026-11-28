@@ -1,4 +1,8 @@
+'use client';
+
+import { useId, useLayoutEffect, useRef, useState } from 'react';
 import AnnouncementDayButton from './AnnouncementDayButton';
+import CalendarAnnouncementPanel, { type CalendarAnnouncement } from './CalendarAnnouncementPanel';
 import styles from './ElectionCalendar.module.css';
 
 const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -14,53 +18,103 @@ function getMonthWeeks(month: Date) {
 }
 
 /** Shows the election month and the preceding two months for an ISO calendar date. */
-export default function ElectionCalendar({ electionDate, announcementDates }: {
+export default function ElectionCalendar({ electionDate, announcementsByDate }: {
   electionDate: string;
-  announcementDates: ReadonlySet<string>;
+  announcementsByDate: Readonly<Record<string, readonly CalendarAnnouncement[]>>;
 }) {
+  const [selection, setSelection] = useState<{ date: string; button: HTMLButtonElement } | null>(null);
+  const panelId = useId();
+  const gridRef = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLElement>(null);
+  const headingRef = useRef<HTMLHeadingElement>(null);
+
+  function closePanel() {
+    selection?.button.focus();
+    setSelection(null);
+  }
+
+  useLayoutEffect(() => {
+    const grid = gridRef.current;
+    const panel = panelRef.current;
+    if (!grid || !panel || !selection) return;
+
+    const positionPanel = () => {
+      panel.style.top = `${selection.button.getBoundingClientRect().bottom - grid.getBoundingClientRect().top}px`;
+    };
+
+    positionPanel();
+    headingRef.current?.focus();
+    const observer = new ResizeObserver(positionPanel);
+    observer.observe(grid);
+    return () => observer.disconnect();
+  }, [selection]);
+
   const election = new Date(electionDate);
   const months = [-2, -1, 0].map(offset =>
     new Date(Date.UTC(election.getUTCFullYear(), election.getUTCMonth() + offset, 1)),
   );
 
   return (
-    <div className={styles.months}>
-      {months.map(month => {
-        const monthKey = month.toISOString().slice(0, 7);
+    <div className={styles.calendar} onKeyDown={event => {
+      if (event.key === 'Escape' && selection) closePanel();
+    }}>
+      <div ref={gridRef} className={styles.months}>
+        {months.map(month => {
+          const monthKey = month.toISOString().slice(0, 7);
 
-        return (
-          <table key={monthKey} className={styles.month}>
-            <caption>{monthFormat.format(month)}</caption>
-            <thead>
-              <tr>
-                {weekdays.map(day => <th key={day} scope="col" aria-label={day}>{day.slice(0, 3)}</th>)}
-              </tr>
-            </thead>
-            <tbody>
-              {getMonthWeeks(month).map((week, index) => (
-                <tr key={index}>
-                  {week.map((day, weekday) => {
-                    if (day === null) return <td key={weekday} />;
-                    const date = `${monthKey}-${String(day).padStart(2, '0')}`;
-
-                    return (
-                      <td key={weekday}>
-                        {announcementDates.has(date) ? (
-                          <AnnouncementDayButton date={date} isElectionDay={date === electionDate} />
-                        ) : date === electionDate ? (
-                          <time dateTime={date} className={styles.electionDay}>
-                            {day}<span>Election day</span>
-                          </time>
-                        ) : day}
-                      </td>
-                    );
-                  })}
+          return (
+            <table key={monthKey} className={styles.month}>
+              <caption>{monthFormat.format(month)}</caption>
+              <thead>
+                <tr>
+                  {weekdays.map(day => <th key={day} scope="col" aria-label={day}>{day.slice(0, 3)}</th>)}
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        );
-      })}
+              </thead>
+              <tbody>
+                {getMonthWeeks(month).map((week, index) => (
+                  <tr key={index}>
+                    {week.map((day, weekday) => {
+                      if (day === null) return <td key={weekday} />;
+                      const date = `${monthKey}-${String(day).padStart(2, '0')}`;
+
+                      return (
+                        <td key={weekday}>
+                          {announcementsByDate[date] ? (
+                            <AnnouncementDayButton
+                              date={date}
+                              isElectionDay={date === electionDate}
+                              expanded={selection?.date === date}
+                              panelId={panelId}
+                              onClick={event => {
+                                if (selection?.date === date) closePanel();
+                                else setSelection({ date, button: event.currentTarget });
+                              }}
+                            />
+                          ) : date === electionDate ? (
+                            <time dateTime={date} className={styles.electionDay}>
+                              {day}<span>Election day</span>
+                            </time>
+                          ) : day}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          );
+        })}
+      </div>
+      {selection && (
+        <CalendarAnnouncementPanel
+          id={panelId}
+          date={selection.date}
+          announcements={announcementsByDate[selection.date]}
+          onClose={closePanel}
+          panelRef={panelRef}
+          headingRef={headingRef}
+        />
+      )}
     </div>
   );
 }
