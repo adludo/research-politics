@@ -5,6 +5,7 @@ import VictorianBudgetChart from '../../../components/budgets/VictorianBudgetCha
 import PolicyComparison from '../../../components/policies/PolicyComparison';
 import SourceReference from '../../../components/policies/SourceReference';
 import BackToTop from '../../../components/ui/BackToTop';
+import ElectionCalendar from '../../../components/ui/ElectionCalendar';
 import ExpandableSection from '../../../components/ui/ExpandableSection';
 
 import { getPolicyVerification } from './policy-verification';
@@ -96,6 +97,7 @@ function StateBudget() {
 }
 
 const sections = [
+  { id: 'calendar', title: 'Calendar', Content: () => <ElectionCalendar electionDate={comparison.electionDateSupplied} /> },
   { id: 'policies', title: 'Policies', Content: ElectionPolicies, topics: comparison.sections },
   { id: 'state-budget', title: 'State budget', Content: StateBudget },
   { id: 'verification-heading', title: 'Verification and source review', Content: SourceReview, headingId: 'review-heading' },

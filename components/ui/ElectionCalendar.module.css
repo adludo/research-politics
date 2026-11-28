@@ -1,0 +1,41 @@
+.months {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  align-items: start;
+  gap: 1rem;
+}
+
+.month {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background: var(--surface);
+  text-align: center;
+  font-size: .875rem;
+}
+
+.month caption {
+  padding: .5rem;
+  background: var(--surface-accent);
+  font-weight: 700;
+}
+
+.month th, .month td {
+  border: 1px solid var(--border);
+  padding: .35rem .125rem;
+}
+
+.month th { color: var(--muted); font-size: .75rem; }
+.month td { height: 2.5rem; }
+
+.electionDay {
+  display: block;
+  border-radius: .25rem;
+  background: var(--accent);
+  color: var(--surface);
+  font-weight: 700;
+  line-height: 1.2;
+  padding: .15rem 0;
+}
+
+.electionDay span { display: block; font-size: .625rem; overflow-wrap: anywhere; }
