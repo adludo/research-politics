@@ -420,22 +420,42 @@
             {
               "text": "Seek $2 billion in Suburban Rail Loop savings: approximately $1 billion through scope reductions and another $1 billion targeted through an independent review.",
               "source": "srl",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-08-25",
+                "isAnnouncement": true,
+                "url": "https://www.premier.vic.gov.au/labor-will-build-suburban-rail-loop-and-save-money"
+              }
             },
             {
               "text": "Progressively restore the land-tax threshold to $300,000, starting with increases in 2027–28.",
               "source": "labor-land",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-04",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/labor-will-cut-land-tax-to-help-with-the-cost-of-living"
+              }
             },
             {
               "text": "Introduce a $350 million manufacturing package, targeting 5,000 jobs through grants and public–private investment.",
               "source": "abc",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-04",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/labor-will-create-5-000-new-manufacturing-jobs"
+              }
             },
             {
               "text": "In its 26 November financial statement, Labor projected a further $1 billion reduction in state debt and pledged no new or increased taxes.",
               "source": "labor-financial-statement",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-26",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/our-sustainable-plan-reduces-debt-and-protects-health"
+              }
             }
           ]
         },
@@ -445,22 +465,42 @@
             {
               "text": "Target a cash surplus by 2032; freeze recruitment to back-office positions, claiming $22 billion in savings; use windfall revenue to reduce debt.",
               "source": "coalition-economy",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-05-08",
+                "isAnnouncement": true,
+                "url": "https://vicliberal.org.au/media-releases/2026-05-08-liberals-and-nationals-launch-comprehensive-10-year-economic-plan"
+              }
             },
             {
               "text": "Promise no new or increased taxes.",
               "source": "coalition-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-05",
+                "isAnnouncement": false,
+                "url": "https://ourplan.au/lower-costs/"
+              }
             },
             {
               "text": "Restore the $300,000 land-tax threshold over five years; provide business payroll-tax relief and remove payroll taxes applying to schools and GP services.",
               "source": "coalition-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-05-08",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/media-releases/2026-05-08-liberals-and-nationals-launch-comprehensive-10-year-economic-plan"
+              }
             },
             {
               "text": "In its 26 November costings release, the Coalition proposed leasing Melbourne Water’s Eastern and Western sewage treatment plants for 90 years. Jess Wilson clarified that the cash surplus target was for the 2033 financial year.",
               "source": "abc-coalition-costings",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-26",
+                "isAnnouncement": true,
+                "url": "https://www.abc.net.au/news/2026-11-26/coalition-costings-victorian-state-election-2026/107430554"
+              }
             }
           ]
         },
@@ -470,7 +510,12 @@
             {
               "text": "Introduce a quarterly 0.1% levy on Victoria’s share of the five major banks’ liabilities; increase online gambling tax to 25%, pokies taxes to 75%, and double casino table-game taxes; double coal and gas royalties; increase land tax on residential investment portfolios above $5 million. Use these taxes to fund expanded public services and household relief.",
               "source": "greens-tax",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-09-11",
+                "isAnnouncement": false,
+                "url": "https://cdn.greens.org.au/vic/news/media-release/victorian-greens-make-gambling-giants-pay-fix-your-teeth"
+              }
             }
           ]
         },
@@ -480,12 +525,22 @@
             {
               "text": "Cancel the Suburban Rail Loop and redirect its funding; reduce senior bureaucracy; introduce sunset reviews requiring government entities to justify their continuation.",
               "source": "one-fiscal",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             },
             {
               "text": "Wind back land-tax increases and lift the payroll-tax threshold. The supplied summary does not specify the new payroll threshold.",
               "source": "one-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://www.abc.net.au/news/2026-10-03/one-nation-launches-victorian-election-campaign/107223676"
+              }
             }
           ]
         }
@@ -502,12 +557,22 @@
             {
               "text": "Introduce a $30 weekly public-transport cap, or $15 for concession holders, for two years from 1 January 2027.",
               "source": "labor-fares",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-19",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/capping-fares"
+              }
             },
             {
               "text": "Introduce a $30 weekly toll cap during 2027 through rebates capped at $350 a week and $5,000 per vehicle annually. Eligible small businesses could claim for up to five vehicles.",
               "source": "labor-tolls",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-18",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/capping-tolls"
+              }
             }
           ]
         },
@@ -517,7 +582,12 @@
             {
               "text": "Introduce a $50 weekly toll cap for two years from 1 July 2027, covering cars, light commercial vehicles and small-business fleets of up to five vehicles. Scrap the Emergency Services Tax.",
               "source": "coalition-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-05-08",
+                "isAnnouncement": false,
+                "url": "https://www.jesswilsonkew.com.au/media-releases/2026-05-08-liberals-and-nationals-launch-comprehensive-10-year-economic-plan-media-release-speech"
+              }
             }
           ]
         },
@@ -527,7 +597,12 @@
             {
               "text": "Make public transport permanently free; trial 10 publicly owned supermarkets selling a basket of essential groceries at prices intended to be 30% cheaper; introduce $3,000 energy-upgrade vouchers for renters and homeowners.",
               "source": "greens-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-08",
+                "isAnnouncement": false,
+                "url": "https://www.abc.net.au/news/2026-10-08/victoria-greens-state-supermarkets-election-campaign/107239256"
+              }
             }
           ]
         },
@@ -537,7 +612,12 @@
             {
               "text": "Abolish stamp duty on home, contents and car insurance; provide $300 per school-age child annually for sport, split between summer and winter seasons, without means testing.",
               "source": "one-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": false,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             }
           ]
         }
@@ -554,17 +634,32 @@
             {
               "text": "Open 20 free public dental clinics, including six in regional Victoria. Make free annual check-ups available to Victorian residents, with treatment prioritised by urgency.",
               "source": "labor-dental",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-31",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/labor-will-deliver-20-new-dental-clinics"
+              }
             },
             {
               "text": "Expand 12 hospital emergency departments, adding 250 beds and 750 nurses.",
               "source": "labor-health",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-25",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/labor-will-slash-wait-times"
+              }
             },
             {
               "text": "In costing advice released on 24 November, Victorian Treasury recorded Labor’s plan to support 300 graduate nurses and midwives a year from 1 July 2027, with each cohort employed on a 12-month program.",
               "source": "dtf-labor-nursing",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-26",
+                "isAnnouncement": true,
+                "url": "https://www.dtf.vic.gov.au/sites/default/files/2026-11/Election-costing-advice-ALP-More-graduate-nurses-and-midwives,-and-nurse-prescribers-24-November-2026.pdf"
+              }
             }
           ]
         },
@@ -574,12 +669,22 @@
             {
               "text": "Deliver 25,000 additional elective operations annually through private-hospital partnerships at no additional patient cost; upgrade regional hospitals including West Gippsland, Wonthaggi and Mildura; establish a $50 million mental-health workforce fund; provide $5 million for a Parkville youth mental-health facility masterplan.",
               "source": "coalition-government",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/media-releases/2026-10-03-surgerysooner-to-halve-victorias-elective-surgery-waitlist"
+              }
             },
             {
               "text": "On 24 November, Jess Wilson said a Coalition government would close the North Richmond medically supervised injecting room.",
               "source": "abc-nov25-campaign",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-24",
+                "isAnnouncement": true,
+                "url": "https://www.abc.net.au/news/2026-11-25/victoria-election-live-updates-labor-liberals-campaign/107422466"
+              }
             }
           ]
         },
@@ -589,12 +694,22 @@
             {
               "text": "Invest $3 billion in public dentistry, including clinics, prevention and workforce expansion, to make dental care free.",
               "source": "greens-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-09-11",
+                "isAnnouncement": true,
+                "url": "https://cdn.greens.org.au/vic/news/media-release/victorian-greens-make-gambling-giants-pay-fix-your-teeth"
+              }
             },
             {
               "text": "Allocate at least 5% of the health budget to prevention and health promotion, and 3% to community health; expand abortion access, pill testing and supervised injecting services.",
               "source": "abc",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-13",
+                "isAnnouncement": false,
+                "url": "https://www.abc.net.au/news/2026-11-04/victoria-2026-election-policy-promise-tracker/107247200"
+              }
             }
           ]
         },
@@ -604,17 +719,32 @@
             {
               "text": "Create a real-time statewide surgical and specialist waiting-list system; improve electronic-record interoperability; expand hospital-at-home and nurse-led discharge; redirect administrative savings into clinical care.",
               "source": "one-health",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             },
             {
               "text": "Guarantee minimum regional services, including 24/7 emergency departments.",
               "source": "abc",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             },
             {
               "text": "Cover remaining public maternity out-of-pocket expenses and contribute $2,000 towards private maternity care.",
               "source": "one-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-16",
+                "isAnnouncement": true,
+                "url": "https://www.theguardian.com/australia-news/2026/oct/16/one-nation-birth-subsidy-victoria-abortion-laws-ntwnfb"
+              }
             }
           ]
         }
@@ -631,7 +761,12 @@
             {
               "text": "Partner with the Commonwealth to deliver 25,600 homes, giving first-home buyers an initial exclusive purchasing opportunity. Sell at market prices, with the first homes expected in 2027. Contribute $499 million in state funding, including supporting infrastructure.",
               "source": "labor-homes",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-21",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/labor-will-build-25-000-homes-for-first-home-buyers"
+              }
             }
           ]
         },
@@ -641,7 +776,12 @@
             {
               "text": "Exempt first-home buyers from stamp duty on homes up to $1 million; scrap Labor’s suburban high-rise activity-centre plans and restore local planning control; expand the Capital City Zone into selected inner-city areas; accelerate growth-area land release.",
               "source": "coalition-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2025-05-26",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/news/2025-05-26-liberals-and-nationals-to-abolish-stamp-duty-for-first-homebuyers"
+              }
             }
           ]
         },
@@ -651,12 +791,22 @@
             {
               "text": "Abolish stamp duty for owner-occupied homes below $1.1 million, with discounts up to $1.6 million; target 88,000 additional public homes, starting with $4 billion towards construction, maintenance and upgrades; oppose public-housing tower demolition.",
               "source": "greens-housing",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-07-09",
+                "isAnnouncement": true,
+                "url": "https://greens.org.au/vic/news/media-release/greens-unveil-bold-housing-plan-bring-down-cost-buying-home-abolishing-stamp"
+              }
             },
             {
               "text": "Introduce a two-year rent freeze, followed by limits linked to wages or inflation.",
               "source": "abc",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-09-24",
+                "isAnnouncement": false,
+                "url": "https://cdn.greens.org.au/vic/news/media-release/renters-being-pushed-breaking-point-new-data-shows-scale-victorias-rental"
+              }
             }
           ]
         },
@@ -666,7 +816,12 @@
             {
               "text": "Release underused government land; impose statutory planning and building-approval deadlines; ease granny-flat and spare-room rental restrictions; increase foreign-purchaser duty; require community consultation before high-rise development.",
               "source": "one-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             }
           ]
         }
@@ -683,17 +838,32 @@
             {
               "text": "Continue the Suburban Rail Loop with scope reductions and a savings review.",
               "source": "srl",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-08-25",
+                "isAnnouncement": true,
+                "url": "https://www.premier.vic.gov.au/labor-will-build-suburban-rail-loop-and-save-money"
+              }
             },
             {
               "text": "Repair 500,000 potholes in 2026, upgrade 50 local roads and strengthen government responsibility for road maintenance. The supplied summary describes the pothole program as already underway, rather than entirely a future-term promise.",
               "source": "labor-roads",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-29",
+                "isAnnouncement": false,
+                "url": "https://www.viclabor.org.au/news/labor-will-upgrade-50-local-roads"
+              }
             },
             {
               "text": "On 27 November, Labor pledged $2.2 million for a pedestrian crossing on Elgar Road at Windsor Crescent in Mont Albert.",
               "source": "labor-elgar-crossing",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-27",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/new-pedestrian-crossing-for-elgar-road"
+              }
             }
           ]
         },
@@ -703,22 +873,42 @@
             {
               "text": "Pause and review the Suburban Rail Loop.",
               "source": "abc",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-31",
+                "isAnnouncement": false,
+                "url": "https://www.brisbanetimes.com.au/politics/victoria/wilson-insists-srl-position-is-very-clear-despite-days-of-confusion-20261031-p61a8n.html"
+              }
             },
             {
               "text": "Spend $5 billion on road repairs and resurfacing; target one million potholes; provide 25 hybrid electric trains for the Melton and Wyndham Vale lines.",
               "source": "coalition-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-07-12",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/media-releases/2026-07-12-5-billion-to-eliminate-1-million-potholes-and-get-victorias-roads-back-on-track"
+              }
             },
             {
               "text": "Guarantee regional Victoria at least 25% of infrastructure spending.",
               "source": "coalition-government",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-05-22",
+                "isAnnouncement": true,
+                "url": "https://vicliberal.org.au/media-releases/2026-05-22-a-fair-share-for-regional-victorians-guaranteed"
+              }
             },
             {
               "text": "On 26 November, the Coalition said it would cancel planned level crossing removals in Yarraville and Spotswood and on the Upfield line in Brunswick and Parkville, and defer the Seaford removals beyond 2030.",
               "source": "abc-coalition-costings",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-26",
+                "isAnnouncement": true,
+                "url": "https://www.abc.net.au/news/2026-11-26/coalition-costings-victorian-state-election-2026/107430554"
+              }
             }
           ]
         },
@@ -728,7 +918,12 @@
             {
               "text": "Run trams and most trains at least every 10 minutes between 7am and 10pm, where infrastructure permits; spend $270 million on bus reform and $245 million on more frequent regional trains and coaches; allocate $80 million annually to safe cycling routes.",
               "source": "greens-transport",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-13",
+                "isAnnouncement": false,
+                "url": "https://www.abc.net.au/news/2026-11-04/victoria-2026-election-policy-promise-tracker/107247200"
+              }
             }
           ]
         },
@@ -738,7 +933,12 @@
             {
               "text": "Cancel the Suburban Rail Loop, publish the costs of continuing versus stopping it, and redirect funding to other infrastructure.",
               "source": "one-fiscal",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             }
           ]
         }
@@ -755,12 +955,22 @@
             {
               "text": "Pause and review the Western Renewables Link transmission project.",
               "source": "guardian",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-09-15",
+                "isAnnouncement": true,
+                "url": "https://www.abc.net.au/news/2026-09-15/western-renewables-link-ees-approval-ben-carroll-cost-assessment/107154342"
+              }
             },
             {
               "text": "Introduce a 2km buffer between new waste-to-energy facilities and existing homes.",
               "source": "abc",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-11",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/labor-will-keep-waste-to-energy-away-from-homes"
+              }
             }
           ]
         },
@@ -770,12 +980,22 @@
             {
               "text": "Reverse restrictions on new gas connections and gas appliances; encourage gas exploration; establish commercial-rooftop Urban Solar Parks.",
               "source": "coalition-economy",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-01-06",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/news/2026-01-06-liberals-and-nationals-launch-ad-campaign-against-labors-gas-ban"
+              }
             },
             {
               "text": "Cancel VNI West; require fundamental changes and a rigorous review before Western Renewables Link proceeds; restore a 2km wind-turbine buffer around homes.",
               "source": "coalition-government",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-08-19",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/media-releases/2026-08-19-more-gas-fewer-poles-and-wires-our-plan-to-keep-the-lights-on-and-prices-low"
+              }
             }
           ]
         },
@@ -785,12 +1005,22 @@
             {
               "text": "Ban offshore oil and gas drilling and stop Viva’s gas import terminal; invest in renewables to enable earlier closure of Loy Yang A generating units.",
               "source": "greens-climate",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-23",
+                "isAnnouncement": false,
+                "url": "https://greens.org.au/vic/platform/climate"
+              }
             },
             {
               "text": "Establish a public energy retailer and expand publicly owned renewables; impose a moratorium on new AI data centres pending protective laws; strengthen native-forest protection.",
               "source": "greens-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-06-24",
+                "isAnnouncement": false,
+                "url": "https://greens.org.au/vic/news/media-release/victorian-greens-call-moratorium-all-new-large-scale-data-centres"
+              }
             }
           ]
         },
@@ -800,12 +1030,22 @@
             {
               "text": "Scrap net-zero targets and subsidies; cancel VNI West and Western Renewables Link; support coal infrastructure upgrades and offshore gas exploration; reverse the new-home gas ban; repeal Victoria’s nuclear prohibition.",
               "source": "one-energy",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             },
             {
               "text": "On 26 November, Victorian One Nation deputy leader Colleen Harkin said the party would impose a moratorium on AI data centres if elected.",
               "source": "abc-one-data-centres",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-26",
+                "isAnnouncement": false,
+                "url": "https://www.abc.net.au/listen/programs/melbourne-mornings/what-would-one-nation-do-with-the-balance-of-power-/107429562"
+              }
             }
           ]
         }
@@ -822,7 +1062,12 @@
             {
               "text": "Commit more than $1.17 billion to upgrades at 228 public schools, with planning for another 16. Provide $500 million for non-government school upgrades: $350 million for Catholic schools and $150 million for other low-fee independent schools. The supplied summary dates this announcement to 14 November 2026.",
               "source": "labor-schools",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-14",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/labor-will-upgrade-hundreds-of-local-schools"
+              }
             }
           ]
         },
@@ -832,22 +1077,42 @@
             {
               "text": "Establish 10 technical secondary colleges and subsidise half of eligible apprentices’ off-the-job training costs.",
               "source": "coalition-costs",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-10",
+                "isAnnouncement": true,
+                "url": "https://vicliberal.org.au/media-releases/2026-10-10-bringing-back-technical-colleges-to-boost-our-economy-and-upskill-the-next-generation-of-tradies-sooner"
+              }
             },
             {
               "text": "Build three selective-entry high schools; introduce a literacy and numeracy guarantee with a long-term 90% NAPLAN proficiency goal.",
               "source": "coalition-government",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-07-19",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/media-releases/2026-07-19-backing-victorian-kids-to-achieve-their-best-liberals-and-nationals-announce-literacy-and-numeracy-guarantee"
+              }
             },
             {
               "text": "On 26 November, the Coalition said it would keep free kindergarten for four-year-olds at 15 hours a week instead of proceeding with the planned expansion to 30 hours.",
               "source": "abc-coalition-costings",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-26",
+                "isAnnouncement": true,
+                "url": "https://www.abc.net.au/news/2026-11-26/coalition-costings-victorian-state-election-2026/107430554"
+              }
             },
             {
               "text": "ABC reported on 27 November that the Coalition would cancel planned government-run early learning centres in areas with childcare shortages and review early learning infrastructure and capacity.",
               "source": "abc-nov27-campaign",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-27",
+                "isAnnouncement": false,
+                "url": "https://www.abc.net.au/news/2026-11-27/victorian-election-live-coalition-labor-costings-polling-day-eve/107433332"
+              }
             }
           ]
         },
@@ -857,7 +1122,12 @@
             {
               "text": "Bring forward Victoria’s full 75% state share of the Schooling Resource Standard to 2028; replace schools’ reliance on voluntary parent contributions with adequate funding; establish an independent authority to allocate school upgrades according to need.",
               "source": "greens-education",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-16",
+                "isAnnouncement": false,
+                "url": "https://greens.org.au/vic/platform/education"
+              }
             }
           ]
         },
@@ -867,7 +1137,12 @@
             {
               "text": "Replace the Victorian Curriculum with a sequenced syllabus prioritising literacy, numeracy, science, history and civics; expand explicit instruction and phonics; expand dedicated trade schools and specialist behavioural-support settings.",
               "source": "one-education",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             }
           ]
         }
@@ -884,7 +1159,12 @@
             {
               "text": "Recruit 1,500 additional police, alongside 200 Protective Services Officers and 400 reservists, to increase frontline policing capacity.",
               "source": "labor-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-08-16",
+                "isAnnouncement": false,
+                "url": "https://www.premier.vic.gov.au/more-reservists-means-more-police-stations-open-longer"
+              }
             }
           ]
         },
@@ -894,7 +1174,12 @@
             {
               "text": "Increase police numbers by 3,000, comprising existing vacancies plus 1,500 additional funded positions; reopen more than 40 police stations; introduce “Break Bail, Face Jail” rules; expand adult sentencing for serious offences committed by young people.",
               "source": "coalition-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-04-14",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/media-releases/2026-04-14-tougher-bail-and-sentencing-laws-to-keep-victorians-safe"
+              }
             }
           ]
         },
@@ -904,12 +1189,22 @@
             {
               "text": "Invest $1 billion in community safety, including prevention, mental-health outreach and crisis response.",
               "source": "greens-safety",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-08",
+                "isAnnouncement": true,
+                "url": "https://www.abc.net.au/news/2026-10-08/victoria-greens-state-supermarkets-election-campaign/107239256"
+              }
             },
             {
               "text": "Raise the criminal-responsibility age to 14; repeal the 2025 bail changes and end life sentences for children.",
               "source": "greens-justice",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-26",
+                "isAnnouncement": false,
+                "url": "https://greens.org.au/vic/platform/first-nations-justice"
+              }
             }
           ]
         },
@@ -919,12 +1214,22 @@
             {
               "text": "Establish a 24/7 Bail Court; target resolution of violent charges within 90 days; apply adult sentencing to serious child offenders.",
               "source": "one-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": false,
+                "url": "https://www.abc.net.au/news/2026-10-03/one-nation-launches-victorian-election-campaign/107223676"
+              }
             },
             {
               "text": "Reduce police administrative work and prioritise retention of experienced officers.",
               "source": "one-crime",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             }
           ]
         }
@@ -941,17 +1246,32 @@
             {
               "text": "Maintain Treaty.",
               "source": "abc",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-13",
+                "isAnnouncement": false,
+                "url": "https://www.abc.net.au/news/2026-11-04/victoria-2026-election-policy-promise-tracker/107247200"
+              }
             },
             {
               "text": "Establish Royalties for the Regions, directing all mineral-resource royalties into regional investment, with more than $500 million forecast over four years.",
               "source": "labor-regions",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-11",
+                "isAnnouncement": true,
+                "url": "https://www.viclabor.org.au/news/labor-will-guarantee-royalties-for-the-regions"
+              }
             },
             {
               "text": "Continue the construction-sector Royal Commission, supported by a special prosecutor and stronger IBAC financial-investigation powers.",
               "source": "labor-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-09-08",
+                "isAnnouncement": false,
+                "url": "https://www.premier.vic.gov.au/more-powers-construction-royal-commission"
+              }
             }
           ]
         },
@@ -961,12 +1281,22 @@
             {
               "text": "Repeal Treaty within its first 100 days.",
               "source": "abc",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-05-01",
+                "isAnnouncement": false,
+                "url": "https://vicliberal.org.au/news/2026-05-01-repealing-treaty-to-save-taxpayers-1-billion"
+              }
             },
             {
               "text": "Introduce a Charter of Budget Honesty and public spending tracker; establish an enhanced Royal Commission into construction-sector misconduct.",
               "source": "coalition-government",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-05-08",
+                "isAnnouncement": false,
+                "url": "https://www.jesswilsonkew.com.au/media-releases/2026-05-08-liberals-and-nationals-launch-comprehensive-10-year-economic-plan-media-release-speech"
+              }
             }
           ]
         },
@@ -976,17 +1306,32 @@
             {
               "text": "Defend Treaty and support further local treaties; implement Yoorrook Justice Commission recommendations, with an initial $50 million investment; support Traditional Owner management of national and state parks.",
               "source": "greens-justice",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-26",
+                "isAnnouncement": false,
+                "url": "https://greens.org.au/vic/platform/first-nations-justice"
+              }
             },
             {
               "text": "Ban major corporate political donations and strengthen anti-corruption oversight.",
               "source": "greens-plan",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-07-06",
+                "isAnnouncement": false,
+                "url": "https://greens.org.au/vic/news/media-release/greens-call-ban-dodgy-donations-wealthy-property-developers-shopping"
+              }
             },
             {
               "text": "On 25 November, the Greens pledged up to $8 million to the successful community group seeking to acquire the Don Bosco Youth Centre in Brunswick.",
               "source": "greens-don-bosco",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-11-25",
+                "isAnnouncement": true,
+                "url": "https://greens.org.au/vic/news/media-release/victorian-greens-announce-plan-save-don-bosco-labor-and-liberals-refuse-step"
+              }
             }
           ]
         },
@@ -996,7 +1341,12 @@
             {
               "text": "Repeal the Statewide Treaty and abolish Gellung Warl, ending its legislated funding; establish Royal Commissions into the Big Build and Victoria’s COVID response.",
               "source": "one-integrity",
-              "status": "verification-pending"
+              "status": "verification-pending",
+              "date": {
+                "value": "2026-10-03",
+                "isAnnouncement": true,
+                "url": "https://vic.onenation.org.au/wp-content/uploads/2026/10/The_Real_Deal_One_Nation_Vic_Policy_Booklet_Oct2026.pdf"
+              }
             }
           ]
         }
