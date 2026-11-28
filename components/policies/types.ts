@@ -14,6 +14,11 @@ export interface PolicySource {
 export interface PolicyClaim {
   text: string;
   source: string;
+  date?: {
+    value: string;
+    isAnnouncement: boolean;
+    url: string;
+  };
 }
 
 export interface PartyPolicies {

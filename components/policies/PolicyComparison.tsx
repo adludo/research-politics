@@ -18,6 +18,7 @@ export default function PolicyComparison({
   return (
     <div className={styles.comparison}>
       <p className={styles.hint}>Open a policy area, then a party to read its policies. You can keep multiple areas and parties open.</p>
+      <p className={styles.hint}>Dates link to the announcement or the earliest dated reference found. When a tile combines pledges made at different times, it shows the earliest dated evidence for one of them.</p>
       {sections.map((section, index) => (
         <ExpandableSection
           key={section.id}
